@@ -1,0 +1,1792 @@
+---
+title: 'Tutorial review 30 Years of Research on ESI/MS response: trends, contradictions
+  and applications'
+author: "Piia Liigand, Jaanus Liigand, Karl Kaupmees, Anneli Kruve"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, echo=FALSE, warning=F, message=FALSE}
+#Libraries
+library(tidyverse)
+library(rcdk)
+library(enviPat)
+library(extrafont)
+library(extrafontdb)
+library(kableExtra)
+library(gridExtra)
+library(Metrics)
+```
+
+```{r, echo=FALSE}
+#VARIABLES
+padel_path <- 'functions/PaDEL-Descriptor/PaDEL-Descriptor.jar'
+babel_path <- 'C:/Program Files/OpenBabel-2.4.1'
+#graphics
+#global parameters
+font <- "Arial"
+fontsize <- 10
+fontcolour <- "#7F7F7F"
+# Axis titles
+title_x_axis <- expression(Comparable*" "*log*italic("RRF"))
+title_y_axis <- expression(Predicted*" "*log*italic("IE"))
+title_y_logP <- expression("log"*italic("P"))
+title_x_logP <- expression("log"*italic("P"))
+title_x_pKa_acid <- expression(p*italic("K")["a"]*' acid')
+title_x_pKa_base <- expression(p*italic("K")["a"]*' base')
+#DAtaset variables
+organic_modifier_abrahamsson <- "MeOH"
+pH_abrahamsson <- 3
+ammonia_abrahamsson <- 1
+abrahamsson_vendor <- "Agilent"
+abrahamsson_model <- "Agilent 6530B Accurate-Mass QTOF/MS"
+abrahamsson_mass_analyzer <- "QTOF"
+abrahamsson_source <- "HESI"
+abrahamsson_doi <- "10.1021/acs.jcim.9b01096"
+abrahamsson_organic_phase <- "MeOH 0.4 mM ammonium formate"
+abrahamsson_aqueous_phase <- "0.4 mM ammonium formate"
+abrahamsson_factor <- 0.95
+organic_modifier_alymatiri <- "MeOH"
+alymatiri_vendor <- "Shimadzu"
+alymatiri_model <- "LCMS 2020"
+alymatiri_mass_analyzer <- "Q"
+alymatiri_source <- "ESI"
+alymatiri_doi <- "10.1039/c5ay02839f"
+organic_modifier_bedner <- "MeCN"
+bedner_organic_phase <- "MeCN 0.1% formic acid"
+bedner_aqueous_phase <- "0.1% formic acid"
+pH_bedner <- 2.6
+ammonia_bedner <- 0
+bedner_vendor <- "Agilent"
+bedner_model <- "SL series MS detector"
+bender_mass_analyzer <- "Q"
+bedner_source <- "ESI"
+bedner_doi <- "10.1021/ac200372d"
+organic_byrdwell <- 100
+organic_modifier_byrdwell <- "MeOH"
+pH_byrdwell <- 7
+ammonia_byrdwell <- 0
+byrdwell_vendor <- "AB Sciex"
+byrdwell_model <- "QTrap 4000"
+byrdwell_mass_analyzer <- "LIT-QQQ"
+byrdwell_source <- "ESI"
+byrdwell_doi <- "10.1016/j.chroma.2013.10.031"
+organic_chalcraft <- 50
+organic_modifier_chalcraft <- "MeOH"
+pH_chalcraft <- 2.60
+ammonia_chalcraft <- 0
+chalcraft_vendor <- "Agilent"
+chalcraft_model <- "XCT 3D ion trap"
+chalcraft_mass_analyzer <- "ion trap"
+chalcraft_source <- "nanoESI"
+chalcraft_doi <- "10.1021/ac802272u"
+organic_modifier_cifkova <- "MeCN"
+cifkova_aqueous_phase <- "5 mM ammonium acetate"
+pH_cifkova <- 7
+ammonia_cifkova <- 1
+cifkova_vendor <- "Bruker"
+cifkova_model <- "Esquire 3000"
+cifkova_mass_analyzer <- "ion trap"
+cifkova_source <- "ESI"
+cifkova_doi <- "10.1021/ac3024476"
+organic_modifier_cole <- "MeOH"
+organic_cole <- 50
+pH_cole <- 2.6
+ammonia_cole <- 0
+cole_vendor <- "AB Sciex" #wild guess based on ref 11, 57 in this chapter
+cole_model <- "API 2000" #based on ref 57
+cole_mass_analyzer <- "QQQ"
+cole_source <- "ESI"
+cole_doi <- "ISBN: 978-0-471-74107-7, Table 13.1 page 449"
+pH_cramer <- 2.6
+ammonia_cramer <- 0
+organic_modifier_cramer <- "MeCN"
+organic_cramer <- 50
+cramer_vendor <- "Thermo"
+cramer_model <- "linear ion trap hybrid Orbitrap Elite"
+cramer_mass_analyzer <- "LIT-Orbitrap"
+cramer_source <- "ESI"
+cramer_doi <- "10.1007/s13361-016-1536-4"
+pH_ehrmann <- 3
+ammonia_ehrmann <- 0
+organic_modifier_ehrmann <- "MeOH"
+ehrmann_vendor <- "Thermo"
+ehrmann_model <- "LCQ Advantage Ion Trap"
+ehrmann_mass_analyzer <- "LIT"
+ehrmann_source <- "nanoESI"
+ehrmann_doi <- "10.1016/j.jasms.2008.01.003"
+ammonia_henriksen <- 0
+pH_henriksen <- 7
+henriksen_vendor <- "Waters"
+henriksen_model <- "Quattro Ultima triple quadrupole"
+henriksen_mass_analyzer <- "QQQ"
+henriksen_source <- "ESI"
+henriksen_doi <- "10.1016/j.jasms.2004.11.021"
+organic_modifier_hermans <- "MeCN"
+pH_hermans <- 2.6
+ammonia_hermans <- 0
+hermans_organic_phase <- "MeCN 0.1% formic acid"
+hermans_aqueous_phase <- "0.1% formic acid"
+hermans_vendor <- "Bruker"
+hermans_model <- "HCT ion trap"
+hermans_mass_analyzer <- "ion trap"
+hermans_source <- "ESI"
+hermans_doi <- "10.1021/acs.analchem.7b01899"
+pH_huffman <- 7
+ammonia_huffman <- 0
+huffman_vendor <- "Agilent"
+huffman_model <- "Agilent 6460 triple quadrupole"
+huffman_mass_analyzer <- "QQQ"
+huffman_source <- "HESI"
+huffman_doi <- "10.1021/ac302397b"
+organic_modifier_kiontke <- "MeCN"
+kiontke_vendor_sciex <- "AB Sciex"
+kiontke_model_sciex <- "API 2000 3Q"
+kiontke_mass_analyzer_sciex <- "QQQ"
+kiontke_vendor_bruker <- "Bruker"
+kiontke_model_bruker <- "ion trap"
+kiontke_mass_analyzer_bruker <- "Esquire 3000+"
+kiontke_source_sciex <- "HESI"
+kiontke_source_bruker <- "ESI"
+kiontke_doi <- "10.1371/journal.pone.0167502"
+organic_modifier_lin <- "MeOH"
+pH_lin <- 7
+ammonia_lin <- 1
+lin_organic_phase <- "MeOH 1mM ammonium acetate"
+lin_aqueous_phase <- "1mM ammonium acetate"
+lin_vendor <- "Thermo"
+lin_model <- "Orbitrap Tribrid HRMS"
+lin_mass_analyzer <- "Q-Orbitrap-LIT"
+lin_source <- "HESI"
+lin_doi <- "10.1016/j.chroma.2016.01.039"
+organic_modifier_mandra <- "MeOH"
+pH_mandra <- 10
+ammonia_mandra <- 1
+mandra_vendor <- "Shimadzu"
+mandra_model <- "LCMS 2020"
+mandra_mass_analyzer <- "Q"
+mandra_source <- "ESI"
+mandra_doi <- "10.1002/rcm.7263"
+organic_modifier_mayhew <- "MeOH"
+pH_mayhew <- 7
+ammonia_mayhew <- 0
+organic_mayhew <- 80
+mayhew_vendor <- "Thermo"
+mayhew_model <- "QExactive Orbitrap"
+mayhew_mass_analyzer <- "Q-Orbitrap"
+mayhew_source <- "HESI"
+mayhew_doi <- "10.1021/acsomega.0c00732"
+organic_modifier_pieke <- "MeCN"
+pH_pieke <- 3.1
+ammonia_pieke <- 1
+pieke_aqueous_phase <- "ammonium formate pH = 3.1"
+pieke_vendor <- "Agilent"
+pieke_model <- "Agilent 6550 Q-TOF"
+pieke_mass_analyzer <- "QTOF"
+pieke_source <- "HESI"
+pieke_doi <- "10.1016/j.aca.2017.03.054"
+organic_modifier_tang <- "MeCN"
+pH_tang <- 3
+ammonia_tang <- 0
+tang_aqueous_phase <- "formic acid pH = 3"
+tang_vendor <- "Bruker"
+tang_model <- "MacroTOF-QII"
+tang_mass_analyzer <- "QTOF"
+tang_source <- "ESI"
+tang_doi <- "10.1155/2014/643879"
+pH_thurman <- 2.7 #wild guess
+ammonia_thurman <- 0 #wild guess
+organic_modifier_thurman <- "MeOH" #wild guess
+organic_thurman <- 50 #wild guess
+thurman_vendor <- "Agilent"
+thurman_model <- "Hewlett-Packard mass spectrometer, model HP 1100"
+thurman_mass_analyzer <- "Q"
+thurman_source <- "ESI"
+thurman_doi <- "10.1021/ac010506f"
+organic_modifier_wu <- "MeOH"
+pH_wu <- 3.65
+ammonia_wu <- 0
+wu_organic_phase <- "MeOH"
+wu_aqueous_phase <- "0.025% acetic acid"
+wu_vendor <- "AB Sciex"
+wu_model <- "TripleTOF 5600"
+wu_mass_analyzer <- "QTOF"
+wu_source <- "HESI"
+wu_doi <- "10.1016/j.aca.2013.07.034"
+organic_modifier_yang <- "MeOH"
+organic_yang <- 50
+pH_yang <- 3
+ammonia_yang <- 0
+yang_vendor <- "AB Sciex"
+yang_model <- "API QSTAR"
+yang_mass_analyzer <- "QTOF"
+yang_source <- "ESI"
+yang_doi <- "10.1021/ac0600510"
+```
+
+```{r, echo=FALSE}
+#FUNCTIONS
+source("functions/isotope_correction.R")
+source("functions/eluent_features.R")
+source("functions/smiles_standardisation.R")
+source("functions/R_PaDEL_batch.R")
+source("functions/get_inchikey.R")
+get_eluent_features <- function(dataset,
+                                eluent_data,
+                                organic_modifier,
+                                pH,
+                                ammonia,
+                                organic_phase,
+                                aqueous_phase,
+                                factor = 1){
+  dataset <- dataset %>% 
+  group_by(SMILES) %>% 
+  mutate(organic = get_organic_percentage(eluent_data,ret_time),
+         viscosity = get_viscosity(organic,organic_modifier),
+         surface_tension = get_surface_tension(organic,organic_modifier),
+         polarity_index = get_polarity_index(organic,organic_modifier),
+         pH.aq. = pH,
+         NH4 = ammonia,
+         eluent_composition = paste(round(organic*factor, digits = 1),"% ", organic_phase,", ", round(100-organic*factor,digits = 1), "% ",aqueous_phase, sep = "")) %>% 
+  ungroup()
+  return(dataset)
+}
+
+get_natural_mass <- function(SMILES){
+  natural_mass <- SMILES %>% 
+    parse.smiles() %>% 
+    first() %>% 
+    get.natural.mass()
+  return(natural_mass)
+}
+get_natural_mass <- Vectorize(get_natural_mass)
+
+select_relevant_columns <- function(dataset){
+  result <- dataset %>% 
+    select(compound_name,SMILES,ESI_mode,logRF_original,isotope_correction,organic_modifier,organic_pc,vendor, instrument_model, mass_analyzer, ESI_source, eluent_composition, publication, doi, viscosity, surface_tension, polarity_index, pH.aq., NH4)
+  return(result)
+}
+```
+
+```{r, echo=FALSE, eval=F}
+#RAW DATA
+abrahamsson_pos <- read_csv("data/abrahamsson_pos_raw.csv")
+abrahamsson_eluent <- read_csv("data/abrahamsson_eluent_parameters.csv")
+abrahamsson_neg <- read_csv("data/abrahamsson_neg_raw.csv")
+alymatiri_neg <- read_csv("data/alymatiri_neg_raw.csv")
+alymatiri_pos <- read_csv("data/alymatiri_pos_raw.csv")
+bedner <- read_csv("data/bedner_raw.csv")
+bedner_eluent <- read_csv("data/bedner_eluent_parameters.csv")
+byrdwell <- read_csv("data/byrdwell_raw.csv")
+chalcraft <- read_csv("data/chalcraft_raw.csv")
+cifkova <- read_csv("data/cifkova_raw.csv")
+cifkova_eluent <- read_csv("data/cifkova_eluent_parameters.csv")
+cole <- read_csv("data/cole_raw.csv")
+cramer <- read_csv("data/cramer_raw.csv")
+ehrmann <- read_csv("data/ehrmann_raw.csv")
+henriksen <- read_csv("data/henriksen_raw.csv")
+hermans <- read_csv("data/hermans_raw.csv")
+hermans_eluent <- read_csv("data/hermans_eluent_parameters.csv")
+huffman <- read_csv("data/huffman_raw.csv")
+kiontke <- read_csv("data/kiontke_raw.csv")
+liigand_pos <- read_csv("data/liigand_pos_raw.csv")
+liigand_neg <- read_csv("data/liigand_neg_raw.csv")
+lin <- read_csv("data/lin_raw.csv")
+lin_eluent <- read_csv("data/lin_eluent_parameters.csv")
+mandra <- read_csv("data/mandra_raw.csv")
+mayhew <- read_csv("data/mayhew_raw.csv")
+pieke_pos <- read_csv("data/pieke_pos_raw.csv")
+pieke_neg <- read_csv("data/pieke_neg_raw.csv")
+pieke_eluent <- read_csv("data/pieke_eluent_parameters.csv")
+tang <- read_csv("data/tang_raw.csv")
+tang_eluent <- read_csv("data/tang_eluent_parameters.csv")
+thurman <- read_csv("data/thurman_raw.csv")
+wu <- read_csv("data/wu_raw.csv")
+wu_eluent <- read_csv("data/wu_eluent_parameters.csv")
+yang <- read_csv("data/yang_raw.csv")
+```
+
+```{r, warning=F, echo=FALSE, eval=F}
+#Abrahamsson positive data preprocessing
+abrahamsson_pos_tidied <- abrahamsson_pos %>% 
+  select(Preferred_Name,`Desalted SMILES`,mean_RT,Corrected_HighConc,Corrected_MidConc,Corrected_LowConc,mean_High_Intensity,mean_Low_Intensity,mean_Mid_Intensity) %>% 
+  rename(SMILES = `Desalted SMILES`,
+         Name = Preferred_Name,
+         ret_time = mean_RT) %>% 
+  gather("concentration_key","concentration", 4:6) %>% 
+  gather("peak_area_key","peak_area", 4:6) %>% 
+  mutate(peak_area_key = case_when(
+    peak_area_key == "mean_High_Intensity" ~ "Corrected_HighConc",
+    peak_area_key == "mean_Low_Intensity" ~ "Corrected_LowConc",
+    peak_area_key == "mean_Mid_Intensity" ~ "Corrected_MidConc"
+  )) %>% 
+  filter(concentration_key == peak_area_key,
+         peak_area_key != "Corrected_HighConc") %>% #removing high concentration because of suspicion of saturation of signal
+  arrange(Name) %>%
+  select(-c(concentration_key,peak_area_key)) 
+  
+abrahamsson_pos_RF <- abrahamsson_pos_tidied %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() %>% 
+  mutate(corrected_peak_area = peak_area*isotope_correction,
+         molar_concentration = concentration / 1000000,
+         RF = corrected_peak_area/molar_concentration) %>% 
+  group_by(SMILES) %>% 
+  mutate(RF = mean(RF, na.rm = T)) %>% 
+  ungroup() %>% 
+  distinct(SMILES, .keep_all = T)
+
+RF_anchor <- abrahamsson_pos_RF %>% filter(Name == "Scopolamine hydrochloride") %>% distinct(RF) %>% pull()
+
+abrahamsson_pos_RF <- abrahamsson_pos_RF %>% 
+  group_by(SMILES) %>% 
+  mutate(logRF_original = log10(RF/RF_anchor)) %>% 
+  ungroup()
+
+abrahamsson_pos_prepared <- get_eluent_features(dataset = abrahamsson_pos_RF,
+                                                eluent_data = abrahamsson_eluent,
+                                                organic_modifier = organic_modifier_abrahamsson,
+                                                pH = pH_abrahamsson,
+                                                ammonia = ammonia_abrahamsson,
+                                                aqueous_phase = abrahamsson_aqueous_phase,
+                                                organic_phase = abrahamsson_organic_phase,
+                                                factor = abrahamsson_factor)
+abrahamsson_pos_prepared <- abrahamsson_pos_prepared %>% 
+  rename(compound_name = Name,
+         organic_pc = organic) %>% 
+  mutate(vendor = abrahamsson_vendor,
+         organic_modifier = organic_modifier_abrahamsson,
+         mass_analyzer = abrahamsson_mass_analyzer,
+         ESI_mode = "positive",
+         ESI_source = abrahamsson_source,
+         instrument_model = abrahamsson_model,
+         doi = abrahamsson_doi,
+         publication = "Abrahamsson") %>% 
+  select_relevant_columns()
+```
+
+```{r, warning=F, echo=FALSE, eval=F}
+#Abrahamsson negative data preprocessing
+abrahamsson_neg_tidied <- abrahamsson_neg %>% 
+  select(Preferred_Name,`Desalted SMILES`,mean_RT,Corrected_HighConc,Corrected_MidConc,Corrected_LowConc,mean_High_Intensity,mean_Low_Intensity,mean_Mid_Intensity) %>% 
+  rename(SMILES = `Desalted SMILES`,
+         Name = Preferred_Name,
+         ret_time = mean_RT) %>% 
+  gather("concentration_key","concentration", 4:6) %>% 
+  gather("peak_area_key","peak_area", 4:6) %>% 
+  mutate(peak_area_key = case_when(
+    peak_area_key == "mean_High_Intensity" ~ "Corrected_HighConc",
+    peak_area_key == "mean_Low_Intensity" ~ "Corrected_LowConc",
+    peak_area_key == "mean_Mid_Intensity" ~ "Corrected_MidConc"
+  )) %>% 
+  filter(concentration_key == peak_area_key,
+         peak_area_key != "Corrected_HighConc") %>% #removing high concentration because of suspicion of saturation of signal
+  arrange(Name) %>%
+  select(-c(concentration_key,peak_area_key))  
+  
+abrahamsson_neg_RF <- abrahamsson_neg_tidied %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() %>% 
+  mutate(corrected_peak_area = peak_area*isotope_correction,
+         molar_concentration = concentration / 1000000,
+         RF = corrected_peak_area/molar_concentration) %>% 
+  group_by(SMILES) %>% 
+  mutate(RF = mean(RF, na.rm = T)) %>% 
+  ungroup() %>% 
+  distinct(SMILES, .keep_all = T)
+
+RF_anchor <- abrahamsson_neg_RF %>% filter(Name == "2,4-Dinitrophenol") %>% distinct(RF) %>% pull()
+
+abrahamsson_neg_RF <- abrahamsson_neg_RF %>% 
+  group_by(SMILES) %>% 
+  mutate(logRF_original = log10(RF/RF_anchor)) %>% 
+  ungroup()
+
+abrahamsson_neg_prepared <- get_eluent_features(dataset = abrahamsson_neg_RF,
+                                                eluent_data = abrahamsson_eluent,
+                                                organic_modifier = organic_modifier_abrahamsson,
+                                                pH = pH_abrahamsson,
+                                                ammonia = ammonia_abrahamsson,
+                                                aqueous_phase = abrahamsson_aqueous_phase,
+                                                organic_phase = abrahamsson_organic_phase,
+                                                factor = abrahamsson_factor)
+abrahamsson_neg_prepared <- abrahamsson_neg_prepared %>% 
+  rename(compound_name = Name,
+         organic_pc = organic) %>% 
+  mutate(vendor = abrahamsson_vendor,
+         organic_modifier = organic_modifier_abrahamsson,
+         mass_analyzer = abrahamsson_mass_analyzer,
+         ESI_mode = "negative",
+         ESI_source = abrahamsson_source,
+         instrument_model = abrahamsson_model,
+         doi = abrahamsson_doi,
+         publication = "Abrahamsson") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Alymatiri negative mode
+alymatiri_neg_tidied <- alymatiri_neg %>% 
+  rename(signal = peak_area) %>% 
+  mutate(concentration_molar = 1*(1/1000000)/MW/(1/1000),
+         isotope_correction = isotope_distribution(SMILES),
+         RF = signal*isotope_correction/concentration_molar
+         ) %>% 
+  group_by(system,SMILES) %>% 
+  summarise(RF = mean(RF),
+            compound_name = unique(compound_name),
+            isotope_correction = unique(isotope_correction)) %>% 
+  ungroup() %>% 
+  filter(RF != 0)
+
+RF_anchor_organic <- alymatiri_neg_tidied %>% filter(compound_name == "Ethinylestradiol", system == "100% MeOH") %>% pull(RF)
+RF_anchor_pH10 <- alymatiri_neg_tidied %>% filter(compound_name == "Ethinylestradiol", system == "MeOH/H2O (pH = 10) 50/50") %>% pull(RF)
+
+alymatiri_neg_prepared <- alymatiri_neg_tidied %>% 
+  mutate(logRF_original = case_when(
+    system == "100% MeOH" ~ log10(RF/RF_anchor_organic),
+    system == "MeOH/H2O (pH = 10) 50/50" ~ log10(RF/RF_anchor_pH10)
+    ),
+    organic = case_when(
+    system == "100% MeOH" ~ 100,
+    system == "MeOH/H2O (pH = 10) 50/50" ~ 50
+    ),
+    viscosity = get_viscosity(organic, organic_modifier = organic_modifier_alymatiri),
+    surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_alymatiri),
+    polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_alymatiri),
+    pH.aq. = case_when(
+    system == "100% MeOH" ~ 7,
+    system == "MeOH/H2O (pH = 10) 50/50" ~ 10
+    ),
+    NH4 = case_when(
+    system == "100% MeOH" ~ 0,
+    system == "MeOH/H2O (pH = 10) 50/50" ~ 1
+    ),
+    system = case_when(
+    system == "100% MeOH" ~ system,
+    system == "MeOH/H2O (pH = 10) 50/50" ~ "MeOH/H2O pH = 10 adjsuted with ammonia 50/50"
+    )
+    )
+
+alymatiri_neg_prepared <- alymatiri_neg_prepared %>% 
+  rename(organic_pc = organic,
+         eluent_composition = system) %>% 
+  mutate(vendor = alymatiri_vendor,
+         organic_modifier = organic_modifier_alymatiri,
+         ESI_mode = "negative",
+         ESI_source = alymatiri_source,
+         instrument_model = alymatiri_model,
+         mass_analyzer = alymatiri_mass_analyzer,
+         doi = alymatiri_doi,
+         publication = "Alymatiri") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Alymatiri positive mode
+alymatiri_organic <- 50
+alymatiri_pos_tidied <- alymatiri_pos %>% 
+  rename(signal = peak_area) %>% 
+  mutate(concentration_molar = 1*(1/1000000)/MW/(1/1000),
+         isotope_correction = isotope_distribution(SMILES),
+         RF = signal*isotope_correction/concentration_molar
+         )
+
+RF_anchor <- alymatiri_pos_tidied %>% filter(compound_name == "Ethinylestradiol") %>% pull(RF)
+
+alymatiri_pos_prepared <- alymatiri_pos_tidied %>% 
+  mutate(logRF_original =log10(RF/RF_anchor),
+         organic = alymatiri_organic,
+    viscosity = get_viscosity(organic, organic_modifier = organic_modifier_alymatiri),
+    surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_alymatiri),
+    polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_alymatiri),
+    pH.aq. = 10,
+    NH4 = 1,
+    eluent_composition = "MeOH/H2O pH = 10 adjusted with ammonia 50/50"
+    )
+alymatiri_pos_prepared <- alymatiri_pos_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = alymatiri_vendor,
+         organic_modifier = organic_modifier_alymatiri,
+         ESI_mode = "positive",
+         ESI_source = alymatiri_source,
+         instrument_model = alymatiri_model,
+         mass_analyzer = alymatiri_mass_analyzer,
+         doi = alymatiri_doi,
+         publication = "Alymatiri") %>% 
+  select_relevant_columns()
+```
+
+```{r, warning=F, echo=FALSE, eval=F}
+#Bedner 2011 positive mode
+#Internal standard proxyphylline
+SMILES_is <- "CC(CN1C=NC2=C1C(=O)N(C(=O)N2C)C)O"
+mw_is <- 238.247
+isotope_correction_is <- isotope_distribution(SMILES_is)
+#standard solutions 30% MeOH in water
+density_standard_solution <- 0.958
+bedner_tidied <- bedner %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() %>% 
+  mutate(c_stock = `Stock Conc. (mg/g)`/1000/MW/(1/density_standard_solution/1000),
+         c_is = `Stock IS Conc. (mg/g)`/1000/mw_is/(1/density_standard_solution/1000),
+         RF_stock = `Peak Area Calibrant`*isotope_correction/c_stock,
+         RF_is = `Peak Area IS`*isotope_correction_is/c_is,
+         RRF = RF_stock/RF_is) %>% 
+  group_by(SMILES) %>% 
+  mutate(logRF_original = RRF %>% mean %>% log10()) %>% 
+  ungroup()
+
+bedner_prepared <- get_eluent_features(dataset = bedner_tidied,
+                                       eluent_data = bedner_eluent,
+                                       organic_modifier = organic_modifier_bedner,
+                                       pH = pH_bedner,
+                                       ammonia = ammonia_bedner,
+                                       aqueous_phase = bedner_aqueous_phase,
+                                       organic_phase = bedner_organic_phase)
+
+bedner_prepared <- bedner_prepared %>% 
+  rename(compound_name = Compound,
+         organic_pc = organic) %>% 
+  mutate(vendor = bedner_vendor,
+         mass_analyzer = bender_mass_analyzer,
+         organic_modifier = organic_modifier_bedner,
+         ESI_mode = "positive",
+         ESI_source = bedner_source,
+         instrument_model = bedner_model,
+         doi = bedner_doi,
+         publication = "Bedner") %>% 
+  select_relevant_columns()
+  
+```
+```{r, echo=FALSE, eval=F}
+#Byrdwell positive
+byrdwell_tidied <- byrdwell %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES),
+         RF = RRF*isotope_correction)
+
+RF_anchor <- byrdwell_tidied %>% filter(compound_name == "linolenic a.c., Ln, 18:3") %>% pull(RF)
+
+byrdwell_prepared <- byrdwell_tidied %>% 
+  mutate(logRF_original =log10(RF/RF_anchor),
+         organic = organic_byrdwell,
+    viscosity = get_viscosity(organic, organic_modifier = organic_modifier_byrdwell),
+    surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_byrdwell),
+    polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_byrdwell),
+    pH.aq. = pH_byrdwell,
+    NH4 = ammonia_byrdwell,
+    eluent_composition = "100% MeOH"
+    )
+byrdwell_prepared <- byrdwell_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = byrdwell_vendor,
+         mass_analyzer = byrdwell_mass_analyzer,
+         organic_modifier = organic_modifier_byrdwell,
+         ESI_mode = "positive",
+         ESI_source = byrdwell_source,
+         instrument_model = byrdwell_model,
+         doi = byrdwell_doi,
+         publication = "Byrdwell") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Chalcraft positive
+chalcraft_tidied <- chalcraft %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES),
+         RF = RRF*isotope_correction)
+
+RF_anchor <- chalcraft_tidied %>% filter(compound_name == "D-Ala-D-Ala") %>% pull(RF)
+
+chalcraft_prepared <- chalcraft_tidied %>% 
+  mutate(logRF_original =log10(RF/RF_anchor),
+         organic = organic_chalcraft,
+    viscosity = get_viscosity(organic, organic_modifier = organic_modifier_chalcraft),
+    surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_chalcraft),
+    polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_chalcraft),
+    pH.aq. = pH_chalcraft,
+    NH4 = ammonia_chalcraft,
+    eluent_composition = "50% MeOH 50% 0.1% formic acid"
+    )
+chalcraft_prepared <- chalcraft_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = chalcraft_vendor,
+         mass_analyzer = chalcraft_mass_analyzer,
+         organic_modifier = organic_modifier_chalcraft,
+         ESI_mode = "positive",
+         ESI_source = chalcraft_source,
+         instrument_model = chalcraft_model,
+         doi = chalcraft_doi,
+         publication = "Chalcraft") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Cifkova positive in matrix
+cifkova_tidied <- cifkova %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES),
+         RF = RRF*isotope_correction)
+
+RF_anchor <- cifkova_tidied %>% filter(compound_name == "N-dodecanoylheptadecasphing-4-enine-1-phosphoethanolamine (sphingosyl PE, d17:1/12:0)") %>% pull(RF)
+
+cifkova_tidied <- cifkova_tidied %>% 
+  mutate(logRF_original =log10(RF/RF_anchor))
+
+cifkova_prepared <- get_eluent_features(dataset = cifkova_tidied,
+                                        eluent_data = cifkova_eluent,
+                                        organic_modifier = organic_modifier_cifkova,
+                                        pH = pH_cifkova,
+                                        ammonia = ammonia_cifkova,
+                                        aqueous_phase = cifkova_aqueous_phase,
+                                        organic_phase = organic_modifier_cifkova)
+
+cifkova_prepared <- cifkova_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = cifkova_vendor,
+         mass_analyzer = cifkova_mass_analyzer,
+         organic_modifier = organic_modifier_cifkova,
+         ESI_mode = "positive",
+         ESI_source = cifkova_source,
+         instrument_model = cifkova_model,
+         doi = cifkova_doi,
+         publication = "Cifkova") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Cole ESI book page 449 positive
+cole_tidied <- cole %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES),
+         RF_adjusted = RRF*isotope_correction)
+
+RF_anchor <- cole_tidied %>% filter(compound_name == "Verapamil") %>% pull(RF_adjusted)
+
+cole_prepared <- cole_tidied %>% 
+  mutate(logRF_original =log10(RF_adjusted/RF_anchor),
+         organic = organic_cole,
+         viscosity = get_viscosity(organic, organic_modifier = organic_modifier_cole),
+         surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_cole),
+         polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_cole),
+         pH.aq. = pH_cole,
+         NH4 = ammonia_cole,
+         eluent_composition = "50% MeOH 0.1% formic acid, 50% 0.1% formic acid",
+         vendor = cole_vendor,
+         mass_analyzer = cole_mass_analyzer,
+         organic_modifier = organic_modifier_cole,
+         ESI_mode = "positive",
+         ESI_source = cole_source,
+         instrument_model = cole_model,
+         doi = cole_doi,
+         publication = "Cole"
+        ) %>% 
+  rename(organic_pc = organic) %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Cramer positive mode
+cramer_tidied <- cramer %>% 
+  mutate(signal = 10^log10_ion_counts,
+         isotope_correction = isotope_distribution(SMILES),
+         RF = signal*isotope_correction/(10e-6))
+
+RF_anchor <- cramer_tidied %>% filter(compound_name == "Naproxen") %>% pull(RF)
+
+cramer_prepared <- cramer_tidied %>% 
+  mutate(logRF_original = log10(RF/RF_anchor),
+         organic = organic_cramer,
+         viscosity = get_viscosity(organic, organic_modifier = organic_modifier_cramer),
+         surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_cramer),
+         polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_cramer),
+         pH.aq. = pH_cramer,
+         NH4 = ammonia_cramer,
+         eluent_composition = "50% MeCN 0.1% formic acid, 50% 0.1% formic acid"
+         )
+
+cramer_prepared <- cramer_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = cramer_vendor,
+         mass_analyzer = cramer_mass_analyzer,
+         organic_modifier = organic_modifier_cramer,
+         ESI_mode = "positive",
+         ESI_source = cramer_source,
+         instrument_model = cramer_model,
+         doi = cramer_doi,
+         publication = "Cramer") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Ehrmann positive mode
+ehrmann_tidied <- ehrmann %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() %>% 
+  mutate(RF = signal*isotope_correction/(1e-4))
+
+RF_anchor <- ehrmann_tidied %>% filter(compound_name == "2-Methoxyaniline") %>% pull(RF)
+
+ehrmann_prepared <- ehrmann_tidied %>% 
+  mutate(logRF_original = log10(RF/RF_anchor),
+         organic = 100,
+         viscosity = get_viscosity(organic, organic_modifier = organic_modifier_ehrmann),
+         surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_ehrmann),
+         polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_ehrmann),
+         pH.aq. = pH_ehrmann,
+         NH4 = ammonia_ehrmann,
+         eluent_composition = "100% MeOH 0.5% acetic acid"
+         )
+ehrmann_prepared <- ehrmann_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = ehrmann_vendor,
+         mass_analyzer = ehrmann_mass_analyzer,
+         organic_modifier = organic_modifier_ehrmann,
+         ESI_mode = "positive",
+         ESI_source = ehrmann_source,
+         instrument_model = ehrmann_model,
+         doi = ehrmann_doi,
+         publication = "Ehrmann") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Henriksen negative mode
+henriksen_tidied <- henriksen %>% 
+  rename(signal = "response") %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() %>% 
+  mutate(RF = signal*isotope_correction/(1e-7))
+
+RF_anchor <- henriksen_tidied %>% filter(compound_name == "4-Chloro-2-methylphenol", system == "MeOH") %>% pull(RF)
+
+henriksen_prepared <- henriksen_tidied %>% 
+  mutate(logRF_original = log10(RF/RF_anchor),
+         pH.aq. = pH_henriksen,
+         organic_modifier = case_when(
+           system %in% c("MeOH", "50/50 MeOH/water") ~ "MeOH",
+           system %in% c("MeCN", "50/50 MeCN/water") ~ "MeCN"
+         ),
+         organic = case_when(
+           system %in% c("50/50 MeCN/water", "50/50 MeOH/water") ~ 50,
+           system %in% c("MeCN", "MeOH") ~ 100
+         ),
+         NH4 = ammonia_henriksen,
+         viscosity = get_viscosity(organic, organic_modifier = organic_modifier),
+         surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier),
+         polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier),
+         eluent_composition = case_when(
+           system == "MeOH" ~ "100% MeOH",
+           system == "MeCN" ~ "100% MeCN",
+           system == "50/50 MeOH/water" ~ "50% MeOH, 50% water",
+           system == "50/50 MeCN/water" ~ "50% MeCN, 50% water"
+         )
+         )
+henriksen_prepared <- henriksen_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = henriksen_vendor,
+         mass_analyzer = henriksen_mass_analyzer,
+         ESI_mode = "negative",
+         ESI_source = henriksen_source,
+         instrument_model = henriksen_model,
+         doi = henriksen_doi,
+         publication = "Henriksen") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Hermans positive
+hermans_tidied <- hermans %>% 
+  rename(signal = peak_area) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES),
+         RF = signal*isotope_correction/(50*1/1000000))
+
+RF_anchor <- hermans_tidied %>% filter(compound_name == "G") %>% pull(RF)
+
+hermans_tidied <- hermans_tidied %>% 
+  mutate(logRF_original =log10(RF/RF_anchor))
+
+hermans_prepared <- get_eluent_features(dataset = hermans_tidied,
+                                     eluent_data = hermans_eluent,
+                                     organic_modifier = organic_modifier_hermans,
+                                     pH = pH_hermans,
+                                     ammonia = ammonia_hermans,
+                                     aqueous_phase = hermans_aqueous_phase,
+                                     organic_phase = hermans_organic_phase)
+hermans_prepared <- hermans_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = hermans_vendor,
+         mass_analyzer = hermans_mass_analyzer,
+         organic_modifier = organic_modifier_hermans,
+         ESI_mode = "positive",
+         ESI_source = hermans_source,
+         instrument_model = hermans_model,
+         doi = hermans_doi,
+         publication = "Hermans") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Huffman 2012 negative mode
+huffman_tidied <- huffman %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() %>% 
+  mutate(corrected_slope = SLOPE*isotope_correction)
+
+huffman_anchor <- huffman_tidied %>% 
+  filter(compound_name == "benzoic acid",
+         Solvent == "MeOH") %>% 
+  pull(corrected_slope)
+
+huffman_prepared <- huffman_tidied %>% 
+  mutate(logRF_original = log10(corrected_slope/huffman_anchor),
+         organic = if_else(Solvent == "H2O",
+                           0,
+                           100),
+         pH.aq. = pH_huffman,
+         NH4 = ammonia_huffman,
+         Solvent = case_when(
+           Solvent %in% c("acetone", "Acetone") ~ "acetone",
+           Solvent == "ACN" ~ "MeCN",
+           TRUE ~ Solvent
+         ),
+         eluent_composition = case_when(
+           Solvent == "MeCN" ~ "100% MeCN",
+           Solvent == "MeOH" ~ "100% MeOH",
+           Solvent == "acetone" ~ "100% acetone",
+           Solvent == "H2O" ~ "100% water",
+         )) %>% 
+  group_by(Solvent) %>% 
+  mutate(viscosity = if_else(Solvent == "H2O",
+                             get_viscosity(organic,"MeCN"),
+                             get_viscosity(organic,Solvent)),
+         surface_tension = if_else(Solvent == "H2O",
+                                   get_surface_tension(organic,"MeCN"),
+                                   get_surface_tension(organic,Solvent)),
+         polarity_index = if_else(Solvent == "H2O",
+                                  get_polarity_index(organic,"MeCN"),
+                                  get_polarity_index(organic,Solvent))
+         ) %>% 
+  ungroup()
+
+huffman_prepared <- huffman_prepared %>% 
+  rename(organic_modifier = Solvent,
+         organic_pc = organic) %>% 
+  mutate(vendor = huffman_vendor,
+         mass_analyzer = huffman_mass_analyzer,
+         ESI_mode = "negative",
+         ESI_source = huffman_source,
+         instrument_model = huffman_model,
+         doi = huffman_doi,
+         publication = "Huffman") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Kiontke positive mode
+kiontke_tidied <- kiontke %>% 
+  rename(signal = "Peak area") %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() %>% 
+  mutate(RF = signal*isotope_correction/(40*1/1000000))
+
+RF_anchor <- kiontke_tidied %>% filter(compound_name == "Pyridine", experiment == "API_80_pH3") %>% pull(RF)
+
+kiontke_prepared <- kiontke_tidied %>% 
+  mutate(logRF_original = log10(RF/RF_anchor),
+         pH.aq. = case_when(
+           experiment %in% c("API_50_pH3", "API_80_pH3", "Esqu_50_pH3") ~ 3,
+           experiment %in% c("API_80_pH7", "Esqu_50_pH7", "API_50_pH7") ~ 7
+         ),
+         organic = case_when(
+           experiment %in% c("API_50_pH3", "Esqu_50_pH7", "Esqu_50_pH3", "API_50_pH7") ~ 50,
+           experiment %in% c("API_80_pH7", "API_80_pH3") ~ 80
+         ),
+         NH4 = 0,
+         viscosity = get_viscosity(organic, organic_modifier = organic_modifier_kiontke),
+         surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_kiontke),
+         polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_kiontke),
+         eluent_composition = case_when(
+           experiment %in% c("API_50_pH3","Esqu_50_pH3") ~ "50% MeCN , 50% 20 mM formic acid",
+           experiment %in% c("API_50_pH7","Esqu_50_pH7") ~ "50% MeCN, 50% water",
+           experiment == "API_80_pH7" ~ "80% MeCN, 20% water",
+           experiment == "API_80_pH3" ~ "80% MeCN , 20% 20 mM formic acid",
+         )
+         )
+kiontke_prepared <- kiontke_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = case_when(
+           experiment %in% c("API_50_pH3", "API_80_pH3", "API_80_pH7", "API_50_pH7") ~ kiontke_vendor_sciex,
+           experiment %in% c("Esqu_50_pH7", "Esqu_50_pH3") ~ kiontke_vendor_bruker
+         ),
+         mass_analyzer = case_when(
+           experiment %in% c("API_50_pH3", "API_80_pH3", "API_80_pH7", "API_50_pH7") ~ kiontke_mass_analyzer_sciex,
+           experiment %in% c("Esqu_50_pH7", "Esqu_50_pH3") ~ kiontke_mass_analyzer_bruker
+         ),
+         organic_modifier = organic_modifier_kiontke,
+         ESI_mode = "positive",
+         ESI_source = case_when(
+           experiment %in% c("API_50_pH3", "API_80_pH3", "API_80_pH7", "API_50_pH7") ~ kiontke_source_sciex,
+           experiment %in% c("Esqu_50_pH7", "Esqu_50_pH3") ~ kiontke_source_bruker
+         ),
+         instrument_model = case_when(
+           experiment %in% c("API_50_pH3", "API_80_pH3", "API_80_pH7", "API_50_pH7") ~ kiontke_model_sciex,
+           experiment %in% c("Esqu_50_pH7", "Esqu_50_pH3") ~ kiontke_model_bruker
+         ),
+         doi = kiontke_doi,
+         publication = "Kiontke") %>% 
+  select_relevant_columns()
+```
+
+```{r}
+#Liigand positive
+#Original data is already isotope corrected
+liigand_pos_prepared <- liigand_pos %>% 
+  rename(logRF_original = logIE,
+         eluent_composition = solvent,
+         compound_name = name,
+         organic_pc = organic_modifier_percentage,
+         ESI_source = source,
+         instrument_model = instrument) %>% 
+  mutate(ESI_mode = "positive",
+         publication = "Liigand",
+         doi = "10.1038/s41598-020-62573-z",
+         mass_analyzer = case_when(
+           instrument_model == "Agilent XCT" ~ "ion trap",
+           instrument_model == "Thermo LTQ" ~  "LIT",
+           instrument_model %in% c("Agilent 3Q", "Sciex API4000", "Varian J-320") ~ "QQQ",
+           instrument_model == "Agilent 1Q" ~ "Q",
+           instrument_model == "Waters Synapt G.2" ~ "QTOF"),
+         vendor = case_when(
+           instrument_model %in% c("Agilent XCT", "Agilent 3Q", "Agilent 1Q") ~ "Agilent",
+           instrument_model == "Waters Synapt G.2" ~ "Waters",
+           instrument_model == "Thermo LTQ" ~  "Thermo",
+           instrument_model == "Sciex API4000" ~  "AB Sciex",
+           instrument_model == "Varian J-320" ~  "Varian"),
+         ESI_source = if_else(ESI_source %in% c("JetStream", "HESI-II", "TurboSpray", "Z-spray", "AJS"),
+                              "HESI",
+                              "ESI"),
+         instrument_model = case_when(
+           instrument_model == "Agilent 3Q" ~ "Agilent 6495",
+           instrument_model == "Agilent 1Q" ~ "Single Quad 6100",
+         TRUE ~ instrument_model
+         )
+         ) %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() %>% 
+  select_relevant_columns()
+
+```
+
+```{r}
+#Liigand negative
+liigand_neg_prepared <- liigand_neg %>% 
+  rename(logRF_original = logIE,
+         eluent_composition = solvent,
+         compound_name = name,
+         organic_pc = organic_modifier_percentage,
+         ESI_source = source,
+         instrument_model = instrument) %>% 
+  mutate(ESI_mode = "negative",
+         publication = "Liigand",
+         doi = "10.1038/s41598-020-62573-z",
+         mass_analyzer = case_when(
+           instrument_model == "Agilent XCT" ~ "ion trap",
+           instrument_model == "Thermo LTQ" ~  "LIT",
+           instrument_model %in% c("Agilent 3Q", "Sciex API4000", "Varian J-320") ~ "QQQ",
+           instrument_model == "Agilent 1Q" ~ "Q",
+           instrument_model == "Waters Synapt G.2" ~ "QTOF"),
+         vendor = case_when(
+           instrument_model %in% c("Agilent XCT", "Agilent 3Q", "Agilent 1Q") ~ "Agilent",
+           instrument_model == "Waters Synapt G.2" ~ "Waters",
+           instrument_model == "Thermo LTQ" ~  "Thermo",
+           instrument_model == "Sciex API4000" ~  "AB Sciex",
+           instrument_model == "Varian J-320" ~  "Varian"),
+         ESI_source = if_else(ESI_source %in% c("JetStream", "HESI-II", "TurboSpray", "Z-spray", "AJS"),
+                              "HESI",
+                              "ESI"),
+         instrument_model = case_when(
+           instrument_model == "Agilent 3Q" ~ "Agilent 6495",
+           instrument_model == "Agilent 1Q" ~ "Single Quad 6100",
+         TRUE ~ instrument_model
+         )
+         ) %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() %>% 
+  select_relevant_columns()
+```
+
+
+```{r, echo=FALSE, eval=F}
+#Lin negative
+lin_tidied <- lin %>% 
+  mutate(slope_molar = slope*1/(1/1000000000/MW/(1/1000)),
+         isotope_correction = isotope_distribution(SMILES),
+         slope_corrected = slope_molar*isotope_correction)
+
+slope_anchor <- lin_tidied %>% filter(compound_name == "Perfluorobutane sulfonate") %>% pull(slope_corrected)
+
+lin_tidied <- lin_tidied %>% 
+  mutate(logRF_original =log10(slope_corrected/slope_anchor))
+
+lin_prepared <- get_eluent_features(dataset = lin_tidied,
+                                    eluent_data = lin_eluent,
+                                    organic_modifier = organic_modifier_lin,
+                                    pH = pH_lin,
+                                    ammonia = ammonia_lin,
+                                    aqueous_phase = lin_aqueous_phase,
+                                    organic_phase = lin_organic_phase)
+lin_prepared <- lin_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = lin_vendor,
+         mass_analyzer = lin_mass_analyzer,
+         organic_modifier = organic_modifier_lin,
+         ESI_mode = "negative",
+         ESI_source = lin_source,
+         instrument_model = lin_model,
+         doi = lin_doi,
+         publication = "Lin") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Mandra positive mode
+mandra_organic <- 50
+mandra_tidied <- mandra %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES),
+         concentration_molar = 0.5*(1/1000000)/MW/(1/1000),
+         RF = signal*isotope_correction/concentration_molar) %>% 
+  ungroup()
+#Anchor acetaminophen
+RF_anchor <- mandra_tidied %>% filter(compound_name == "acetaminophen") %>% pull(RF)
+
+mandra_prepared <- mandra_tidied %>% 
+  mutate(logRF_original = log10(RF/RF_anchor),
+         organic = mandra_organic,
+         pH.aq. = pH_mandra,
+         NH4 = ammonia_mandra,
+         viscosity = get_viscosity(organic, organic_modifier = organic_modifier_mandra),
+         surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_mandra),
+         polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_mandra),
+         eluent_composition = "MeOH/H2O pH = 10 adjusted with ammonia 50/50")
+
+mandra_prepared <- mandra_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = mandra_vendor,
+         mass_analyzer = mandra_mass_analyzer,
+         organic_modifier = organic_modifier_mandra,
+         ESI_mode = "positive",
+         ESI_source = mandra_source,
+         instrument_model = mandra_model,
+         doi = mandra_doi,
+         publication = "Mandra") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Mayhew negative
+mayhew_tidied <- mayhew %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES),
+         RF = (10^logRIE)*isotope_correction)
+
+RF_anchor <- mayhew_tidied %>% filter(compound_name == "Phthalic Acid") %>% pull(RF)
+
+mayhew_prepared <- mayhew_tidied %>% 
+  mutate(logRF_original =log10(RF/RF_anchor),
+         organic = organic_mayhew,
+         viscosity = get_viscosity(organic, organic_modifier = organic_modifier_mayhew),
+         surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_mayhew),
+         polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_mayhew),
+         pH.aq. = pH_mayhew,
+         NH4 = ammonia_mayhew,
+         eluent_composition = "80% MeOH, 20% water" 
+        )
+mayhew_prepared <- mayhew_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = mayhew_vendor,
+         mass_analyzer = mayhew_mass_analyzer,
+         organic_modifier = organic_modifier_mayhew,
+         ESI_mode = "negative",
+         ESI_source = mayhew_source,
+         instrument_model = mayhew_model,
+         doi = mayhew_doi,
+         publication = "Mayhew") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Pieke positive mode
+pieke_pos_tidied <- pieke_pos %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() 
+#anchor L-Threonine
+isotope_correction_anchor <- pieke_pos_tidied %>% filter(compound_name == "L-Threonine") %>% pull(isotope_correction)
+
+pieke_pos_tidied <- pieke_pos_tidied %>% 
+  mutate(RRF_corrected = RRF*isotope_correction/isotope_correction_anchor,
+         logRF_original = log10(RRF_corrected))
+
+pieke_pos_prepared <- get_eluent_features(dataset = pieke_pos_tidied,
+                                          eluent_data = pieke_eluent,
+                                          organic_modifier = organic_modifier_pieke,
+                                          pH = pH_pieke,
+                                          ammonia = ammonia_pieke,
+                                          aqueous_phase = pieke_aqueous_phase,
+                                          organic_phase = organic_modifier_pieke)
+pieke_pos_prepared <- pieke_pos_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = pieke_vendor,
+         mass_analyzer = pieke_mass_analyzer,
+         organic_modifier = organic_modifier_pieke,
+         ESI_mode = "positive",
+         ESI_source = pieke_source,
+         instrument_model = pieke_model,
+         doi = pieke_doi,
+         publication = "Pieke") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Pieke negative mode
+pieke_neg_tidied <- pieke_neg %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup() 
+#anchor L-Threonine
+isotope_correction_anchor <- pieke_neg_tidied %>% filter(compound_name == "L-Threonine") %>% pull(isotope_correction)
+
+pieke_neg_tidied <- pieke_neg_tidied %>% 
+  mutate(RRF_corrected = RRF*isotope_correction/isotope_correction_anchor,
+         logRF_original = log10(RRF_corrected))
+
+pieke_neg_prepared <- get_eluent_features(dataset = pieke_neg_tidied,
+                                          eluent_data = pieke_eluent,
+                                          organic_modifier = organic_modifier_pieke,
+                                          pH = pH_pieke,
+                                          ammonia = ammonia_pieke,
+                                          aqueous_phase = pieke_aqueous_phase,
+                                          organic_phase = organic_modifier_pieke)
+pieke_neg_prepared <- pieke_neg_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = pieke_vendor,
+         mass_analyzer = pieke_mass_analyzer,
+         organic_modifier = organic_modifier_pieke,
+         ESI_mode = "negative",
+         ESI_source = pieke_source,
+         instrument_model = pieke_model,
+         doi = pieke_doi,
+         publication = "Pieke") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Tang negative
+tang_tidied <- tang %>% 
+  mutate(slope_molar = slope*1/(1/1000000/MW/(1/1000)),
+         isotope_correction = isotope_distribution(SMILES),
+         slope_corrected = slope_molar*isotope_correction)
+
+slope_anchor <- tang_tidied %>% filter(compound_name == "scutellarin") %>% pull(slope_corrected)
+
+tang_tidied <- tang_tidied %>% 
+  mutate(logRF_original =log10(slope_corrected/slope_anchor))
+
+tang_prepared <- get_eluent_features(dataset = tang_tidied,
+                                     eluent_data = tang_eluent,
+                                     organic_modifier = organic_modifier_tang,
+                                     pH = pH_tang,
+                                     ammonia = ammonia_tang,
+                                     aqueous_phase = tang_aqueous_phase,
+                                     organic_phase = organic_modifier_tang)
+tang_prepared <- tang_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = tang_vendor,
+         mass_analyzer = tang_mass_analyzer,
+         organic_modifier = organic_modifier_tang,
+         ESI_mode = "negative",
+         ESI_source = tang_source,
+         instrument_model = tang_model,
+         doi = tang_doi,
+         publication = "Tang") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Thurman positive
+thurman_pos_tidied <- thurman %>% 
+  filter(RF_ESI_pos > 0) %>% 
+  rename(RF = RF_ESI_pos) %>% 
+  select(SMILES,compound_name,RF,concentration_pg_uL) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES),
+         MW = get_natural_mass(SMILES),
+         concentration_molar = concentration_pg_uL*10^-12/MW/(1*10^-6),
+         RF_adjusted = RF*isotope_correction/concentration_molar)
+
+RF_anchor <- thurman_pos_tidied %>% filter(compound_name == "isoproturon") %>% pull(RF_adjusted)
+
+thurman_pos_prepared <- thurman_pos_tidied %>% 
+  mutate(logRF_original =log10(RF_adjusted/RF_anchor),
+         organic = organic_thurman,
+         viscosity = get_viscosity(organic, organic_modifier = organic_modifier_thurman),
+         surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_thurman),
+         polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_thurman),
+         pH.aq. = pH_thurman,
+         NH4 = ammonia_thurman,
+         eluent_composition = "50% MeOH, 50% 0.1% acetic acid", #wild guess
+         vendor = thurman_vendor,
+         mass_analyzer = thurman_mass_analyzer,
+         organic_modifier = organic_modifier_thurman,
+         ESI_mode = "positive",
+         ESI_source = thurman_source,
+         instrument_model = thurman_model,
+         doi = thurman_doi,
+         publication = "Thurman"
+        ) %>% 
+  rename(organic_pc = organic) %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Thurman negative
+thurman_neg_tidied <- thurman %>% 
+  filter(RF_ESI_neg > 0) %>% 
+  rename(RF = RF_ESI_neg) %>% 
+  select(SMILES,compound_name,RF,concentration_pg_uL) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES),
+         MW = get_natural_mass(SMILES),
+         concentration_molar = concentration_pg_uL*10^-12/MW/(1*10^-6),
+         RF_adjusted = RF*isotope_correction/concentration_molar)
+
+RF_anchor <- thurman_neg_tidied %>% filter(compound_name == "3-nitrophenol") %>% pull(RF_adjusted)
+
+thurman_neg_prepared <- thurman_neg_tidied %>% 
+  mutate(logRF_original =log10(RF_adjusted/RF_anchor),
+         organic = organic_thurman,
+         viscosity = get_viscosity(organic, organic_modifier = organic_modifier_thurman),
+         surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_thurman),
+         polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_thurman),
+         pH.aq. = pH_thurman,
+         NH4 = ammonia_thurman,
+         eluent_composition = "50% MeOH, 50% 0.1% acetic acid", #wild guess
+         vendor = thurman_vendor,
+         mass_analyzer = thurman_mass_analyzer,
+         organic_modifier = organic_modifier_thurman,
+         ESI_mode = "negative",
+         ESI_source = thurman_source,
+         instrument_model = thurman_model,
+         doi = thurman_doi,
+         publication = "Thurman"
+        ) %>% 
+  rename(organic_pc = organic) %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Wu negative
+wu_tidied <- wu %>% 
+  mutate(slope_molar = slope*1/(1/1000000/MW/(1/1000)),
+         isotope_correction = isotope_distribution(SMILES),
+         slope_corrected = slope_molar*isotope_correction)
+
+slope_anchor <- wu_tidied %>% filter(compound_name == "benzoic acid") %>% pull(slope_corrected)
+
+wu_tidied <- wu_tidied %>% 
+  mutate(logRF_original =log10(slope_corrected/slope_anchor))
+
+wu_prepared <- get_eluent_features(dataset = wu_tidied,
+                                   eluent_data = wu_eluent,
+                                   organic_modifier = organic_modifier_wu,
+                                   pH = pH_wu,
+                                   ammonia = ammonia_wu,
+                                   aqueous_phase = wu_aqueous_phase,
+                                   organic_phase = wu_organic_phase)
+wu_prepared <- wu_prepared %>% 
+  rename(organic_pc = organic) %>% 
+  mutate(vendor = wu_vendor,
+         mass_analyzer = wu_mass_analyzer,
+         organic_modifier = organic_modifier_wu,
+         ESI_mode = "negative",
+         ESI_source = wu_source,
+         instrument_model = wu_model,
+         doi = wu_doi,
+         publication = "Wu") %>% 
+  select_relevant_columns()
+```
+
+```{r, echo=FALSE, eval=F}
+#Yang positive
+yang_tidied <- yang %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES),
+         RF_adjusted = RF*isotope_correction)
+
+RF_anchor <- yang_tidied %>% filter(compound_name == "NA-NHS-Glu derivate") %>% pull(RF_adjusted)
+
+yang_prepared <- yang_tidied %>% 
+  mutate(logRF_original =log10(RF_adjusted/RF_anchor),
+         organic = organic_yang,
+         viscosity = get_viscosity(organic, organic_modifier = organic_modifier_yang),
+         surface_tension = get_surface_tension(organic, organic_modifier = organic_modifier_yang),
+         polarity_index = get_polarity_index(organic, organic_modifier = organic_modifier_yang),
+         pH.aq. = pH_yang,
+         NH4 = ammonia_yang,
+         eluent_composition = "50% MeOH, 50% 2% acetic acid",
+         vendor = yang_vendor,
+         mass_analyzer = yang_mass_analyzer,
+         organic_modifier = organic_modifier_yang,
+         ESI_mode = "positive",
+         ESI_source = yang_source,
+         instrument_model = yang_model,
+         doi = yang_doi,
+         publication = "Yang"
+        ) %>% 
+  rename(organic_pc = organic) %>% 
+  select_relevant_columns()
+```
+
+
+```{r, echo=FALSE, eval=F}
+#Creating one dataset
+entire_dataset <- alymatiri_neg_prepared %>% 
+  bind_rows(alymatiri_pos_prepared) %>% 
+  bind_rows(abrahamsson_neg_prepared) %>% 
+  bind_rows(abrahamsson_pos_prepared) %>% 
+  bind_rows(bedner_prepared) %>% 
+  bind_rows(byrdwell_prepared) %>% 
+  bind_rows(chalcraft_prepared) %>% 
+  bind_rows(cifkova_prepared) %>% 
+  bind_rows(cole_prepared) %>% 
+  bind_rows(cramer_prepared) %>% 
+  bind_rows(ehrmann_prepared) %>% 
+  bind_rows(henriksen_prepared) %>% 
+  bind_rows(hermans_prepared) %>% 
+  bind_rows(huffman_prepared) %>%
+  bind_rows(kiontke_prepared) %>%
+  bind_rows(liigand_pos_prepared) %>%
+  bind_rows(liigand_neg_prepared) %>%
+  bind_rows(lin_prepared) %>%
+  bind_rows(mandra_prepared) %>%
+  bind_rows(mayhew_prepared) %>%
+  bind_rows(pieke_neg_prepared) %>%
+  bind_rows(pieke_pos_prepared) %>%
+  bind_rows(tang_prepared) %>%
+  bind_rows(thurman_pos_prepared) %>%
+  bind_rows(thurman_neg_prepared) %>%
+  bind_rows(wu_prepared) %>% 
+  bind_rows(yang_prepared)
+#save dataset
+#write_csv(entire_dataset, "data/20200805_entire_dataset.csv")
+```
+
+```{r, echo=FALSE, eval=F}
+#SMILES standardisation
+entire_dataset <- entire_dataset %>% 
+  group_by(SMILES) %>%
+  mutate(SMILES = standardize_smiles(SMILES)) %>% 
+  ungroup()
+```
+
+```{r}
+#Adding InChiKey
+entire_dataset <- entire_dataset %>% 
+  group_by(SMILES) %>%
+  mutate(inchikey = getInChIKey.obabel(SMILES, babel_dir = babel_path)) %>% 
+  ungroup() %>% 
+  select(compound_name, SMILES, inchikey, everything())
+
+```
+
+
+```{r}
+entire_dataset <- read_csv("data/20200805_entire_dataset.csv", col_types = cols())
+# chemaxon <- read_csv("data/chemaxon_logP_pKa.csv", col_types = cols())
+# 
+# entire_dataset <- entire_dataset %>%
+#   left_join(chemaxon)
+
+```
+
+
+```{r, echo=FALSE, warning=F}
+entire_dataset <- entire_dataset %>% 
+  select(-c(viscosity:NH4))
+for_table <- entire_dataset %>% 
+  select(compound_name,SMILES, ESI_mode,logRF_original,eluent_composition, vendor, instrument_model, ESI_source, publication, doi)
+```
+
+```{r, echo=FALSE, eval=F}
+knitr::kable(for_table,
+             digits = 2,
+             #format = "latex",
+             format = "html",
+             col.names = c("Compound name", "SMILES", "ESI mode", "logRF_original", "Eluent composition",
+                           "Vendor", "Instrument model", "ESI source", "Publication", "DOI"),
+             caption = "Table S1: All collected RF values from the literature") %>% 
+  kable_styling(latex_options = c("striped", "scale_down")) %>% 
+  column_spec(column = 2, width = "20em")
+```
+
+```{r, echo=FALSE, eval=F}
+#Calculate descriptors
+
+# SMILES_set <- entire_dataset %>%
+#   distinct(SMILES)
+# 
+# write_csv(SMILES_set,"data/unique_smiles.csv")
+# 
+# descriptors_PaDEL <- padel_batch(padel_path = padel_path,
+#                                  smiles_vec = SMILES_set$SMILES)
+# write_csv(descriptors_PaDEL,"data/descriptors.csv")
+descriptors_PaDEL <- read_csv("data/descriptors.csv")
+```
+
+```{r, echo=FALSE, eval=F}
+positive_mode <- entire_dataset %>% 
+  filter(ESI_mode == "positive")
+nr_positive_RF_values <- positive_mode %>% dim() %>% first()
+nr_unique_pos_compounds <- positive_mode %>% distinct(SMILES) %>% pull(SMILES) %>% length()
+nr_unique_pos_eluents <- positive_mode %>% distinct(eluent_composition) %>% pull(eluent_composition) %>% length()
+
+negative_mode <- entire_dataset %>% 
+  filter(ESI_mode == "negative")
+nr_negative_RF_values <- negative_mode %>% dim() %>% first()
+nr_unique_neg_compounds <- negative_mode %>% distinct(SMILES) %>% pull(SMILES) %>% length()
+nr_unique_neg_eluents <- negative_mode %>% distinct(eluent_composition) %>% pull(eluent_composition) %>% length()
+nr_group <- entire_dataset %>% distinct(publication) %>% dim() %>% first()
+```
+
+
+```{r, echo=FALSE, message=F, warning= F}
+norman <- read_csv("data/susdat_2020-06-18-123341.csv", col_types = cols())
+norman_max_logP <- norman$alogp_ChemSpider %>% max(na.rm = T)
+norman_min_logP <- norman$alogp_ChemSpider %>% min(na.rm = T)
+```
+
+
+```{r, echo=F, warning=F, message=FALSE, fig.cap="Figures S1: Distribution of aqueous pKa values of studied compounds from literature."}
+
+acid_density <- entire_dataset %>% 
+  ggplot(aes(x = apKa1))+
+  geom_density(fill = "#0072B2")+
+  labs(x = "pKa acid", #title_x_pKa_acid
+       y = "Density")+
+  scale_y_continuous(labels = scales::number_format(accuracy = 0.01))+
+  scale_x_continuous(limits = c(-4,22))+
+  theme(panel.background = element_blank(),
+        axis.line = element_line(size = 0.5, colour = fontcolour),
+        text = element_text(family = font,
+                            size = fontsize,
+                            colour = fontcolour),
+        legend.text = element_text(family = font,
+                                   size = fontsize,
+                                   colour = fontcolour),
+        legend.key = element_blank(),
+        legend.position = "bottom",
+        axis.text = element_text(family = font,
+                                 size = fontsize,
+                                 colour = fontcolour),
+        legend.title = element_blank(),
+        strip.text = element_text(family = font,
+                                  size = fontsize),
+        strip.background = element_rect(colour = fontcolour,
+                                        fill = NA),
+        panel.grid.major.x = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y = element_text(hjust = 1),
+        axis.title.x = element_text(hjust = 1))
+
+base_density <- entire_dataset %>% 
+  ggplot(aes(x = bpKa1))+
+  geom_density(fill = "#0072B2")+
+  labs(x = "pKa base", #title_x_pKa_base
+       y = "Density")+
+  scale_y_continuous(labels = scales::number_format(accuracy = 0.01))+
+  scale_x_continuous(limits = c(-12,18))+
+  theme(panel.background = element_blank(),
+        axis.line = element_line(size = 0.5, colour = fontcolour),
+        text = element_text(family = font,
+                            size = fontsize,
+                            colour = fontcolour),
+        legend.text = element_text(family = font,
+                                   size = fontsize,
+                                   colour = fontcolour),
+        legend.key = element_blank(),
+        legend.position = "bottom",
+        axis.text = element_text(family = font,
+                                 size = fontsize,
+                                 colour = fontcolour),
+        legend.title = element_blank(),
+        strip.text = element_text(family = font,
+                                  size = fontsize),
+        strip.background = element_rect(colour = fontcolour,
+                                        fill = NA),
+        panel.grid.major.x = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y = element_text(hjust = 1),
+        axis.title.x = element_text(hjust = 1))
+
+pKa_distribution <- grid.arrange(acid_density, base_density, ncol=2, respect=TRUE)
+
+ggsave("Figures/Figure-S-2.png",pKa_distribution,device = "png", dpi = 600, width = 200 , height = 110, units = "mm" )
+```
+
+```{r, echo=F, warning=F, message=FALSE, fig.cap="Figures S2: logP distributions of compounds studied in individual publications in ESI positive mode"}
+#logP plot positive
+logP_pos_factors <- c("Yang","Chalcraft","Hermans","Pieke","Thurman","Liigand","Kiontke","Ehrmann","Cramer","Mandra","Cole",
+                      "Bedner","Abrahamsson","Alymatiri","Cifkova","Byrdwell")
+
+boxplot_table <- positive_mode %>%
+                 mutate(publication = factor(publication,
+                                             levels = logP_pos_factors)) %>% 
+                  group_by(publication) %>% 
+                  summarise(n_points = length(SMILES),
+                            n_unique_points =length(unique(SMILES)))
+
+boxplot_pos_logP <- positive_mode %>% 
+  mutate(publication = factor(publication,
+                              levels = logP_pos_factors)) %>%
+  ggplot(aes(x = publication,
+             y = logP))+
+  annotate("rect", xmin=-Inf, xmax=Inf, ymin=norman_min_logP, ymax=norman_max_logP, alpha=0.2, fill="light green") +#NORMAN
+  annotate("rect", xmin=-Inf, xmax=Inf, ymin=0, ymax=9.99, alpha=0.2, fill="violet") +#HMDB
+  geom_boxplot()+
+  geom_text(data = boxplot_table,
+            aes(x = publication,
+                y = 14,
+                label = n_unique_points),
+            colour = fontcolour,
+            size = fontsize/14*5)+
+  scale_y_continuous(limits = c(-12,16))+
+  annotate("text", x = 17, y = -2, label = "NORMAN", size = fontsize/14*5, color = "light green", family = font)+
+  annotate("text", x = 17, y = 2, label = "HMDB", size = fontsize/14*5, color = "violet", family = font)+
+  annotate("text", x = 17, y = 14, label = "# of compounds", size = fontsize/14*5, color = fontcolour, family = font)+
+  scale_x_discrete(breaks = logP_pos_factors, limits = c(logP_pos_factors,NA))+
+  coord_flip()+
+  labs(y = title_y_logP, #title_y_logP
+       x = "Publication")+
+  theme(panel.background = element_blank(),
+        axis.line = element_line(size = 0.5,
+                                 colour = fontcolour),
+        text = element_text(family = font,
+                            size = fontsize,
+                            colour = fontcolour),
+        legend.text = element_text(family = font,
+                                   size = fontsize,
+                                   colour = fontcolour),
+        legend.key = element_blank(),
+        legend.position = "bottom",
+        axis.text = element_text(family = font,
+                                 size = fontsize,
+                                 colour = fontcolour),
+        legend.title = element_blank(),
+        strip.text = element_text(family = font,
+                                  size = fontsize),
+        strip.background = element_rect(colour = fontcolour,
+                                        fill = NA),
+        panel.grid.major.x = element_blank(),
+        axis.ticks = element_blank(),
+        axis.title.y = element_text(hjust = 1),
+        axis.title.x = element_text(hjust = 1))
+boxplot_pos_logP
+
+ggsave("Figures/Figure-S-5.png",boxplot_pos_logP,device = "png", dpi = 600, width = 200 , height = 140, units = "mm" )
+```
+\newpage
+```{r, echo=F, warning=F, message=FALSE,fig.cap="Figures S3: logP distributions of compounds studied in individual publications in ESI negative mode"}
+#logP plot negative
+logP_neg_factors <- c("Mayhew","Tang","Pieke","Wu","Huffman","Liigand","Abrahamsson","Alymatiri","Henriksen","Thurman","Lin")
+
+boxplot_table <- negative_mode %>% 
+                 mutate(publication = factor(publication,
+                                                  levels = logP_neg_factors)) %>%
+                 group_by(publication) %>% 
+                 summarise(n_points = length(SMILES),
+                           n_unique_points =length(unique(SMILES)))
+
+boxplot_neg_logP <- negative_mode %>%
+  mutate(publication = factor(publication,
+                              levels = logP_neg_factors)) %>%
+  ggplot(aes(x = publication,
+             y = logP))+
+  annotate("rect", xmin=-Inf, xmax=Inf, ymin=norman_min_logP, ymax=norman_max_logP, alpha=0.2, fill="light green") +#NORMAN
+  annotate("rect", xmin=-Inf, xmax=Inf, ymin=0, ymax=9.99, alpha=0.2, fill="violet") +#HMDB
+  geom_boxplot()+
+  geom_text(data = boxplot_table,
+            aes(x = publication,
+                y = 14,
+                label = n_unique_points),
+            colour = fontcolour,
+            size = fontsize/14*5)+
+  scale_y_continuous(limits = c(-10,16))+
+  scale_x_discrete(breaks = logP_neg_factors, limits = c(logP_neg_factors,NA))+
+  labs(y = title_y_logP, #title_y_logP
+       x = "Publication")+
+  annotate("text", x = 12, y = -2, label = "NORMAN", size = fontsize/14*5, color = "light green", family = font)+
+  annotate("text", x = 12, y = 2, label = "HMDB", size = fontsize/14*5, color = "violet", family = font)+
+  annotate("text", x = 12, y = 14, label = "# of compounds", size = fontsize/14*5, color = fontcolour, family = font)+
+  coord_flip()+
+  theme(panel.background = element_blank(),
+        axis.line = element_line(size = 0.5,
+                                 colour = fontcolour),
+        text = element_text(family = font,
+                            size = fontsize,
+                            colour = fontcolour),
+        legend.text = element_text(family = font,
+                                   size = fontsize,
+                                   colour = fontcolour),
+        legend.key = element_blank(),
+        legend.position = "bottom",
+        axis.text = element_text(family = font,
+                                 size = fontsize,
+                                 colour = fontcolour),
+        legend.title = element_blank(),
+        strip.text = element_text(family = font,
+                                  size = fontsize),
+        strip.background = element_rect(colour = fontcolour,
+                                        fill = NA),
+        panel.grid.major.x = element_blank(),
+        #axis.text.x = element_text(angle = 90),
+        axis.ticks = element_blank(),
+        axis.title.y = element_text(hjust = 1),
+        axis.title.x = element_text(hjust = 1))
+boxplot_neg_logP
+ggsave("Figures/Figure-S-6.png",boxplot_neg_logP,device = "png", dpi = 600, width = 200 , height = 120, units = "mm" )
+```
+\newpage
+```{r, echo=F, warning=F, message=FALSE, fig.cap="Figures S4: pKa distributions of compounds studied in individual publications in ESI positive mode"}
+#pKa positive
+positive_mode <- positive_mode %>% 
+  group_by(SMILES) %>% 
+  mutate(pKa_base = max(bpKa1,bpKa2, na.rm = T)) %>% 
+  ungroup()
+
+pKa_pos_factors <- c("Pieke","Bedner","Alymatiri","Abrahamsson","Cramer","Cole","Cifkova","Thurman","Yang","Hermans","Mandra","Ehrmann","Liigand",
+                     "Kiontke","Byrdwell", "Chalcraft")
+
+boxplot_table <- positive_mode %>%
+                 mutate(publication = factor(publication,
+                                             levels = pKa_pos_factors)) %>% 
+                  group_by(publication) %>% 
+                  summarise(n_points = length(SMILES),
+                            n_unique_points =length(unique(SMILES)))
+
+boxplot_pos_pKa <- positive_mode %>% 
+  mutate(publication = factor(publication,
+                              levels = pKa_pos_factors)) %>%
+  ggplot(aes(x = publication,
+             y = pKa_base))+
+  geom_boxplot()+
+  geom_text(data = boxplot_table,
+            aes(x = publication,
+                y = 18,
+                label = n_unique_points),
+            colour = fontcolour,
+            size = fontsize/14*5)+
+  scale_y_continuous(limits = c(-12,18))+
+  coord_flip()+
+  #geom_text(aes(label = length(Smiles)))+
+  labs(y = title_x_pKa_base, #title_x_pKa_base,
+       x = "Publication")+
+  theme(panel.background = element_blank(),
+        axis.line = element_line(size = 0.5,
+                                 colour = fontcolour),
+        text = element_text(family = font,
+                            size = fontsize,
+                            colour = fontcolour),
+        legend.text = element_text(family = font,
+                                   size = fontsize,
+                                   colour = fontcolour),
+        legend.key = element_blank(),
+        legend.position = "bottom",
+        axis.text = element_text(family = font,
+                                 size = fontsize,
+                                 colour = fontcolour),
+        legend.title = element_blank(),
+        strip.text = element_text(family = font,
+                                  size = fontsize),
+        strip.background = element_rect(colour = fontcolour,
+                                        fill = NA),
+        panel.grid.major.x = element_blank(),
+        #axis.text.x = element_text(angle = 90),
+        axis.ticks = element_blank(),
+        axis.title.y = element_text(hjust = 1),
+        axis.title.x = element_text(hjust = 1))
+boxplot_pos_pKa
+ggsave("Figures/Figure-S-7.png",boxplot_pos_pKa,device = "png", dpi = 600, width = 200 , height = 160, units = "mm" )
+```
+\newpage
+```{r, echo=F, warning=F, message=FALSE,fig.cap="Figures S5: pKa distributions of compounds studied in individual publications in ESI negative mode"}
+#pKa negative
+negative_mode <- negative_mode %>% 
+  group_by(SMILES) %>% 
+  mutate(pKa_acid = min(apKa1,apKa2, na.rm = T)) %>% 
+  ungroup()
+
+pKa_neg_factors <- c("Lin","Thurman","Tang","Mayhew","Wu","Liigand","Abrahamsson","Huffman","Pieke","Henriksen","Alymatiri")
+
+boxplot_table <- negative_mode %>%
+                 mutate(publication = factor(publication,
+                                             levels = pKa_neg_factors)) %>% 
+                  group_by(publication) %>% 
+                  summarise(n_points = length(SMILES),
+                            n_unique_points =length(unique(SMILES)))
+
+boxplot_neg_pKa <- negative_mode %>% 
+  mutate(publication = factor(publication,
+                              levels = pKa_neg_factors)) %>%
+  ggplot(aes(x = publication,
+             y = pKa_acid))+
+  geom_boxplot()+
+  geom_text(data = boxplot_table,
+            aes(x = publication,
+                y = 22,
+                label = n_unique_points),
+            colour = fontcolour,
+            size = fontsize/14*5)+
+  scale_y_continuous(limits = c(-4,22))+
+  coord_flip()+
+  #geom_text(aes(label = length(Smiles)))+
+  labs(y = title_x_pKa_acid, #title_x_pKa_acid,
+       x = "Publication")+
+  theme(panel.background = element_blank(),
+        axis.line = element_line(size = 0.5,
+                                 colour = fontcolour),
+        text = element_text(family = font,
+                            size = fontsize,
+                            colour = fontcolour),
+        legend.text = element_text(family = font,
+                                   size = fontsize,
+                                   colour = fontcolour),
+        legend.key = element_blank(),
+        legend.position = "bottom",
+        axis.text = element_text(family = font,
+                                 size = fontsize,
+                                 colour = fontcolour),
+        legend.title = element_blank(),
+        strip.text = element_text(family = font,
+                                  size = fontsize),
+        strip.background = element_rect(colour = fontcolour,
+                                        fill = NA),
+        panel.grid.major.x = element_blank(),
+        #axis.text.x = element_text(angle = 90),
+        axis.ticks = element_blank(),
+        axis.title.y = element_text(hjust = 1),
+        axis.title.x = element_text(hjust = 1))
+boxplot_neg_pKa
+ggsave("Figures/Figure-S-8.png",boxplot_neg_pKa,device = "png", dpi = 600, width = 200 , height = 120, units = "mm" )
+```
