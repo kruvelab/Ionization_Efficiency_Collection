@@ -1,0 +1,281 @@
+Manifest-Version: 1.0
+RapidMiner-Version: 5.2
+ParseRule-Descriptor: 
+Implementation-Title: PaDEL-Descriptor
+Operator-Descriptor: /com/rapidminer/resources/OperatorsPaDELDescripto
+ r.xml
+X-COMMENT: Main-Class will be added automatically by build
+SplashScreen-Image: META-INF/PaDELlogoSplash.jpg
+Namespace: padel_descriptor
+Plugin-Dependencies: 
+Implementation-Vendor: Pharmaceutical Data Exploration Laboratory
+Ant-Version: Apache Ant 1.7.1
+Group-Descriptor: 
+Initialization-Class: 
+Specification-Title: PaDEL
+IOObject-Descriptor: /com/rapidminer/resources/ioobjectsPaDELDescripto
+ r.xml
+GUI-Descriptor: 
+UserError-Descriptor: 
+Implementation-Version: 5.2.3
+Class-Path: lib/appframework-1.0.3.jar lib/swing-worker-1.1.jar lib/li
+ bPaDEL.jar lib/libPaDEL-Descriptor.jar lib/libPaDEL-Jobs.jar lib/l2fp
+ rod-common-all.jar lib/commons-cli-1.2.jar lib/jgrapht-0.6.0.jar lib/
+ vecmath1.2-1.14.jar lib/xom-1.1.jar lib/jama.jar lib/rapidminer.jar l
+ ib/cdk-1.4.15.jar lib/ambit2-base-2.4.7-SNAPSHOT.jar lib/ambit2-core-
+ 2.4.7-SNAPSHOT.jar lib/ambit2-smarts-2.4.7-SNAPSHOT.jar lib/guava-17.
+ 0.jar
+Error-Descriptor: 
+Created-By: 11.3-b02 (Sun Microsystems Inc.)
+Implementation-URL: http://padel.nus.edu.sg
+Extension-ID: rmx_padel_descriptor
+RapidMiner-Type: RapidMiner_Extension
+Specification-Version: 5.2.3
+Main-Class: padeldescriptor.PaDELDescriptorApp
+
+Name: com/rapidminer/operator/chemistry/CompoundDetectDimensionality.c
+ lass
+SHA1-Digest: Ht5KQbRfcRXJ8qEDGttXBkY1oBc=
+
+Name: com/rapidminer/gui/viewer/PaDELSimpleTableViewerTableModel.class
+SHA1-Digest: cvHNdrEJ6MFob2zCSd9PkMfzXzw=
+
+Name: padeldescriptor/resources/busyicons/busy-icon1.png
+SHA1-Digest: OjqcNMI54VjBr2m2w3M1JgFX2nw=
+
+Name: com/rapidminer/gui/viewer/PaDELSimpleTableViewerTable$1.class
+SHA1-Digest: 7zM8gLuXlAul5zuvmjkfUalbL10=
+
+Name: com/rapidminer/gui/viewer/PaDELSimpleTableViewer.class
+SHA1-Digest: o15soYgDRhst6V5m8vO9d4g1zP0=
+
+Name: padeldescriptor/resources/busyicons/idle-icon.png
+SHA1-Digest: 2ZbNLgqhLR8OpdlOgpTlD4ptNgM=
+
+Name: com/rapidminer/operator/chemistry/CompoundRename.class
+SHA1-Digest: dEJYhLFmXftFBxcOkNIIRm6CUb4=
+
+Name: padeldescriptor/resources/busyicons/busy-icon8.png
+SHA1-Digest: Mbkb2VWZS1CY+SWILPRHR/rTso8=
+
+Name: com/rapidminer/operator/chemistry/CompoundCountSubstructure.clas
+ s
+SHA1-Digest: rPlnWxKgU+zSKua0lo7GgN7RSVg=
+
+Name: padeldescriptor/PaDELDescriptorView$1.class
+SHA1-Digest: 1YuT/q3nPdb7Zg19vfpHq8sEP3w=
+
+Name: padeldescriptor/PaDELDescriptorAboutBox.class
+SHA1-Digest: ezhcLLj4E0fF9SpuILWT8Gwh6Z0=
+
+Name: padeldescriptor/PaDELDescriptorView$2.class
+SHA1-Digest: +bkAPj3QtgZ1JKJVQh+KJZxZIOg=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage2.class
+SHA1-Digest: XrMB3iyMNuotzCquY3U2ubdLm2U=
+
+Name: META-INF/tautomerlist.txt
+SHA1-Digest: hGpqnN7JOuQXmIM1IvVUsL+lvJI=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage1.class
+SHA1-Digest: awtur73IlqQkGi04dhpx8GNF+b8=
+
+Name: padeldescriptor/resources/busyicons/busy-icon11.png
+SHA1-Digest: tZ3/2MPPkeWmU1BMqJby1iOGMi8=
+
+Name: padeldescriptor/resources/PaDELDescriptorView.properties
+SHA1-Digest: +5X6+lUD7ld/Ee5oEzq4i86DlLk=
+
+Name: com/rapidminer/operator/chemistry/CompoundGetSMILES.class
+SHA1-Digest: 9dD7QnH10KC+BrJGGd58c3jr50o=
+
+Name: padeldescriptor/resources/busyicons/busy-icon9.png
+SHA1-Digest: 1GNMr1TZ5qb+4JYJm6TXTu2WCKg=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage1$BeanRB.class
+SHA1-Digest: kTGjc9MM7AKboktfP/Dz2yDwJwE=
+
+Name: com/rapidminer/resources/i18n/OperatorsDocPaDELDescriptor.xml
+SHA1-Digest: 8iVtnCko3L/lOHl120TEk+k4V6U=
+
+Name: com/rapidminer/gui/wizards/MoleculeDescriptorsConfigurationDialo
+ g.class
+SHA1-Digest: XnZkftWNhm7CGScgNBfi/UZuF70=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage4$Bean.class
+SHA1-Digest: yfbGH5GKrkik1G1m2OdhcEwfC9M=
+
+Name: padeldescriptor/PaDELDescriptorApp$StartTask.class
+SHA1-Digest: RvZ0MlbJx5O0r+l8cycyrIvPRQA=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage3$Bean.class
+SHA1-Digest: w7PqC8pKPcaSZj8/JdQQVu4g0iI=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage1$Bean.class
+SHA1-Digest: tlxiQGOKIbJJQbTV0zRYrEB4Xgs=
+
+Name: com/rapidminer/operator/chemistry/CompoundSource.class
+SHA1-Digest: XtjgInZ4bdM3XP6qPmISIxCFtTg=
+
+Name: com/rapidminer/resources/OperatorsPaDELDescriptor.xml
+SHA1-Digest: hmNbBLUu33Vpkf61m8eBVVfdScs=
+
+Name: com/rapidminer/operator/chemistry/CompoundWriter.class
+SHA1-Digest: 3L10MmtUvdmsTPv0lQ4mo77yDyQ=
+
+Name: com/rapidminer/operator/chemistry/CompoundConvert3D.class
+SHA1-Digest: c//HI8+f0r2cSAacwzl2BcgPhG8=
+
+Name: com/rapidminer/tools/PaDELSimpleTable.class
+SHA1-Digest: yzDKQki5kMBzbvqGLIQrtCbRgik=
+
+Name: padeldescriptor/resources/busyicons/busy-icon7.png
+SHA1-Digest: pxz2LfHaY3Ji9YRoVMbr0QNSw8E=
+
+Name: com/rapidminer/operator/chemistry/Compounds.class
+SHA1-Digest: 4yV23YcKqr59WAGbYZ1DilE+OMI=
+
+Name: padeldescriptor/PaDELDescriptorView$3.class
+SHA1-Digest: pON/ZTd6FLEyWgUmABsWTnShx00=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage4$BeanBeanInfo.c
+ lass
+SHA1-Digest: FEj2DNdEWVM4AxLox019kZaPMeU=
+
+Name: com/rapidminer/operator/chemistry/CompoundAbstractProcessing.cla
+ ss
+SHA1-Digest: fMfwkYuvxhwooKSqFnbSM6gyy8w=
+
+Name: com/rapidminer/operator/chemistry/CompoundStandardize.class
+SHA1-Digest: EmZqim2cdBNksLipDi0/1ZeeuM4=
+
+Name: META-INF/PaDELlogoSplash.jpg
+SHA1-Digest: JJi+XuJl3juEpQn936CE1C9mk0Y=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage1$ConvertTo3DEdi
+ tor.class
+SHA1-Digest: 6AZ8fDaELgzW0cqPNN8JdUyCePA=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage2$BeanRB.class
+SHA1-Digest: y+5hdgtzKMEBxA21/eJ1ro1NYMA=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage1$DescriptorFile
+ Editor.class
+SHA1-Digest: uJVcC1aYHKicONA0VaaAvjFkI4Q=
+
+Name: padeldescriptor/resources/PaDELDescriptorApp.properties
+SHA1-Digest: J4AP5zwZ7pJAc2HtxHy5MA/ylBU=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage2$Bean.class
+SHA1-Digest: K+FClTvdHitA8z6LD14x7EHK6uo=
+
+Name: META-INF/descriptors.xml
+SHA1-Digest: juNFVeTWIdqgHsswA81jVfdZMUQ=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage4$BeanRB.class
+SHA1-Digest: jKk3tby5nXvUrTtqUIqgeNHD2bQ=
+
+Name: padeldescriptor/resources/busyicons/busy-icon0.png
+SHA1-Digest: QkqjzD7dInE1oZzFJIaKu93rbMc=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage3$BeanRB.class
+SHA1-Digest: FEvxI3agFL7RvyadtJeloUqoqko=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage3.class
+SHA1-Digest: BGAr7IzgDqeEDlvgnNiEaJefnXM=
+
+Name: padeldescriptor/resources/busyicons/busy-icon14.png
+SHA1-Digest: GeLiE8mnsC13JbaMlC7+n/5E/8I=
+
+Name: padeldescriptor/resources/PaDELlogo.jpg
+SHA1-Digest: OJ0QEEqAnKRtmq6Ra29KfpixGtY=
+
+Name: com/rapidminer/gui/viewer/PaDELSimpleTableViewerTable.class
+SHA1-Digest: jEVlkNyhfxkey2ZcYYHBGUMTiQQ=
+
+Name: padeldescriptor/resources/busyicons/busy-icon13.png
+SHA1-Digest: RQtPLVgTyVz+w9cJL7anz8tsJa4=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage1$BeanBeanInfo.c
+ lass
+SHA1-Digest: isxF1RG/qAI7rQ/Z9GUMMpMkX4w=
+
+Name: com/rapidminer/resources/i18n/ErrorsTemplate.properties
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage4.class
+SHA1-Digest: 3HpGSke+p5GWwnUw6vXb39SpFSs=
+
+Name: com/rapidminer/resources/parserulesTemplate.xml
+SHA1-Digest: wXXi5S4Rm63ExjKxErMdxMcCVCA=
+
+Name: padeldescriptor/resources/busyicons/busy-icon2.png
+SHA1-Digest: DOXxH0PiIAP78dPYQ44B1kJrM6M=
+
+Name: com/rapidminer/gui/wizards/MoleculeDescriptorsConfigurationWizar
+ dCreator.class
+SHA1-Digest: Bfav34b1SJAzsJSRzDgpwSygdV4=
+
+Name: padeldescriptor/resources/busyicons/busy-icon3.png
+SHA1-Digest: EXH6MbIyIzMzHlZ2e/VejyI7/co=
+
+Name: padeldescriptor/resources/busyicons/busy-icon12.png
+SHA1-Digest: YVCoVq5LynXficvoytEjCjyStXA=
+
+Name: com/rapidminer/resources/groupsTemplate.properties
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: padeldescriptor/PaDELDescriptorApp.class
+SHA1-Digest: nsLRXdp/PLF0S6uJvvvGTyawI54=
+
+Name: padeldescriptor/resources/busyicons/busy-icon5.png
+SHA1-Digest: MT9RjPnrrCMEao1ogt3Y3vtgTgA=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage2$BeanBeanInfo.c
+ lass
+SHA1-Digest: /6aLbeg3Ia7OFU1mSvGDwlH8ISY=
+
+Name: padeldescriptor/PaDELDescriptorPropertySheetPage3$BeanBeanInfo.c
+ lass
+SHA1-Digest: Zpnyz3jrxEaQ3KxiuuOSWUVFJUI=
+
+Name: com/rapidminer/tools/PaDELSimpleTableRenderer.class
+SHA1-Digest: DxLF9drwPLhIR2121yXTVSweiS4=
+
+Name: com/rapidminer/operator/chemistry/CompoundDescriptors.class
+SHA1-Digest: HF4/n6RmJSAdQJVO3KCzLd2Q7Uk=
+
+Name: com/rapidminer/operator/chemistry/CompoundAddHydrogens.class
+SHA1-Digest: eJMF4jBTElMT/BlWqc40Qk5KGJI=
+
+Name: padeldescriptor/resources/busyicons/busy-icon4.png
+SHA1-Digest: ioviXv82C4Lt8V9H4rxFNTRlyxo=
+
+Name: META-INF/services/org.jdesktop.application.Application
+SHA1-Digest: 48i6z7zTig3bIiXm2i5dvad2lEk=
+
+Name: padeldescriptor/resources/PaDELlogoSplash.jpg
+SHA1-Digest: JJi+XuJl3juEpQn936CE1C9mk0Y=
+
+Name: com/rapidminer/resources/i18n/GUITemplate.properties
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: padeldescriptor/resources/busyicons/busy-icon6.png
+SHA1-Digest: 2g0ww4b9JoxKqWooygpzzU67QoM=
+
+Name: com/rapidminer/resources/i18n/UserErrorMessagesTemplate.properti
+ es
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: padeldescriptor/resources/busyicons/busy-icon10.png
+SHA1-Digest: 62mtRYP0G6dCP8rgMkTAYOxOLEE=
+
+Name: padeldescriptor/PaDELDescriptorView.class
+SHA1-Digest: PGXV7c9DaAK03QKFd20QIfX4RKY=
+
+Name: padeldescriptor/resources/PaDELDescriptorAboutBox.properties
+SHA1-Digest: nH/6+pIrozYbffuGN41rxIoAGOU=
+
+Name: com/rapidminer/resources/ioobjectsPaDELDescriptor.xml
+SHA1-Digest: rlBoxHOMdL3YGm/jHuxOlOSRLgI=
+

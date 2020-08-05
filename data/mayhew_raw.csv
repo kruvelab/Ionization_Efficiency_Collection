@@ -1,0 +1,60 @@
+compound_name,SMILES,logRIE
+"2,3-Naphthalenedicarbox
+ylic Acid",OC(C1=CC2=CC=CC=C2C=C1C(O)=O)=O,1.46
+MBTCA ,CC(C)(C(CC(O)=O)C(O)=O)C(O)=O,1.38
+Salicylic Acid ,OC1=CC=CC=C1C(O)=O,1.25
+4-Nitrobenzoic Acid ,O=C(O)C1=CC=C([N+]([O-])=O)C=C1,1.24
+3-Nitrobenzoic Acid ,O=C(O)C1=CC=CC([N+]([O-])=O)=C1,1.21
+Suberic Acid ,O=C(O)CCCCCCC(=O)O,1.2
+Citraconic Acid ,O=C(O)\\C=C(/C(=O)O)C,1.19
+Maleic Acid ,O=C(O)\\C=C/C(=O)O,1.14
+"2-Hydroxy-3-methyl
+butyric Acid",OC(C(O)C(C)C)=O,1.1
+Pinic Acid ,OC(CC1C(C)(C)C(C(O)=O)C1)=O,1.09
+Sebacic Acid ,O=C(CCCCCCCCC(O)=O)O,1.09
+p-Coumaric Acid ,OC1=CC=C(/C=C/C(O)=O)C=C1,1.08
+Acetylsalicylic Acid ,OC(C1=CC=CC=C1OC(C)=O)=O,1.07
+Azelaic Acid ,O=C(O)CCCCCCCC(=O)O,1.07
+"2,3-Dihydroxybenzoic
+Acid",O=C(C1=CC=CC(O)=C1O)O,1.06
+"2,5-Dihydroxybenzoic
+Acid",OC1=CC=C(O)C=C1C(O)=O,1.05
+Adipic Acid ,O=C(O)CCCCC(=O)O,1.05
+Pimelic Acid ,OC(=O)CCCCCC(=O)O,0.92
+2-Nitrobenzoic Acid ,O=C(O)C1=C([N+]([O-])=O)C=CC=C1,0.88
+Glutaric Acid ,O=C(O)CCCC(=O)O,0.83
+"trans,trans-1,3-Butadiene-
+1,4-dicarboxylic Acid",OC(/C=C/C=C/C(O)=O)=O,0.83
+"3,4-Dihydroxybenzoic
+Acid",O=C(C1=CC=C(O)C(O)=C1)O,0.8
+Isophthalic Acid ,O=C(C1=CC=CC(C(O)=O)=C1)O,0.77
+Malic Acid ,O=C(O)CC(O)C(=O)O,0.63
+Phthalic Acid ,OC(C1=CC=CC=C1C(O)=O)=O,0.63
+Citric Acid ,OC(=O)CC(O)(C(=O)O)CC(=O)O,0.59
+Succinic Acid ,O=C(O)CCC(=O)O,0.59
+Pinonic Acid ,CC1(C)C(CC(O)=O)CC1C(C)=O,0.58
+L(+)Tartaric Acid ,O=C(O)[C@H](O)[C@@H](O)C(O)=O,0.57
+"1,4-Cyclohexanedicar
+boxylic Acid",OC(C1CCC(C(O)=O)CC1)=O,0.57
+Itaconic Acid ,O=C(O)CC(C(O)=O)=C,0.55
+Mucic Acid ,OC([C@H](O)[C@@H](O)[C@@H](O)[C@H](O)C(O)=O)=O,0.53
+trans-Aconitic Acid ,OC(C/C(C(O)=O)=C/C(O)=O)=O,0.53
+Methylmalonic Acid ,O=C(C(C)C(O)=O)O,0.51
+Chlorogenic Acid ,C1[C@H]([C@H]([C@@H](C[C@@]1(C(=O)O)O)OC(=O)/C=C/C2=CC(=C(C=C2)O)O)O)O,0.51
+Acetoxyacetic Acid ,CC(OCC(O)=O)=O,0.46
+Glycolic Acid ,O=C(CO)O,0.29
+Malonic Acid ,O=C(O)CC(=O)O,0.26
+Levulinic Acid ,CC(=O)CCC(=O)O,0.15
+Vanillic Acid ,OC(C1=CC=C(O)C(OC)=C1)=O,-0.13
+m-Toluic Acid ,O=C(O)C1=CC(C)=CC=C1,-0.16
+Hydrocinnamic Acid ,OC(CCC1=CC=CC=C1)=O,-0.4
+trans-Cinnamic Acid ,OC(/C=C/C1=CC=CC=C1)=O,-0.4
+p-Toluic Acid ,CC1=CC=C(C(O)=O)C=C1,-0.45
+4-Methoxybenzoic Acid ,COC1=CC=C(C=C1)C(O)=O,-0.69
+4-Phenylbutyric Acid ,OC(CCCC1=CC=CC=C1)=O,-0.73
+Phenylacetic Acid ,OC(CC1=CC=CC=C1)=O,-0.93
+PABA† ,NC1=CC=C(C(O)=O)C=C1,-1.68
+Sorbic Acid† ,O=C(/C=C/C=C/C)O,-1.85
+p-Hydroxybenzoic Acid† ,O=C(C1=CC=C(O)C=C1)O,-1.88
+"3,3-Dimethylacrylic
+Acid†",OC(/C=C(C)/C)=O,-2.59

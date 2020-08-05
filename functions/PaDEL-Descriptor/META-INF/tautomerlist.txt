@@ -1,0 +1,35 @@
+// Sitzmann, M., Ihlenfeldt, W. D., and Nicklaus, M. C. (2010). Tautomerism in large databases. J Comput Aided Mol Des 24, 521-551.
+[O,S,Se,Te;X1:1]=[C;z{1-2}:2][CX4R{0-2}:3][#1:4]>>[#1:4][O,S,Se,Te;X2:1][#6;z{1-2}:2]=[C,cz{0-1}R{0-1}:3]	1,3 (thio)keto/(thio)enol
+[O,S,Se,Te;X1:1]=[Cz1H0:2][C:5]=[C:6][CX4z0,NX3:3][#1:4]>>[#1:4][O,S,Se,Te;X2:1][Cz1:2]=[C:5][C:6]=[Cz0,N:3]	1,5 (thio)keto/(thio)enol
+[#1,a:5][NX2:1]=[Cz1:2][CX4R{0-2}:3][#1:4]>>[#1,a:5][NX3:1]([#1:4])[Cz1,Cz2:2]=[C:3]	simple (aliphatic) imine
+[Cz0R0X3:1]([C:5])=[C:2][Nz0:3][#1:4]>>[#1:4][Cz0R0X4:1]([C:5])[c:2]=[nz0:3]	special imine
+[#1:4][N:1][C;e6:2]=[O,NX2:3]>>[NX2,nX2:1]=[C,c;e6:2][O,N:3][#1:4]	1,3 aromatic heteroatom H shift
+[N,n,S,s,O,o,Se,Te:1]=[NX2,nX2,C,c,P,p:2][N,n,S,O,Se,Te:3][#1:4]>>[#1:4][N,n,S,O,Se,Te:1][NX2,nX2,C,c,P,p:2]=[N,n,S,s,O,o,Se,Te:3]	1,3 heteroatom H shift
+[nX2,NX2,S,O,Se,Te:1]=[C,c,nX2,NX2:6][C,c:5]=[C,c,nX2:2][N,n,S,s,O,o,Se,Te:3][#1:4]>>[#1:4][N,n,S,O,Se,Te:1][C,c,nX2,NX2:6]=[C,c:5][C,c,nX2:2]=[NX2,S,O,Se,Te:3]	1,5 (aromatic) heteroatom H shift (1)
+[n,s,o:1]=[c,n:6][c:5]=[c,n:2][n,s,o:3][#1:4]>>[#1:4][n,s,o:1][c,n:6]=[c:5][c,n:2]=[n,s,o:3]	1,5 aromatic heteroatom H shift (2)
+[nX2,NX2,S,O,Se,Te,Cz0X3:1]=[c,C,NX2,nX2:6][C,c:5]=[C,c,NX2,nX2:2][C,c,NX2,nX2:7]=[C,c,NX2,nX2:8][N,n,S,s,O,o,Se,Te:3][#1:4]>>[#1:4][N,n,S,O,Se,Te,Cz0X4:1][C,c,NX2,nX2:6]=[C,c:5][C,c,NX2,nX2:2]=[C,c,NX2,nX2:7][C,c,NX2,nX2:8]=[NX2,S,O,Se,Te:3][C,c,NX2,nX2:8]=[NX2,S,O,Se,Te:3]	1,7 (aromatic) heteroatom H shift
+[#1:1][n,N,O:2][c,nX2,C:3]=[c,nX2,C:4][c,nX2:5]=[c,nX2:6][c,nX2:7]=[c,nX2:8][c,nX2,C:9]=[n,N,O:10]>>[N,n,O:2]=[C,c,nX2:3][c,nX2:4]=[c,nX2:5][c,nX2:6]=[c,nX2:7][c,nX2:8]=[c,nX2:9][n,O:10][#1:1]	1,9 (aromatic) heteroatom H shift
+[#1:1][n,N,O:2][c,nX2,C:3]=[c,nX2,C:4][c,nX2:5]=[c,C,nX2:6][c,C,nX2:7]=[c,C,nX2:8][c,nX2,C:9]=[c,C,nX2:10][c,C,nX2:11]=[nX2,NX2,O:12]>>[NX2,nX2,O:2]=[C,c,nX2:3][c,C,nX2:4]=[c,C,nX2:5][c,C,nX2:6]=[c,C,nX2:7][c,C,nX2:8]=[c,C,nX2:9][c,C,nX2:10]=[c,C,nX2:11][nX2,O:12][#1:1]	1,11 (aromatic) heteroatom H shift
+[#1:1][O,S,N:2][c,C;z2;r5:3]=[C,c;r5:4][c,C;r5:5]>>[O,S,N:2]=[Cz2r5:3][C&r5R{0-2}:4]([#1:1])[C,c;r5:5]	furanones
+[O,S,Se,Te;X1:1]=[C:2]=[C:3][#1:4]>>[#1:4][O,S,Se,Te;X2:1][C:2]#[C:3]	keten/ynol exchange
+[#1:1][C:2][N+:3]([O–:5])=[O:4]>>[C:2]=[N+:3]([O-:5])[O:4][#1:1]	ionic nitro/aci-nitro
+[#1:1][C:2][N:3](=[O:5])=[O:4]>>[C:2]=[N:3](=[O:5])[O:4][#1:1]	pentavalent nitro/aci-nitro
+[#1:1][O:2][Nz1:3]=[C:4]>>[O:2]=[Nz1:3][C:4][#1:1]	oxim/nitroso
+[#1:1][O:2][N:3]=[C:4][C:5]=[C:6][C:7]=[O:8]>>[O:2]=[N:3][c:4]=[c:5][c:6]=[c:7][O:8][#1:1]	oxim/nitroso via phenol
+[#1:1][O:2][C:3]#[N:4]>>[O:2]=[C:3]=[N:4][#1:1]	cyanic/iso-cyanic acids
+[#1:1][O,N:2][C:3]=[S,Se,Te:4]=[O:5]>>[O,N:2]=[C:3][S,Se,Te:4][O:5][#1:1]	formamidinesulfinic acids
+[#1:1][C0:2]#[N0:3]>>[C–:2]#[N+:3][#1:1]	isocyanides
+[#1:1][O:2][P:3]>>[O:2]=[P:3][#1:1]	phosphonic acids
+
+// From ChemAxon (http://www.chemaxon.com/jchem/doc/user/Standardizer_files/examples/Examples.html)
+// [O-:2][N+:1]=O>>[O:2]=[N:1]=O	Converting nitro mesomers
+N=[N:1]#[N:2]>>N=[N+:1]=[N-:2]	Converting azide mesomers
+[H:4][O:3][C:1]=[C:2]>>[H:4][C:2][C:1]=[O:3]	Converting oxo-enol tautomers
+[H:4][N:3][C:1]=[C:2]>>[H:4][C:2][C:1]=[N:3]	Converting enamine-imine tautomers
+[H:4][O:3][C:1]#[C:2]>>[H:4][C:2]=[C:1]=[O:3]	Ynol-ketene conversion
+[#6][CH1:3]([#6])[N:1]=[O:2]>>[#6][CH0:3]([#6])=[N:1][#8H1:2]	Nitroso-oxime tautomerism
+// [H:4][n:3]:[c:1]=[O:2]>>[O:2]-[c:1]:[n:3]	Pyridone-pyridol type tautomerism (got problem)
+[#6][O:1][Na:2]>>[#6]-[#8-:1].[Na+:2]	Converting covalent form of alcoholates to ionic form
+// C[N+:1][H:2].[F,Cl,Br,I-:3]>>C[N:1]	Hydrochloric acid removal from ammonium salts (got problem)
+[H:2][O:1][#6:3]>>[2#1A:2][18O:1][14#6:3]	Replacing atoms with isotopes
+// [C:8][C:7]([N+:9])[c:6]1[c:1][c:2][c:3][c:4][c:5]1.[O-]C=O>>[O]C=O	Removing large counterions (got problem)

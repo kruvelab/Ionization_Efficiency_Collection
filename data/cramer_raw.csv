@@ -1,0 +1,59 @@
+compound_name,SMILES,log10_ion_counts
+Aminoglutethimide,CCC1(CCC(=O)NC1=O)c2ccc(N)cc2,7.51
+Bromacil,CCC(C)N1C(=O)NC(=C(Br)C1=O)C,7.06
+Caffeine,Cn1cnc2N(C)C(=O)N(C)C(=O)c12,6.09
+Carbaryl,CNC(=O)Oc1cccc2ccccc12,6
+Carbofuran,CNC(=O)Oc1cccc2CC(C)(C)Oc12,7.49
+Celecoxib,Cc1ccc(cc1)c2cc(nn2c3ccc(cc3)[S](N)(=O)=O)C(F)(F)F,7.11
+Citalopram,CN(C)CCCC1(OCc2cc(ccc12)C#N)c3ccc(F)cc3,8.51
+Dapsone,Nc1ccc(cc1)[S](=O)(=O)c2ccc(N)cc2,7.37
+Diazinon,CCO[P](=S)(OCC)Oc1cc(C)nc(n1)C(C)C,8.49
+Diclofenac,OC(=O)Cc1ccccc1Nc2c(Cl)cccc2Cl,6.97
+Linezolid,CC(=O)NC[C@H]1CN(C(=O)O1)c2ccc(N3CCOCC3)c(F)c2,8.07
+Methomyl,CNC(=O)O\N=C(/C)SC,5.64
+Mirtazapine,CN1CCN2C(C1)c3ccccc3Cc4cccnc24,8.16
+Naproxen,COc1ccc2cc(ccc2c1)C(C)C(O)=O,5.03
+Nefazadone,Clc4cccc(N3CCN(CCCN1/N=C(\N(C1=O)CCOc2ccccc2)CC)CC3)c4,8.75
+Traxoprodil,C[C@@H]([C@@H](O)c1ccc(O)cc1)N2CCC(O)(CC2)c3ccccc3,8.32
+Valdecoxib,Cc1onc(c2ccccc2)c1c3ccc(cc3)[S](N)(=O)=O,6.98
+Zaleplon,CCN(C(C)=O)c1cccc(c1)c2ccnc3n2ncc3C#N,7.76
+Zileuton,CC(N(O)C(N)=O)c1sc2ccccc2c1,6.98
+Zomepirac,Cn1c(CC(O)=O)cc(C)c1C(=O)c2ccc(Cl)cc2,7.21
+Zonisamide,N[S](=O)(=O)Cc1noc2ccccc12,5.81
+Acyclovir,NC1=NC(=O)c2ncn(COCCO)c2N1,7.09
+Acecainide,CCN(CC)CCNC(=O)C1=CC=C(C=C1)NC(=O)C,8.01
+Atropine,CN1C2CCC1CC(C2)OC(=O)C(CO)c3ccccc3,8.34
+Azelastine,CN1CCCC(CC1)N2N=C(Cc3ccc(Cl)cc3)c4ccccc4C2=O,8.06
+Clindamycin,CCC[C@@H]1C[C@H](N(C)C1)C(=O)NC(C(C)Cl)[C@H]2O[C@H](SC)[C@H](O)[C@@H](O)[C@H]2O,8.26
+Fleroxacin,CN1CCN(CC1)c2c(F)cc3C(=O)C(=CN(CCF)c3c2F)C(O)=O,8.31
+Galanthamine,CN1CC[C@@]23C=C[C@@H](C[C@@H]2OC4=C(C=CC(=C34)C1)OC)O,8.09
+Pirmenol,C[C@@H]1CCC[C@@H](N1CCCC(C2=CC=CC=C2)(C3=CC=CC=N3)O)C,8.47
+Quinine,COc1ccc2nccc([C@@H](O)[C@@H]3C[C@H]4CCN3C[C@@H]4C=C)c2c1,8.32
+Tramadol,CN(C)C[C@H]1CCCC[C@@]1(C2=CC(=CC=C2)OC)O,8.08
+Venlafaxine,COc1ccc(cc1)C(CN(C)C)C2(O)CCCCC2,8.14
+Verapamil,COc1ccc(CCN(C)CCCC(C#N)(C(C)C)c2ccc(OC)c(OC)c2)cc1OC,8.74
+Vildagliptin,OC12CC3CC(C1)CC(C3)(C2)NCC(=O)N4CCC[C@H]4C#N,8.15
+9-Methylguanine,Cn1cnc2C(=O)NC(=Nc12)N,7.27
+acetyl-para-aminophenol,CC(=O)c1cc(N)ccc1O,6.45
+acetyl-para-aminophenol sulfate,CC(=O)NC1=CC=C(C=C1)OS(=O)(=O)O,6.49
+acetyl-para-aminophenol glucuronide,CC(=O)Nc1ccc(cc1)O[C@@H]1O[C@@H]([C@@H](O)[C@H](O)[C@H]1O)C(=O)O,5.43
+Mesalazine,Nc1ccc(O)c(c1)C(O)=O,6.82
+N-acetyl mesalazine,CC(=O)NC1=CC(=C(C=C1)O)C(=O)O,6.03
+N-methyl piperdine,CN1CCCCC1,7.18
+Dexamethasone,C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]2(C)[C@@]1(O)C(=O)CO,7.81
+Meropenem,O=C3N2\C(=C(\S[C@H]1C[C@@H](C(=O)N(C)C)NC1)[C@H](C)[C@@H]2[C@H]3[C@H](O)C)C(=O)O,8.01
+Phencyclidine,C1CCN(CC1)C2(CCCCC2)c3ccccc3,7.93
+Procainamide,O=C(c1ccc(N)cc1)NCCN(CC)CC,8.03
+Coumarin,O=C1Oc2ccccc2C=C1,5.52
+Umbelliferone,Oc1ccc2C=CC(=O)Oc2c1,5.64
+Umbelliferone Gluc,O=C(O)[C@H]1O[C@@H](Oc2cc3OC(=O)C=Cc3cc2)[C@H](O)[C@@H](O)[C@@H]1O,5.25
+Hymecromone,CC1=CC(=O)Oc2cc(O)ccc12,6.09
+Hymecromone Glucuronide,O=C(O)[C@H]1O[C@@H](Oc2cc3OC(=O)C=C(C)c3cc2)[C@H](O)[C@@H](O)[C@@H]1O,6.03
+Nefamostat,C1=CC(=CC=C1C(=O)OC2=CC3=C(C=C2)C=C(C=C3)C(=N)N)N=C(N)N,8.31
+4-Guanidinobenzoic acid,NC(=N)Nc1ccc(cc1)C(O)=O,7.54
+6-Amidino-2-napthol,C1=CC(=C(N)N)C=C2C1=CC(=O)C=C2,7.77
+Phenolphthalein,Oc1ccc(cc1)C2(OC(=O)c3ccccc23)c4ccc(O)cc4,7.06
+Phenolphthalein Glucuronide,C1=CC=C2C(=C1)C(=O)OC2(C3=CC=C(C=C3)O)C4=CC=C(C=C4)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)O)O)O)O,7.18
+Clozapine,CN1CCN(CC1)C2=C3C=CC=CC3=Nc4ccc(Cl)cc4N2,8.49
+Clozapine N-oxide,CN1CCN(CC1)C2=C3C=CC=CC3=Nc4ccc(Cl)cc4N2O,8.39
+Clozapine N-desmethyl,Clc1ccc2Nc4ccccc4C(=N\c2c1)/N3CCNCC3,8.32

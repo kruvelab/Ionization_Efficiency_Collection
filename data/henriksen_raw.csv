@@ -1,0 +1,55 @@
+SMILES,compound_name,response,system
+Oc1ccccc1,Phenol,1.15E+05,MeOH
+Cc1ccc(O)cc1,4-Methylphenol,1.25E+06,MeOH
+Oc1ccc(F)cc1,4-Fluorophenol,1.60E+06,MeOH
+Cc1ccc(O)c(C)c1,"2,4-Dimethylphenol",5.00E+06,MeOH
+Oc1ccc(F)cc1F,"2,4-Difluorophenol",1.00E+07,MeOH
+Oc1ccc(Cl)cc1,4-Chlorophenol,1.50E+07,MeOH
+Cc1cc(Cl)ccc1O,4-Chloro-2-methylphenol,2.50E+07,MeOH
+Oc1ccc(Cl)cc1Cl,"2,4-Dichlorophenol",3.00E+07,MeOH
+Oc1ccc(cc1)[N+]([O-])=O,4-Nitrophenol,3.50E+07,MeOH
+Oc1cc(Cl)c(Cl)cc1Cl,"2,4,5-Trichlorophenol",4.90E+07,MeOH
+Cc1cc(cc(c1O)[N+]([O-])=O)[N+]([O-])=O,"2-methyl-4,6-dinitrophenol",7.90E+07,MeOH
+Oc1c(Br)cc(cc1Br)C#N,Bromoxynil,9.00E+07,MeOH
+Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,Pentachlorophenol,9.50E+07,MeOH
+Oc1c(I)cc(cc1I)C#N,Ioxynil,1.09E+08,MeOH
+Cc1ccc(O)cc1,4-Methylphenol,6.00E+04,50/50 MeOH/water
+Oc1ccc(F)cc1,4-Fluorophenol,7.00E+04,50/50 MeOH/water
+Cc1ccc(O)c(C)c1,"2,4-Dimethylphenol",8.00E+04,50/50 MeOH/water
+Oc1ccc(F)cc1F,"2,4-Difluorophenol",9.00E+04,50/50 MeOH/water
+Oc1ccc(Cl)cc1,4-Chlorophenol,8.00E+05,50/50 MeOH/water
+Cc1cc(Cl)ccc1O,4-Chloro-2-methylphenol,1.90E+06,50/50 MeOH/water
+Oc1ccc(Cl)cc1Cl,"2,4-Dichlorophenol",2.00E+05,50/50 MeOH/water
+Oc1ccc(cc1)[N+]([O-])=O,4-Nitrophenol,4.00E+06,50/50 MeOH/water
+Oc1cc(Cl)c(Cl)cc1Cl,"2,4,5-Trichlorophenol",5.00E+06,50/50 MeOH/water
+Cc1cc(cc(c1O)[N+]([O-])=O)[N+]([O-])=O,"2-methyl-4,6-dinitrophenol",3.00E+07,50/50 MeOH/water
+Oc1c(Br)cc(cc1Br)C#N,Bromoxynil,2.60E+07,50/50 MeOH/water
+Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,Pentachlorophenol,2.40E+07,50/50 MeOH/water
+Oc1c(I)cc(cc1I)C#N,Ioxynil,2.50E+07,50/50 MeOH/water
+Oc1ccccc1,Phenol,6.00E+04,MeCN
+Cc1ccc(O)cc1,4-Methylphenol,7.00E+04,MeCN
+Oc1ccc(F)cc1,4-Fluorophenol,3.00E+05,MeCN
+Cc1ccc(O)c(C)c1,"2,4-Dimethylphenol",1.00E+05,MeCN
+Oc1ccc(F)cc1F,"2,4-Difluorophenol",1.50E+06,MeCN
+Oc1ccc(Cl)cc1,4-Chlorophenol,1.30E+06,MeCN
+Cc1cc(Cl)ccc1O,4-Chloro-2-methylphenol,3.00E+06,MeCN
+Oc1ccc(Cl)cc1Cl,"2,4-Dichlorophenol",1.00E+07,MeCN
+Oc1ccc(cc1)[N+]([O-])=O,4-Nitrophenol,4.00E+07,MeCN
+Oc1cc(Cl)c(Cl)cc1Cl,"2,4,5-Trichlorophenol",3.50E+07,MeCN
+Cc1cc(cc(c1O)[N+]([O-])=O)[N+]([O-])=O,"2-methyl-4,6-dinitrophenol",8.50E+07,MeCN
+Oc1c(Br)cc(cc1Br)C#N,Bromoxynil,1.10E+08,MeCN
+Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,Pentachlorophenol,7.00E+07,MeCN
+Oc1c(I)cc(cc1I)C#N,Ioxynil,1.15E+08,MeCN
+Cc1ccc(O)cc1,4-Methylphenol,6.00E+04,50/50 MeCN/water
+Oc1ccc(F)cc1,4-Fluorophenol,7.00E+04,50/50 MeCN/water
+Cc1ccc(O)c(C)c1,"2,4-Dimethylphenol",8.00E+04,50/50 MeCN/water
+Oc1ccc(F)cc1F,"2,4-Difluorophenol",8.00E+04,50/50 MeCN/water
+Oc1ccc(Cl)cc1,4-Chlorophenol,9.00E+05,50/50 MeCN/water
+Cc1cc(Cl)ccc1O,4-Chloro-2-methylphenol,1.70E+06,50/50 MeCN/water
+Oc1ccc(Cl)cc1Cl,"2,4-Dichlorophenol",2.00E+05,50/50 MeCN/water
+Oc1ccc(cc1)[N+]([O-])=O,4-Nitrophenol,4.00E+06,50/50 MeCN/water
+Oc1cc(Cl)c(Cl)cc1Cl,"2,4,5-Trichlorophenol",5.00E+06,50/50 MeCN/water
+Cc1cc(cc(c1O)[N+]([O-])=O)[N+]([O-])=O,"2-methyl-4,6-dinitrophenol",2.50E+07,50/50 MeCN/water
+Oc1c(Br)cc(cc1Br)C#N,Bromoxynil,2.70E+07,50/50 MeCN/water
+Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,Pentachlorophenol,2.50E+07,50/50 MeCN/water
+Oc1c(I)cc(cc1I)C#N,Ioxynil,2.70E+07,50/50 MeCN/water

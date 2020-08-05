@@ -1,0 +1,7 @@
+compound_name,SMILES,MW,slope,ret_time
+scutellarin,O[C@@H]1[C@@H](O)[C@@H](O[C@@H]([C@H]1O)C(O)=O)Oc2cc3OC(=CC(=O)c3c(O)c2O)c4ccc(O)cc4,462.363,12671,6.64
+tectoridin,COc1c(O)c2C(=O)C(=COc2cc1O[C@@H]3O[C@H](CO)[C@@H](O)[C@H](O)[C@H]3O)c4ccc(O)cc4,462.407,25559,7.31
+baicalin,O[C@@H]1[C@@H](O)[C@@H](O[C@@H]([C@H]1O)C(O)=O)Oc2cc3OC(=CC(=O)c3c(O)c2O)c4ccccc4,446.364,26364,9.02
+chrysin,Oc1cc(O)c2C(=O)C=C(Oc2c1)c3ccccc3,254.241,29604,10.55
+wogonoside,COc1c(O[C@@H]2O[C@@H]([C@@H](O)[C@H](O)[C@H]2O)C(O)=O)cc(O)c3C(=O)C=C(Oc13)c4ccccc4,460.391,45361,14.7
+wogonin,COc1c(O)cc(O)c2C(=O)C=C(Oc12)c3ccccc3,284.267,39610,14.81

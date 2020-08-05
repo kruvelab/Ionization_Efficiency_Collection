@@ -1,0 +1,32 @@
+SMILES,compound_name,RRF
+COc1ccc(CCN(C)CCCC(C#N)(C(C)C)c2ccc(OC)c(OC)c2)cc1OC,Verapamil,100
+CCCC[N+]1(C)[C@H]2CC(C[C@H]1[C@@H]1O[C@H]21)OC(=O)C(CO)c1ccccc1,Buscopan,65
+Cc1cc2nc3cc(C)c(N)cc3[n+](-c3ccccc3)c2cc1N,Safranin orange,58
+C[C@]12CC[C@H]3[C@@H](CCC4=C3C=CC(OS(O)(=O)=O)=C4)[C@@H]1CC[C@H]2O,Estradiol sulfate,49
+CC/C(c1ccccc1)=C(c2ccccc2)/c3ccc(OCCN(C)C)cc3,Tamoxifen,45
+OC1(CCN(CCCC(=O)c2ccc(F)cc2)CC1)c3ccc(Cl)cc3,Haloperidol,35
+CN1CC[C@]23[C@H]4Oc5c(O)ccc(C[C@@H]1[C@@H]2C=C[C@@H]4O)c35,Morphine,16
+CC(C)(C)NCC(O)c1cc(Cl)c(N)c(Cl)c1,Clenbuterol,10
+CCCCC1C(=O)N(N(C1=O)c2ccccc2)c3ccccc3,Phenylbutazone,9
+CC(C)C[C@@H]1N2C(=O)[C@](O[C@]2(O)[C@@H]2CCCN2C1=O)(N=C(O)[C@H]1CN(C)[C@@H]2CC3=C(Br)NC4=CC=CC(=C34)C2=C1)C(C)C,Bromocryptin,8
+CN1CC[C@]23[C@@H]4[C@H]1CC5=C2C(=C(C=C5)O)O[C@H]3[C@H](C=C4)O[C@H]6[C@@H]([C@H]([C@@H]([C@H](O6)C(=O)O)O)O)O,Morphine glucuronide,8
+C[N+](C)(C)CCOC(=O)CCC(=O)OCC[N+](C)(C)C,Succinyl choline,7
+C[C@H]1[C@H](NC(=O)C(=N/OC(C)(C)C(O)=O)\c2csc(N)n2)C(=O)N1S(O)(=O)=O,Aztreonam,5
+N[S](=O)(=O)c1cc(C(O)=O)c(NCc2occc2)cc1Cl,Furosemide,4
+C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C,Dianabol,3
+CCCCC1C(=O)N(N(C1=O)c2ccc(O)cc2)c3ccccc3,Oxyphenylbutazone,3
+CC(C)N1C(=O)c2ccccc2N[S]1(=O)=O,Bentazon,2
+O=C(OCC(=O)[C@]3(OC(=O)CC)[C@]2(C[C@H](O)[C@]4(Cl)[C@@]/1(\C(=C/C(=O)\C=C\1)CC[C@H]4[C@@H]2C[C@@H]3C)C)C)CC,Beclomethazone,2
+C[C@H](CCC(=O)NCC[S](O)(=O)=O)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C,Taurocholic acid,2
+COc1ccc2cc(ccc2c1)C(C)C(O)=O,Naproxen,2
+CCC(=O)OC(O[P](=O)(CCCCc1ccccc1)CC(=O)N2C[C@@H](C[C@H]2C(O)=O)C3CCCCC3)C(C)C,Fosinopril,2
+C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]2(C)[C@@]1(O)C(=O)CO,Dexamethazone,2
+C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)C=C[C@]34C)[C@@H]1CC[C@]2(O)C(=O)CO,Prednisolone,1
+C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@]34C)[C@@H]1CC[C@@H]2O[C@@H]5O[C@@H]([C@@H](O)[C@H](O)[C@H]5O)C(O)=O,Testosterone glucuronide,1
+FC1=CNC(=O)NC1=O,5-Fluorouracil,1
+Brc1ccc2NC(=O)CN=C(c3ccccn3)c2c1,Bromazepam,1
+CC(=O)O[C@H]1C(=O)[C@]2(C)[C@@H](O)C[C@H]3OC[C@@]3(OC(C)=O)[C@H]2[C@H](OC(=O)c4ccccc4)[C@]5(O)C[C@H](OC(=O)[C@H](O)[C@@H](NC(=O)c6ccccc6)c7ccccc7)C(=C1C5(C)C)C,Taxol,1
+CC[C@H](C)C(=O)O[C@H]1C[C@@H](C)C=C2C=C[C@H](C)[C@H](CC[C@@H]3C[C@@H](O)CC(=O)O3)[C@@H]12,Lovastatin,1
+C([C@@H]1[C@@H]2[C@@H]([C@H]([C@H](O1)O[C@@H]3[C@H](O[C@@H]([C@@H]([C@H]3O)O)O[C@@H]4[C@H](O[C@@H]([C@@H]([C@H]4O)O)O[C@@H]5[C@H](O[C@@H]([C@@H]([C@H]5O)O)O[C@@H]6[C@H](O[C@@H]([C@@H]([C@H]6O)O)O[C@@H]7[C@H](O[C@H](O2)[C@@H]([C@H]7O)O)CO)CO)CO)CO)CO)O)O)O,a-Cyclodextrin,0.3
+CC[C@H]1OC(=O)[C@H](C)[C@@H](O[C@H]2C[C@@](C)(OC)[C@@H](O)[C@H](C)O2)[C@H](C)[C@@H](O[C@@H]3O[C@H](C)C[C@@H]([C@H]3O)N(C)C)[C@](C)(O)C[C@@H](C)C(=O)[C@H](C)[C@@H](O)[C@]1(C)O,Erythromycin,0.2
+CCC1NC(=O)C([C@H](O)[C@H](C)C\C=C\C)N(C)C(=O)C(C(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(CC(C)C)N(C)C(=O)C(C)NC(=O)C(C)NC(=O)C(CC(C)C)N(C)C(=O)C(NC(=O)C(CC(C)C)N(C)C(=O)CN(C)C1=O)C(C)C,Cyclosporin,0.2

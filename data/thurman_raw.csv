@@ -1,0 +1,36 @@
+SMILES,compound_name,RF_APCI_pos,RF_APCI_neg,RF_ESI_pos,RF_ESI_neg,concentration_pg_uL
+CN(C)C(=O)Nc1ccc(C)c(Cl)c1,chlorotoluron,64,0,9,4,10
+CN(C)C(=O)Nc1ccc(Cl)c(Cl)c1,diuron,57,10,7,5,10
+CN(C)C(=O)Nc1cccc(c1)C(F)(F)F,fluometuron,64,7,8,6,10
+CC(C)c1ccc(NC(=O)N(C)C)cc1,isoproturon,100,0,14,0,10
+CON(C)C(=O)Nc1ccc(Cl)c(Cl)c1,linuron,14,7,7,3,10
+CCNc1nc(Cl)nc(NC(C)C)n1,atrazine,100,0,7,0,10
+CCNc1nc(N)nc(Cl)n1,deisopropylatrazine,50,0,3,0,10
+C1(=NC(=NC(=N1)Cl)N)N,didealkylatrazine,25,0,2,0,10
+CCNc1nc(Cl)nc(NC(C)(C)C#N)n1,cyanazine,71,0,7,0,10
+CSc1nc(NC2CC2)nc(NC(C)(C)C)n1,irgarol,100,0,14,0,10
+CC(C)Nc1nc(Cl)nc(NC(C)C)n1,propazine,100,0,9,0,10
+CCNc1nc(Cl)nc(NCC)n1,simazine,71,0,5,0,10
+CCNc1nc(Cl)nc(NC(C)(C)C)n1,terbuthylazine,100,0,9,0,10
+C[N+](C)(C)CCCl,chlormequat,0,0,8,0,10
+C[N+]1(CCCCC1)C,mepiquat,0,0,10,0,10
+C1C[n+]2ccccc2-c2cccc[n+]12,diquat,0,0,7,0,10
+C[n+]1ccc(cc1)c2cc[n+](C)cc2,paraquat,0,0,7,0,10
+CCC1=CC=CC(=C1N(COCC)C(=O)CS(=O)(=O)O)C,acetochlor ESA,0,0,0,11,10
+CCC1=C(C(=CC=C1)CC)N(COC)C(=O)CS(=O)(=O)O,alachlor ESA,0,0,0,11,10
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)CS(=O)(=O)O)C,metolachlor ESA,0,0,0,14,10
+CCC1=CC=CC(=C1N(COCC)C(=O)C(=O)O)C,acetochlor OXA,0,0,0,14,10
+CCC1=C(C(=CC=C1)CC)N(COC)C(=O)C(=O)O,alachlor OXA,0,0,0,14,10
+CCC1=CC=CC(=C1N(C(C)COC)C(=O)C(=O)O)C,metolachlor OXA,0,0,0,14,10
+COc1c(Cl)ccc(Cl)c1C(O)=O,dicamba,0,14,0,50,10
+OC(=O)COc1ccc(Cl)cc1Cl,"2,4-D",0,14,0,50,10
+CC(Oc1ccc(Cl)cc1Cl)C(O)=O,"2,4-DP",0,14,0,50,10
+OC(=O)COc1cc(Cl)c(Cl)cc1Cl,"2,4,5-T",0,14,0,50,10
+Oc1ccccc1,phenol,0,0,0,0,10
+Oc1cccc(c1)[N+]([O-])=O,3-nitrophenol,0,43,0,11,10
+Oc1ccc(cc1[N+]([O-])=O)[N+]([O-])=O,"2,4-dinitrophenol",0,14,0,14,10
+Oc1c(ccc(c1[N+]([O-])=O)[N+]([O-])=O)[N+]([O-])=O,"2,3,6-trinitrophenol",0,14,0,14,10
+Cc1cc(O)ccc1Cl,4-chloro-3-methylphenol ,0,14,0,6,10
+Oc1cc(Cl)c(Cl)cc1Cl,"2,4,5-trichlorophenol",0,50,0,7,10
+CCCCCCCCCCCCOS(O)(=O)=O,"alkyl sulfate surfactant
+sodium dodecyl sulfate",0,0,0,3,10

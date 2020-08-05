@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<operators name="padel_descriptor" version="5.0" docbundle="com/rapidminer/resources/i18n/OperatorsDocPaDELDescriptor">
+   <group key="">
+   <!--CHEMISTRY-->
+        <group key="chemistry">            
+            <group key="import">
+                <icon>import.png</icon>
+                <operator>
+                    <key>read_compound</key>
+                    <class>com.rapidminer.operator.chemistry.CompoundSource</class>
+                </operator>
+            </group>
+            <group key="export">
+                <icon>export2.png</icon>
+                <operator>
+                    <key>write_compound</key>
+                    <class>com.rapidminer.operator.chemistry.CompoundWriter</class>
+                </operator>
+            </group>
+            <group key="basic_information">
+                <icon>symbol_percent.png</icon>
+                <operator>
+                    <key>count_substructure</key>
+                    <class>com.rapidminer.operator.chemistry.CompoundCountSubstructure</class>
+                </operator>
+                <operator>
+                    <key>detect_dimensionality</key>
+                    <class>com.rapidminer.operator.chemistry.CompoundDetectDimensionality</class>
+                </operator>
+                <operator>
+                    <key>get_smiles</key>
+                    <class>com.rapidminer.operator.chemistry.CompoundGetSMILES</class>
+                </operator>
+            </group>
+            <group key="compound_transformation">
+                <icon>table_new.png</icon>
+                <operator>
+                    <key>add_hydrogen</key>
+                    <class>com.rapidminer.operator.chemistry.CompoundAddHydrogens</class>
+                </operator>
+                <operator>
+                    <key>convert_3d</key>
+                    <class>com.rapidminer.operator.chemistry.CompoundConvert3D</class>
+                </operator>
+                <operator>
+                    <key>standardize</key>
+                    <class>com.rapidminer.operator.chemistry.CompoundStandardize</class>
+                </operator>
+                <operator>
+                    <icon>table_column_edit.png</icon>
+                    <key>rename_compound</key>
+                    <class>com.rapidminer.operator.chemistry.CompoundRename</class>
+                </operator>
+            </group>
+            <group key="descriptor">
+                <icon>table_column_add.png</icon>
+                <operator>
+                    <key>calculate_descriptor</key>
+                    <class>com.rapidminer.operator.chemistry.CompoundDescriptors</class>
+                </operator>
+            </group>
+        </group>
+   </group>
+</operators>

@@ -1,0 +1,9 @@
+compound_name,SMILES,RRF,ret_time
+"1,2-Dioleoyl-sn-glycero-3-phosphoglycerol (18:1/18:1-PG)",CCCCCCCC\C=C/CCCCCCCC(=O)OC[C@H](CO[P](O)(=O)OCC(O)CO)OC(=O)CCCCCCC\C=C/CCCCCCCC,0.318,4.7
+1-oleoyl-2-hydroxy-sn-glycero-3-phosphoglycerol (18:1-LPG),CCCCCCCC\C=C/CCCCCCCC(=O)OC[C@H](CO[P](O)(=O)OCC(O)CO)OO,0.214,8.4
+"1,2-dioleoyl-sn-glycero-3-phosphoethanolamine (18:1/18:1-PE)",CCCCCCCC\C=C/CCCCCCCC(=O)OC[C@H](CO[P](O)(=O)OCCN)OC(=O)CCCCCCC\C=C/CCCCCCCC,0.296,24.8
+"N-dodecanoylheptadecasphing-4-enine-1-phosphoethanolamine (sphingosyl PE, d17:1/12:0)",CCCCCCCCCCCC/C=C/[C@H]([C@H](COP(=O)(O)OCCN)NC(=O)CCCCCCCCCCC)O,1,33.9
+1-oleoyl-2-hydroxy-sn-glycero-3-phosphoethanolamine (18:1-LPE),CCCCCCCC\C=C/CCCCCCCC(=O)OC[C@H](CO[P](O)(=O)OCCN)OO,0.516,36.1
+"1,2-dioleoyl-sn-glycero-3-phosphocholine (18:1/18:1-PC)",CCCCCCCC\C=C/CCCCCCCC(=O)OC[C@H](CO[P](O)(=O)OCC[N+](C)(C)C)OC(=O)CCCCCCC\C=C/CCCCCCCC,0.106,39.8
+1-oleoyl-sn-sphing-4-enine-1-phosphocholine (18:1-SM),CCCCCCCCCCCCC/C=C/[C@H]([C@H](COP(=O)([O-])OCC[N+](C)(C)C)NC(=O)CCCCCCC/C=C\CCCCCCCC)O,0.068,45.3
+1-oleoyl-2-hydroxy-sn-glycero-3-phosphocholine (18:1-LPC),CCCCCCCC\C=C/CCCCCCCC(=O)OC[C@H](CO[P](O)(=O)OCC[N+](C)(C)C)OO,0.119,51.2

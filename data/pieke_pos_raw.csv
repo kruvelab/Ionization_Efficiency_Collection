@@ -1,0 +1,11 @@
+compound_name,SMILES,RRF,ret_time
+L-Threonine,C[C@@H](O)[C@H](N)C(O)=O,1.00,2.64
+Benzisothiazolone,O=s1ncc2ccccc12,10.29,10.64
+Melamine,Nc1nc(N)nc(N)n1,72.21,2.04
+Octanol,CCCCCCCCO,5.20,7.10
+Methamidophos,CO[P](N)(=O)SC,19.86,6.66
+Benzophenone,O=C(c1ccccc1)c2ccccc2,2.94,19.47
+2-isopropylthioxanthen-9-one,CC(C)c1ccc2Sc3ccccc3C(=O)c2c1,58.39,24.56
+Diphenyl phthalate,O=C(Oc1ccccc1)c2ccccc2C(=O)Oc3ccccc3,33.14,22.40
+Dicyclohexyl phthalate,O=C(OC1CCCCC1)c2ccccc2C(=O)OC3CCCCC3,69.60,25.95
+"?,?-Trehalose",C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)O)O)O)O,1.82,2.75

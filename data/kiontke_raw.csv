@@ -1,0 +1,187 @@
+compound_name,SMILES,CAS,M [g/mol],experiment,Peak area,solv,Flow,Vendor,Mass Analyzer
+2-aminoaniline,Nc1ccccc1N,95-54-5,108,API_50_pH3,0.651866145,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-aminobenzoic acid,Nc1ccccc1C(O)=O,118-92-3,137,API_50_pH3,0.749828702,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-aminopyridine,Nc1ccccn1,504-29-0,94,API_50_pH3,0.789212229,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-Cyanoaniline (2-aminobenzonitrile),Nc1ccccc1C#N,1885-29-6 ,118,API_50_pH3,0.422920739,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-fluoroaniline,Nc1ccccc1F,348-54-9,111,API_50_pH3,0.075965317,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-hydroxyaniline (2-aminophenol),Nc1ccccc1O,95-55-6,109,API_50_pH3,0.433793152,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-methoxyaniline,COc1ccccc1N,90-04-0,123,API_50_pH3,0.825419177,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-methylaniline,Cc1ccccc1N,95-53-4,107,API_50_pH3,0.878104129,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-nitroaniline,Nc1ccccc1[N+]([O-])=O,88-74-4,138,API_50_pH3,0.08690499,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-aminoaniline,Nc1cccc(N)c1,108-45-2,108,API_50_pH3,0.509887447,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-aminobenzoic acid,Nc1cccc(c1)C(O)=O,99-05-8,137,API_50_pH3,0.685581709,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-aminopyridine,Nc1cccnc1,462-08-8,94,API_50_pH3,0.761489591,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-Cyanoaniline (3-aminobenzonitrile),Nc1cccc(c1)C#N,2237-30-1,118,API_50_pH3,0.638011124,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-fluoroaniline,Nc1cccc(F)c1,372-19-0,111,API_50_pH3,0.660829084,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-hydroxyaniline (3-aminophenol),Nc1cccc(O)c1,591-27-5,109,API_50_pH3,0.484008787,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-methoxyaniline,COc1cccc(N)c1,536-90-3,123,API_50_pH3,0.933309486,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-methylaniline,Cc1cccc(N)c1,108-44-1,107,API_50_pH3,0.883740608,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-nitroaniline,Nc1cccc(c1)[N+]([O-])=O,99-09-2,138,API_50_pH3,0.564012716,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-aminoaniline,Nc1ccc(N)cc1,106-50-3,108,API_50_pH3,0.276717519,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-aminobenzoic acid,Nc1ccc(cc1)C(O)=O,150-13-0,137,API_50_pH3,0.704061788,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-aminopyridine,Nc1ccncc1,504-24-5,94,API_50_pH3,0.857157252,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-chloroaniline (Summe beider Isotope),Nc1ccc(Cl)cc1,106-47-8,127,API_50_pH3,1,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-Cyanoaniline (4-aminobenzonitrile),Nc1ccc(cc1)C#N,873-74-5,118,API_50_pH3,0.37625199,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-fluoroaniline,Nc1ccc(F)cc1,371-40-4,111,API_50_pH3,0.805727414,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-hydroxyaniline (4-aminophenol),Nc1ccc(O)cc1,123-30-8,109,API_50_pH3,0.422245622,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-methoxyaniline,COc1ccc(N)cc1,104-94-9,123,API_50_pH3,0.857376413,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-methylaniline,Cc1ccc(N)cc1,106-49-0,107,API_50_pH3,0.917559484,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-nitroaniline,Nc1ccc(cc1)[N+]([O-])=O,100-01-6,138,API_50_pH3,0.246276778,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+Aniline,Nc1ccccc1,62-53-3,93,API_50_pH3,0.698132337,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+Pyridine,c1ccncc1,110-86-1,79,API_50_pH3,0.603464259,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+sulfanilic acid,Nc1ccc(cc1)[S](O)(=O)=O,121-57-3,173,API_50_pH3,0.023836178,"50%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-aminoaniline,Nc1ccccc1N,95-54-5,108,API_50_pH7,0.268800177,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-aminobenzoic acid,Nc1ccccc1C(O)=O,118-92-3,137,API_50_pH7,0.415172851,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-aminopyridine,Nc1ccccn1,504-29-0,94,API_50_pH7,0.605713684,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-Cyanoaniline (2-aminobenzonitrile),Nc1ccccc1C#N,1885-29-6 ,118,API_50_pH7,0.120756925,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-fluoroaniline,Nc1ccccc1F,348-54-9,111,API_50_pH7,0.014766295,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-hydroxyaniline (2-aminophenol),Nc1ccccc1O,95-55-6,109,API_50_pH7,0.576863215,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-methoxyaniline,COc1ccccc1N,90-04-0,123,API_50_pH7,0.970314894,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-methylaniline,Cc1ccccc1N,95-53-4,107,API_50_pH7,0.271439763,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-nitroaniline,Nc1ccccc1[N+]([O-])=O,88-74-4,138,API_50_pH7,0.020555943,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-aminoaniline,Nc1cccc(N)c1,108-45-2,108,API_50_pH7,0.355402185,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-aminobenzoic acid,Nc1cccc(c1)C(O)=O,99-05-8,137,API_50_pH7,0.499392654,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-aminopyridine,Nc1cccnc1,462-08-8,94,API_50_pH7,0.44349754,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-Cyanoaniline (3-aminobenzonitrile),Nc1cccc(c1)C#N,2237-30-1,118,API_50_pH7,0.419146565,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-fluoroaniline,Nc1cccc(F)c1,372-19-0,111,API_50_pH7,0.228908877,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-hydroxyaniline (3-aminophenol),Nc1cccc(O)c1,591-27-5,109,API_50_pH7,0.534552266,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-methoxyaniline,COc1cccc(N)c1,536-90-3,123,API_50_pH7,0.649307601,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-methylaniline,Cc1cccc(N)c1,108-44-1,107,API_50_pH7,0.491482332,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-nitroaniline,Nc1cccc(c1)[N+]([O-])=O,99-09-2,138,API_50_pH7,0.297940861,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-aminoaniline,Nc1ccc(N)cc1,106-50-3,108,API_50_pH7,0.257752037,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-aminobenzoic acid,Nc1ccc(cc1)C(O)=O,150-13-0,137,API_50_pH7,0.354770371,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-aminopyridine,Nc1ccncc1,504-24-5,94,API_50_pH7,0.44861142,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-chloroaniline (Summe beider Isotope),Nc1ccc(Cl)cc1,106-47-8,127,API_50_pH7,0.267896478,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-Cyanoaniline (4-aminobenzonitrile),Nc1ccc(cc1)C#N,873-74-5,118,API_50_pH7,0.096265622,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-fluoroaniline,Nc1ccc(F)cc1,371-40-4,111,API_50_pH7,0.507515493,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-hydroxyaniline (4-aminophenol),Nc1ccc(O)cc1,123-30-8,109,API_50_pH7,0.530568432,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-methoxyaniline,COc1ccc(N)cc1,104-94-9,123,API_50_pH7,0.530274958,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-methylaniline,Cc1ccc(N)cc1,106-49-0,107,API_50_pH7,0.803749478,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-nitroaniline,Nc1ccc(cc1)[N+]([O-])=O,100-01-6,138,API_50_pH7,0.068129634,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+Aniline,Nc1ccccc1,62-53-3,93,API_50_pH7,0.471239327,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+Pyridine,c1ccncc1,110-86-1,79,API_50_pH7,0.356529195,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+sulfanilic acid,Nc1ccc(cc1)[S](O)(=O)=O,121-57-3,173,API_50_pH7,0.007398152,"50%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-aminoaniline,Nc1ccccc1N,95-54-5,108,API_80_pH3,0.247033938,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-aminobenzoic acid,Nc1ccccc1C(O)=O,118-92-3,137,API_80_pH3,0.009987605,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-aminopyridine,Nc1ccccn1,504-29-0,94,API_80_pH3,0.018979186,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-Cyanoaniline (2-aminobenzonitrile),Nc1ccccc1C#N,1885-29-6 ,118,API_80_pH3,0.039477385,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-fluoroaniline,Nc1ccccc1F,348-54-9,111,API_80_pH3,0.723210617,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-hydroxyaniline (2-aminophenol),Nc1ccccc1O,95-55-6,109,API_80_pH3,0.77180202,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-methoxyaniline,COc1ccccc1N,90-04-0,123,API_80_pH3,0.053125105,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-methylaniline,Cc1ccccc1N,95-53-4,107,API_80_pH3,0.031460678,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-nitroaniline,Nc1ccccc1[N+]([O-])=O,88-74-4,138,API_80_pH3,0.240512897,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-aminoaniline,Nc1cccc(N)c1,108-45-2,108,API_80_pH3,0.961055613,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-aminobenzoic acid,Nc1cccc(c1)C(O)=O,99-05-8,137,API_80_pH3,0.018885509,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-aminopyridine,Nc1cccnc1,462-08-8,94,API_80_pH3,0.883224335,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-Cyanoaniline (3-aminobenzonitrile),Nc1cccc(c1)C#N,2237-30-1,118,API_80_pH3,0.002878922,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-fluoroaniline,Nc1cccc(F)c1,372-19-0,111,API_80_pH3,0.021977494,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-hydroxyaniline (3-aminophenol),Nc1cccc(O)c1,591-27-5,109,API_80_pH3,0.716300359,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-methoxyaniline,COc1cccc(N)c1,536-90-3,123,API_80_pH3,0.945808496,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-methylaniline,Cc1cccc(N)c1,108-44-1,107,API_80_pH3,0.818317991,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+3-nitroaniline,Nc1cccc(c1)[N+]([O-])=O,99-09-2,138,API_80_pH3,0.015336537,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-aminoaniline,Nc1ccc(N)cc1,106-50-3,108,API_80_pH3,0.782087563,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-aminobenzoic acid,Nc1ccc(cc1)C(O)=O,150-13-0,137,API_80_pH3,0.596977344,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-aminopyridine,Nc1ccncc1,504-24-5,94,API_80_pH3,0.958740317,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-chloroaniline (Summe beider Isotope),Nc1ccc(Cl)cc1,106-47-8,127,API_80_pH3,0.685622919,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-Cyanoaniline (4-aminobenzonitrile),Nc1ccc(cc1)C#N,873-74-5,118,API_80_pH3,0.238849188,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-fluoroaniline,Nc1ccc(F)cc1,371-40-4,111,API_80_pH3,0.025184916,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-hydroxyaniline (4-aminophenol),Nc1ccc(O)cc1,123-30-8,109,API_80_pH3,0.626274032,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-methoxyaniline,COc1ccc(N)cc1,104-94-9,123,API_80_pH3,0.81165506,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-methylaniline,Cc1ccc(N)cc1,106-49-0,107,API_80_pH3,0.835297806,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+4-nitroaniline,Nc1ccc(cc1)[N+]([O-])=O,100-01-6,138,API_80_pH3,0.181718542,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+Aniline,Nc1ccccc1,62-53-3,93,API_80_pH3,0.015281374,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+Pyridine,c1ccncc1,110-86-1,79,API_80_pH3,1,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+sulfanilic acid,Nc1ccc(cc1)[S](O)(=O)=O,121-57-3,173,API_80_pH3,0.016270222,"80%MeCN, pH = 3",20 uL/min,AB Sciex,API 2000 3Q
+2-aminoaniline,Nc1ccccc1N,95-54-5,108,API_80_pH7,0.320160934,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-aminobenzoic acid,Nc1ccccc1C(O)=O,118-92-3,137,API_80_pH7,0.060536983,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-aminopyridine,Nc1ccccn1,504-29-0,94,API_80_pH7,0.427149462,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-Cyanoaniline (2-aminobenzonitrile),Nc1ccccc1C#N,1885-29-6 ,118,API_80_pH7,0.074706513,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-fluoroaniline,Nc1ccccc1F,348-54-9,111,API_80_pH7,0.032753931,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-hydroxyaniline (2-aminophenol),Nc1ccccc1O,95-55-6,109,API_80_pH7,0.220330314,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-methoxyaniline,COc1ccccc1N,90-04-0,123,API_80_pH7,0.744621492,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-methylaniline,Cc1ccccc1N,95-53-4,107,API_80_pH7,0.27841745,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-nitroaniline,Nc1ccccc1[N+]([O-])=O,88-74-4,138,API_80_pH7,0.026623808,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-aminoaniline,Nc1cccc(N)c1,108-45-2,108,API_80_pH7,0.336182226,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-aminobenzoic acid,Nc1cccc(c1)C(O)=O,99-05-8,137,API_80_pH7,0.31852148,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-aminopyridine,Nc1cccnc1,462-08-8,94,API_80_pH7,0.446461201,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-Cyanoaniline (3-aminobenzonitrile),Nc1cccc(c1)C#N,2237-30-1,118,API_80_pH7,0.259305862,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-fluoroaniline,Nc1cccc(F)c1,372-19-0,111,API_80_pH7,0.041608213,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-hydroxyaniline (3-aminophenol),Nc1cccc(O)c1,591-27-5,109,API_80_pH7,0.28180006,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-methoxyaniline,COc1cccc(N)c1,536-90-3,123,API_80_pH7,0.375831212,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-methylaniline,Cc1cccc(N)c1,108-44-1,107,API_80_pH7,0.229246787,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+3-nitroaniline,Nc1cccc(c1)[N+]([O-])=O,99-09-2,138,API_80_pH7,0.049504665,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-aminoaniline,Nc1ccc(N)cc1,106-50-3,108,API_80_pH7,0.406268967,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-aminobenzoic acid,Nc1ccc(cc1)C(O)=O,150-13-0,137,API_80_pH7,0.409025136,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-aminopyridine,Nc1ccncc1,504-24-5,94,API_80_pH7,0.931443016,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-chloroaniline (Summe beider Isotope),Nc1ccc(Cl)cc1,106-47-8,127,API_80_pH7,0.12446007,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-Cyanoaniline (4-aminobenzonitrile),Nc1ccc(cc1)C#N,873-74-5,118,API_80_pH7,0.05955492,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-fluoroaniline,Nc1ccc(F)cc1,371-40-4,111,API_80_pH7,0.373524741,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-hydroxyaniline (4-aminophenol),Nc1ccc(O)cc1,123-30-8,109,API_80_pH7,0.361904963,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-methoxyaniline,COc1ccc(N)cc1,104-94-9,123,API_80_pH7,0.443342668,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-methylaniline,Cc1ccc(N)cc1,106-49-0,107,API_80_pH7,0.290088663,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+4-nitroaniline,Nc1ccc(cc1)[N+]([O-])=O,100-01-6,138,API_80_pH7,0.061999289,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+Aniline,Nc1ccccc1,62-53-3,93,API_80_pH7,0.12375841,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+Pyridine,c1ccncc1,110-86-1,79,API_80_pH7,0.052827697,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+sulfanilic acid,Nc1ccc(cc1)[S](O)(=O)=O,121-57-3,173,API_80_pH7,0.001010444,"80%MeCN, pH = 7",20 uL/min,AB Sciex,API 2000 3Q
+2-aminoaniline,Nc1ccccc1N,95-54-5,108,Esqu_50_pH3,0.127002794,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+2-aminobenzoic acid (Summe -H2O),Nc1ccccc1C(O)=O,118-92-3,137,Esqu_50_pH3,0.204009878,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+2-aminopyridine,Nc1ccccn1,504-29-0,94,Esqu_50_pH3,0.164059066,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+2-Cyanoaniline (2-aminobenzonitrile),Nc1ccccc1C#N,1885-29-6 ,118,Esqu_50_pH3,0.030841852,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+2-fluoroaniline,Nc1ccccc1F,348-54-9,111,Esqu_50_pH3,0.016117534,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+2-hydroxyaniline (2-aminophenol),Nc1ccccc1O,95-55-6,109,Esqu_50_pH3,0.204832098,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+2-methoxyaniline,COc1ccccc1N,90-04-0,123,Esqu_50_pH3,0.573812098,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+2-methylaniline,Cc1ccccc1N,95-53-4,107,Esqu_50_pH3,0.296926584,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+2-nitroaniline,Nc1ccccc1[N+]([O-])=O,88-74-4,138,Esqu_50_pH3,0.068689428,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+3-aminoaniline,Nc1cccc(N)c1,108-45-2,108,Esqu_50_pH3,0.179157981,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+3-aminobenzoic acid,Nc1cccc(c1)C(O)=O,99-05-8,137,Esqu_50_pH3,0.332212661,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+3-aminopyridine,Nc1cccnc1,462-08-8,94,Esqu_50_pH3,0.149254231,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+3-Cyanoaniline (3-aminobenzonitrile),Nc1cccc(c1)C#N,2237-30-1,118,Esqu_50_pH3,0.194338298,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+3-fluoroaniline,Nc1cccc(F)c1,372-19-0,111,Esqu_50_pH3,0.18766099,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+3-hydroxyaniline (3-aminophenol),Nc1cccc(O)c1,591-27-5,109,Esqu_50_pH3,0.143529673,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+3-methoxyaniline,COc1cccc(N)c1,536-90-3,123,Esqu_50_pH3,0.579450372,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+3-methylaniline,Cc1cccc(N)c1,108-44-1,107,Esqu_50_pH3,0.426582642,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+3-nitroaniline,Nc1cccc(c1)[N+]([O-])=O,99-09-2,138,Esqu_50_pH3,0.289842118,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+4-aminoaniline,Nc1ccc(N)cc1,106-50-3,108,Esqu_50_pH3,0.13572361,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+4-aminobenzoic acid,Nc1ccc(cc1)C(O)=O,150-13-0,137,Esqu_50_pH3,0.357276187,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+4-aminopyridine,Nc1ccncc1,504-24-5,94,Esqu_50_pH3,0.184366474,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+4-chloroaniline (Summe beider Isotope),Nc1ccc(Cl)cc1,106-47-8,127,Esqu_50_pH3,0.106589312,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+4-Cyanoaniline (4-aminobenzonitrile),Nc1ccc(cc1)C#N,873-74-5,118,Esqu_50_pH3,0.085166934,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+4-fluoroaniline,Nc1ccc(F)cc1,371-40-4,111,Esqu_50_pH3,0.304552018,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+4-hydroxyaniline (4-aminophenol),Nc1ccc(O)cc1,123-30-8,109,Esqu_50_pH3,0.1411602,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+4-methoxyaniline,COc1ccc(N)cc1,104-94-9,123,Esqu_50_pH3,0.511160033,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+4-methylaniline,Cc1ccc(N)cc1,106-49-0,107,Esqu_50_pH3,0.447837702,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+4-nitroaniline,Nc1ccc(cc1)[N+]([O-])=O,100-01-6,138,Esqu_50_pH3,0.125183306,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+Aniline,Nc1ccccc1,62-53-3,93,Esqu_50_pH3,0.127368432,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+Pyridine,c1ccncc1,110-86-1,79,Esqu_50_pH3,0.035199261,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+sulfanilic acid,Nc1ccc(cc1)[S](O)(=O)=O,121-57-3,173,Esqu_50_pH3,0.013273674,"50%MeCN, pH = 3",50 uL/min,Bruker,ion trap
+2-aminoaniline,Nc1ccccc1N,95-54-5,108,Esqu_50_pH7,0.369061977,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+2-aminobenzoic acid (Summe -H2O),Nc1ccccc1C(O)=O,118-92-3,137,Esqu_50_pH7,0.094270279,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+2-aminopyridine,Nc1ccccn1,504-29-0,94,Esqu_50_pH7,0.447716117,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+2-Cyanoaniline (2-aminobenzonitrile),Nc1ccccc1C#N,1885-29-6 ,118,Esqu_50_pH7,0.147299222,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+2-fluoroaniline,Nc1ccccc1F,348-54-9,111,Esqu_50_pH7,0.001437139,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+2-hydroxyaniline (2-aminophenol),Nc1ccccc1O,95-55-6,109,Esqu_50_pH7,0.466239625,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+2-methoxyaniline,COc1ccccc1N,90-04-0,123,Esqu_50_pH7,0.613259997,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+2-methylaniline,Cc1ccccc1N,95-53-4,107,Esqu_50_pH7,0.141337269,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+2-nitroaniline,Nc1ccccc1[N+]([O-])=O,88-74-4,138,Esqu_50_pH7,0.01093889,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+3-aminoaniline,Nc1cccc(N)c1,108-45-2,108,Esqu_50_pH7,0.521341459,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+3-aminobenzoic acid,Nc1cccc(c1)C(O)=O,99-05-8,137,Esqu_50_pH7,0.192304066,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+3-aminopyridine,Nc1cccnc1,462-08-8,94,Esqu_50_pH7,0.432979503,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+3-Cyanoaniline (3-aminobenzonitrile),Nc1cccc(c1)C#N,2237-30-1,118,Esqu_50_pH7,0.307876433,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+3-fluoroaniline,Nc1cccc(F)c1,372-19-0,111,Esqu_50_pH7,0.013685068,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+3-hydroxyaniline (3-aminophenol),Nc1cccc(O)c1,591-27-5,109,Esqu_50_pH7,0.388419145,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+3-methoxyaniline,COc1cccc(N)c1,536-90-3,123,Esqu_50_pH7,0.858844029,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+3-methylaniline,Cc1cccc(N)c1,108-44-1,107,Esqu_50_pH7,0.310195297,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+3-nitroaniline,Nc1cccc(c1)[N+]([O-])=O,99-09-2,138,Esqu_50_pH7,0.152924466,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+4-aminoaniline,Nc1ccc(N)cc1,106-50-3,108,Esqu_50_pH7,0.601936463,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+4-aminobenzoic acid,Nc1ccc(cc1)C(O)=O,150-13-0,137,Esqu_50_pH7,0.275721056,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+4-aminopyridine,Nc1ccncc1,504-24-5,94,Esqu_50_pH7,0.53710494,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+4-chloroaniline (Summe beider Isotope),Nc1ccc(Cl)cc1,106-47-8,127,Esqu_50_pH7,0.205912465,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+4-Cyanoaniline (4-aminobenzonitrile),Nc1ccc(cc1)C#N,873-74-5,118,Esqu_50_pH7,0.191139479,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+4-fluoroaniline,Nc1ccc(F)cc1,371-40-4,111,Esqu_50_pH7,0.179341041,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+4-hydroxyaniline (4-aminophenol),Nc1ccc(O)cc1,123-30-8,109,Esqu_50_pH7,0.539418582,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+4-methoxyaniline,COc1ccc(N)cc1,104-94-9,123,Esqu_50_pH7,1,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+4-methylaniline,Cc1ccc(N)cc1,106-49-0,107,Esqu_50_pH7,0.392528812,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+4-nitroaniline,Nc1ccc(cc1)[N+]([O-])=O,100-01-6,138,Esqu_50_pH7,0.080886971,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+Aniline,Nc1ccccc1,62-53-3,93,Esqu_50_pH7,0.092103892,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+Pyridine,c1ccncc1,110-86-1,79,Esqu_50_pH7,0.003258791,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap
+sulfanilic acid,Nc1ccc(cc1)[S](O)(=O)=O,121-57-3,173,Esqu_50_pH7,0.003142427,"50%MeCN, pH = 7",50 uL/min,Bruker,ion trap

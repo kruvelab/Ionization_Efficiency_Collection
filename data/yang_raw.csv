@@ -1,0 +1,18 @@
+compound_name,SMILES,RF
+NA-NHS-Glu derivate,O=C(NC(CCC(=O)O)C(=O)O)c1ccc[nH+]c1,1.00
+C2-NA-NHS-Glu derivate,O=C(NC(CCC(=O)O)C(=O)O)c1ccc[n+](CC)c1,1.60
+C3-NA-NHS-Glu derivate,O=C(NC(CCC(=O)O)C(=O)O)c1ccc[n+](CCC)c1,3.10
+C4-NA-NHS-Glu derivate,O=C(NC(CCC(=O)O)C(=O)O)c1ccc[n+](CCCC)c1,3.30
+BA-13C6-NHSS Glu derivate,O=C(NC(CCC(=O)O)C(=O)O)[13c]1[13cH][13cH][13cH][13cH][13cH]1,0.11
+NA-NHS-Lys derivate,O=C(NC(CCCCN)C(=O)O)c1ccc[nH+]c1,1.00
+C1-NA-NHS-Lys derivate,C[n+]1cccc(c1)C(=O)NC(CCCCN)C(=O)O,2.30
+C2-NA-NHS-Lys derivate,O=C(NC(CCCCN)C(=O)O)c1ccc[n+](CC)c1,3.30
+C3-NA-NHS-Lys derivate,O=C(NC(CCCCN)C(=O)O)c1ccc[n+](CCC)c1,5.00
+C4-NA-NHS-Lys derivate,O=C(NC(CCCCN)C(=O)O)c1ccc[n+](CCCC)c1,6.30
+BA-13C6-NHSS Lys derivate,O=C(NC(CCCCN)C(=O)O)[13c]1[13cH][13cH][13cH][13cH][13cH]1,0.96
+NA-NHS-Trp derivate,O=C(O)C(NC(=O)c1ccc[nH+]c1)Cc1c[NH]c2ccccc21,1.00
+C1-NA-NHS-Trp derivate,C[n+]1cccc(c1)C(=O)NC(Cc1c[NH]c2ccccc21)C(=O)O,2.50
+C2-NA-NHS-Trp derivate,CC[n+]1cccc(c1)C(=O)NC(Cc1c[NH]c2ccccc21)C(=O)O,3.90
+C3-NA-NHS-Trp derivate,CCC[n+]1cccc(c1)C(=O)NC(Cc1c[NH]c2ccccc21)C(=O)O,4.80
+C4-NA-NHS-Trp derivate,CCCC[n+]1cccc(c1)C(=O)NC(Cc1c[NH]c2ccccc21)C(=O)O,12.50
+BA-13C6-NHSS Trp derivate,O=C(O)C(NC(=O)[13c]1[13cH][13cH][13cH][13cH][13cH]1)Cc1c[NH]c2ccccc21,0.15

@@ -1,0 +1,9 @@
+compound_name,SMILES,MW,slope,ret_time
+Perfluorobutane sulfonate,CCCC[S](=O)(=O)OF,338.19,0.324,3.7
+Perfluorohexane sulfonate,CCCCCC[S](=O)(=O)OF,422.1,0.464,5.3
+Perfluorooctane sulfonate,CCCCCCCC[S](=O)(=O)OF,522.11,0.461,6.1
+Perfluorodecane sulfonate,CCCCCCCCCC[S](=O)(=O)OF,622.13,0.560,6.6
+6:2 chlorinated polyfluoroalkyl ether sulfonate,FC(F)(C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(Cl)(F)F)S(=O)(=O)O,570.67,0.325441453,6.2
+"1H, 1H, 2H, 2H-perfluorohexane sulfonate",FC(F)(CCS([O-])(=O)=O)C(F)(F)C(F)(F)C(F)(F)F,350.13,0.400696186,4.6
+"1H, 1H, 2H, 2H-perfluorooctane sulfonate",FC(F)(CCS([O-])(=O)=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,450.15,0.414670471,5.7
+"1H, 1H, 2H, 2H-perfluorodecane sulfonate",FC(F)(CCS([O-])(=O)=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,550.16,0.148276554,6.4

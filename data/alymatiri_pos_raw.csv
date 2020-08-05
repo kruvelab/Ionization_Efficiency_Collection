@@ -1,0 +1,31 @@
+compound_name,SMILES,MW,peak_area,system
+Methyl testosterone ,C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C,302.45,3.60E+07,MeOH/H2O (pH = 10) 50/50
+Ethinylestradiol ,C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1CC[C@@]2(O)C#C,296.4,1.00E+06,MeOH/H2O (pH = 10) 50/50
+Hydroxy progesterone ,CC(=O)C1(CCC2C1(CCC3C2CCC4=CC(=O)CCC34C)C)O,330.46,4.40E+07,MeOH/H2O (pH = 10) 50/50
+"17-Methyl-5-androstane-3b,17b-diol ",C[C@@]1(O)CCC2C3CC[C@@H]4C[C@@H](O)CCC4(C)C3CCC21C,306.48,2.00E+06,MeOH/H2O (pH = 10) 50/50
+Androstane ,C[C@@]12CCC[C@H]1[C@@H]3CCC4CCCC[C@]4(C)[C@H]3CC2,260.46,3.50E+06,MeOH/H2O (pH = 10) 50/50
+Beclomethasone dipropionate ,CCC(=O)OCC(=O)[C@@]1(OC(=O)CC)[C@@H](C)C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(Cl)[C@@H](O)C[C@]12C,521.04,1.70E+07,MeOH/H2O (pH = 10) 50/50
+Betamethasone valerate ,CCCCC(=O)O[C@@]1([C@@H](C)C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]12C)C(=O)CO,476.58,1.75E+07,MeOH/H2O (pH = 10) 50/50
+Clostebol acetate ,CC(=O)O[C@H]1CC[C@H]2[C@@H]3CCC4=C(Cl)C(=O)CC[C@]4(C)[C@H]3CC[C@]12C,364.91,4.60E+07,MeOH/H2O (pH = 10) 50/50
+Cortisone acetate ,CC(=O)OCC(=O)[C@@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3C(=O)C[C@]12C,402.48,1.70E+07,MeOH/H2O (pH = 10) 50/50
+Dehydroiso androsterone ,C[C@]12CC[C@H]3[C@H]([C@@H]1CCC2=O)CC=C4[C@@]3(CC[C@@H](C4)O)C,288.42,1.00E+06,MeOH/H2O (pH = 10) 50/50
+Digitoxin ,C[C@H]1O[C@H](C[C@H](O)[C@@H]1O)O[C@H]2[C@@H](O)C[C@@H](O[C@@H]2C)O[C@H]3[C@@H](O)C[C@@H](O[C@@H]3C)O[C@H]4CC[C@@]5(C)[C@H](CC[C@@H]6[C@@H]5CC[C@]7(C)[C@@H](CC[C@]67O)C8=CC(=O)OC8)C4,764.94,3.50E+06,MeOH/H2O (pH = 10) 50/50
+Estrone ,C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1CCC2=O,270.37,2.50E+06,MeOH/H2O (pH = 10) 50/50
+Ethisterone ,CC12CCC(=O)C=C1CCC3C2CCC4(C)C3CCC4(O)C#C,312.45,4.50E+07,MeOH/H2O (pH = 10) 50/50
+Fludrocortisone acetate ,CC(=O)OCC(=O)[C@@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@@]3(F)[C@@H](O)C[C@]12C,422.49,2.40E+07,MeOH/H2O (pH = 10) 50/50
+Fluorometholone ,C[C@H]1C[C@H]2[C@@H]3CC[C@](O)(C(C)=O)[C@@]3(C)C[C@H](O)[C@]2(F)[C@@]4(C)C=CC(=O)C=C14,376.46,2.00E+07,MeOH/H2O (pH = 10) 50/50
+Formebolone ,C[C@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)C(=C[C@]4(C)[C@H]3[C@H](O)C[C@]12C)C=O,344.45,2.70E+07,MeOH/H2O (pH = 10) 50/50
+Hydrocortisone ,C[C@]12CCC(=O)C=C1CC[C@H]3[C@@H]4CC[C@](O)(C(=O)CO)[C@@]4(C)C[C@H](O)[C@H]23,362.46,2.10E+07,MeOH/H2O (pH = 10) 50/50
+Hydrocortisone acetate ,CC(=O)OCC(=O)[C@@]1(O)CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3[C@@H](O)C[C@]12C,404.5,2.20E+07,MeOH/H2O (pH = 10) 50/50
+Medroxyprogesterone acetate ,C[C@H]1C[C@@H]2[C@H](CC[C@@]3(C)[C@H]2CC[C@]3(OC(C)=O)C(C)=O)[C@@]4(C)CCC(=O)C=C14,386.52,4.25E+07,MeOH/H2O (pH = 10) 50/50
+Norethisterone ,C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@H]34)[C@@H]1CC[C@@]2(O)C#C,298.42,4.75E+07,MeOH/H2O (pH = 10) 50/50
+Prednisolone ,C[C@]12C[C@H](O)[C@H]3[C@@H](CCC4=CC(=O)C=C[C@]34C)[C@@H]1CC[C@]2(O)C(=O)CO,360.44,1.45E+07,MeOH/H2O (pH = 10) 50/50
+Prednisone ,C[C@]12CC(=O)[C@H]3[C@@H](CCC4=CC(=O)C=C[C@]34C)[C@@H]1CC[C@]2(O)C(=O)CO,358.43,3.00E+07,MeOH/H2O (pH = 10) 50/50
+Progesterone ,CC(=O)[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C,314.46,6.10E+07,MeOH/H2O (pH = 10) 50/50
+Proscillaridin ,CC1OC(O[C@H]2CC[C@]3(C)[C@H]4CC[C@]5(C)[C@H](CC[C@]5(O)[C@@H]4CCC3=C2)C6=COC(=O)C=C6)C(O)C(O)C1O,530.65,1.25E+07,MeOH/H2O (pH = 10) 50/50
+Spironolactone ,CC(=O)S[C@@H]1CC2=CC(=O)CC[C@]2(C)[C@H]3CC[C@@]4(C)[C@@H](CC[C@@]45CCC(=O)O5)[C@H]13,416.57,2.90E+07,MeOH/H2O (pH = 10) 50/50
+Stanolone ,C[C@]12CC[C@H]3[C@@H](CC[C@H]4CC(=O)CC[C@]34C)[C@@H]1CC[C@@H]2O,290.44,2.50E+06,MeOH/H2O (pH = 10) 50/50
+Testosterone ,C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@]34C)[C@@H]1CC[C@@H]2O,288.42,4.00E+07,MeOH/H2O (pH = 10) 50/50
+Testosterone acetate ,CC(=O)O[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C,330.46,5.40E+07,MeOH/H2O (pH = 10) 50/50
+Testosterone propionate ,CCC(=O)O[C@H]1CC[C@H]2[C@@H]3CCC4=CC(=O)CC[C@]4(C)[C@H]3CC[C@]12C,344.49,5.55E+07,MeOH/H2O (pH = 10) 50/50
+Androsterone ,C[C@]12CC[C@@H](O)C[C@@H]1CC[C@@H]3[C@@H]2CC[C@@]4(C)[C@H]3CCC4=O,290.44,3.50E+06,MeOH/H2O (pH = 10) 50/50

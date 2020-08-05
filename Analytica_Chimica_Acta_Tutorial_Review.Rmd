@@ -1452,7 +1452,7 @@ knitr::kable(for_table,
 # descriptors_PaDEL <- padel_batch(padel_path = padel_path,
 #                                  smiles_vec = SMILES_set$SMILES)
 # write_csv(descriptors_PaDEL,"data/descriptors.csv")
-descriptors_PaDEL <- read_csv("data/descriptors.csv")
+# descriptors_PaDEL <- read_csv("data/descriptors.csv")
 ```
 
 ```{r, echo=FALSE, eval=F}
@@ -1472,7 +1472,8 @@ nr_group <- entire_dataset %>% distinct(publication) %>% dim() %>% first()
 
 
 ```{r, echo=FALSE, message=F, warning= F}
-norman <- read_csv("data/susdat_2020-06-18-123341.csv", col_types = cols())
+#norman <- read_csv("data/susdat_2020-06-18-123341.csv", col_types = cols()) #the file is too large to save it to git
+# please find it : https://www.norman-network.com/?q=suspect-list-exchange
 norman_max_logP <- norman$alogp_ChemSpider %>% max(na.rm = T)
 norman_min_logP <- norman$alogp_ChemSpider %>% min(na.rm = T)
 ```

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<operatorHelp lang="en_EN">
+<!--GROUPS-->
+    <group>
+        <key>chemistry</key>
+        <name>Chemistry</name>
+    </group>
+    <group>
+        <key>chemistry.import</key>
+        <name>Import</name>
+    </group>
+    <group>
+        <key>chemistry.export</key>
+        <name>Export</name>
+    </group>
+    <group>
+        <key>chemistry.basic_information</key>
+        <name>Basic Information</name>
+    </group>
+    <group>
+        <key>chemistry.compound_transformation</key>
+        <name>Compound Transformation</name>
+    </group>
+    <group>
+        <key>chemistry.descriptor</key>
+        <name>Descriptor</name>
+    </group>
+
+<!--CHEMISTRY-->
+    <!--Import-->
+    <operator>
+        <name>Read Compounds</name>
+        <synopsis>Read compounds from molecular files.</synopsis>
+        <help>This operator reads compounds from molecular files. CDK library is
+        used to read the molecular files so most file formats (e.g. MDL mol/sdf,
+        PDB, SMILES, etc) are supported. The operator can read compounds from a
+        single file or from all supported files in one or several directories.
+        The operator can also read just a single compound from a file containing
+        multiple compounds. After reading the compounds, basic information like
+        name of compound, number of atoms, bonds, fragments and hydrogen atoms
+        are computed and displayed.</help>
+        <key>read_compound</key>
+        <shortName>Read Compounds</shortName>
+    </operator>
+
+    <!--Export-->
+    <operator>
+        <name>Write Compounds</name>
+        <synopsis>Write compounds to molecular file(s).</synopsis>
+        <help>This operator writes compounds to one or several
+        molecular files. CDK library is used to write the molecular files.
+        MDL mol/sdf, PDB, SMILES and Sybyl mol2 molecular formats are supported.
+        </help>
+        <key>write_compound</key>
+        <shortName>Write Compounds</shortName>
+    </operator>
+
+    <!--Basic Information-->
+    <operator>
+        <name>Count Substructure</name>
+        <synopsis>Count number of times that a substructure is present in a molecule.</synopsis>
+        <help>This operator counts the number of times that a substructure is present in a molecule.
+        Aromaticity should be detected using the Detect Aromaticity operator and
+        hydrogen atoms should be added using the Add Hydrogens operator before
+        using this operator.</help>
+        <key>count_substructure</key>
+        <shortName>Count Substructure</shortName>
+    </operator>
+    <operator>
+        <name>Detect Dimensionality</name>
+        <synopsis>Detect dimensionality in a molecule.</synopsis>
+        <help>This operator computes the mean, minimum and maximum x, y, z
+        coordinates of a molecule and detects its dimensionality (0D, 1D, 2D or 3D).</help>
+        <key>detect_dimensionality</key>
+        <shortName>Detect Dimensionality</shortName>
+    </operator>
+    <operator>
+        <name>Get SMILES</name>
+        <synopsis>Get SMILES structure for a molecule.</synopsis>
+        <help>This operator shows the SMILES structure for a molecule.</help>
+        <key>get_smiles</key>
+        <shortName>Get SMILES</shortName>
+    </operator>
+
+    <!--Compound Transformation-->
+    <operator>
+        <name>Add Hydrogens</name>
+        <synopsis>Add hydrogen atoms.</synopsis>
+        <help>This operator adds hydrogen atoms based on atom type definitions.</help>
+        <key>add_hydrogen</key>
+        <shortName>Add Hydrogens</shortName>
+    </operator>
+    <operator>
+        <name>Convert to 3D</name>
+        <synopsis>Convert a molecule to 3D.</synopsis>
+        <help>This operator converts a molecule to 3D coordinates.
+        Aromaticity should be detected using the Detect Aromaticity operator and
+        hydrogen atoms should be added using the Add Hydrogens operator before
+        using this operator.</help>
+        <key>convert_3d</key>
+        <shortName>Convert to 3D</shortName>
+    </operator>    
+    <operator>
+        <name>Standardize</name>
+        <synopsis>Standardize a molecule.</synopsis>
+        <help>This operator standardizes a molecule by removing salts, detect aromaticity, standardize tautomers and standardize nitro groups.</help>
+        <key>standardize</key>
+        <shortName>Standardize</shortName>
+    </operator>
+    <operator>
+        <name>Rename Compound</name>
+        <synopsis>Rename a compound.</synopsis>
+        <help>This operator is used to rename a compound.</help>
+        <key>rename_compound</key>
+        <shortName>Rename Compound</shortName>
+    </operator>
+
+    <!--Descriptor-->
+    <operator>
+        <name>Calculate Descriptors</name>
+        <synopsis>Calculate molecular descriptors.</synopsis>
+        <help>This is the RapidMiner operator for PaDEL-Descriptor. It uses the
+        same descriptor calculation engine as PaDEL-Descriptor.</help>
+        <key>calculate_descriptor</key>
+        <shortName>Calculate Descriptors</shortName>
+    </operator>
+</operatorHelp>

@@ -1,0 +1,174 @@
+SMILES,compound_name,Solvent,SLOPE
+Clc1ccc(NC(=O)Nc2ccc(Cl)c(Cl)c2)cc1,"3,4,4'-trichlorocarbanilide",Acetone,84192200
+OC1=CC(=CC(O)(C1)C(O)=O)O,"1,3,5-trihydroxybenzoic acid",acetone,12799429
+OC(=O)c1ccc(O)c(O)c1,"3,4-dihydroxybenzoic acid",acetone,54585109
+OC(=O)c1ccc(O)cc1,4-hydroxybenzoic acid,acetone,12794922
+Oc1ccc(cc1)C#N,4-hydroxybenzoic acid nitrile,acetone,953289532
+OC(=O)c1ccccc1,benzoic acid,acetone,37568516
+OC(=O)c1cc(O)c(O)c(O)c1,gallic acid,acetone,211684505
+OC(=O)c1cccc2ccccc12,naphthoic acid,Acetone,32914952
+OC(=O)c1ccc2ccc3cccc4ccc1c2c34,pyrenecarboxylic acid,Acetone,73074993
+OC(=O)COc1ccc(Cl)cc1Cl,"2,4-dichlorophenoxyacetic acid",Acetone,17429290
+CCCCCCS(O)(=O)=O,sodium-1-hexanesulfonate,Acetone,3307832325
+OC(=O)/C=C/C(O)=O,fumaric acid,Acetone,14040779
+CC(C)Cc1ccc(cc1)C(C)C(O)=O,ibuprofen,Acetone,1715534
+CCCCCC(O)=O,hexanoic acid,Acetone,14820936
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,undecafluorohexanoic acid,Acetone,37825191
+CCCCCCCC(O)=O,octanoic acid,Acetone,20069471
+CCCCCCCCCC(O)=O,decanoic acid,Acetone,23662136
+CCCCCCCCCCCC(O)=O,dodecanoic acid,Acetone,73311657
+CCCCCCCCCCCCCC(O)=O,tetradecanoic acid,Acetone,94084137
+CCCCCCCCCCCCCCCC(O)=O,hexadecanoic acid,Acetone,142679244
+CCCCCCCCCCCCCCCCCC(O)=O,stearic acid,Acetone,243340561
+Oc1cccc(c1)C(F)(F)F,3-(trifluoromethyl)phenol,Acetone,206162704
+Oc1ccc(Cl)cc1,4-chlorophenol,Acetone,40453192
+Oc1ccc(cc1)[N+]([O-])=O,4-nitrophenol,acetone,156860418
+Oc1ccc(O)cc1,hydroquinone,acetone,671108
+Cc1ccc(O)cc1,p-cresol,acetone,4166382
+Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl,irgasan,Acetone,5403811
+CC(=O)Nc1ccc(O)cc1,4-acetamidophenol,acetone,22771683
+Oc1c(Br)cc(cc1Br)C#N,bromoxynil,Acetone,573011876
+CNc1ccccc1O,2-methylamino phenol,acetone,11922440
+CN(C)c1cccc(O)c1,3-dimethylamino phenol,acetone,3453622
+Nc1ccc(O)cc1,4-aminophenol,acetone,831890
+O=C1NC(=O)NC(=O)N1,cyanuric acid,Acetone,16499480
+O[C@H]1Cc2c(O)cc(O)cc2O[C@@H]1c3ccc(O)c(O)c3,catechin,acetone,130740097
+Oc1ccc(cc1)C2=C(O)C(=O)c3c(O)cc(O)cc3O2,kaempferol,Acetone,812188238
+Nc1ccccc1,aniline,Acetone,20
+[nH]1c2ccccc2c3ccccc13,carbazole,Acetone,59204680
+C[C@]12CC[C@H]3[C@@H](CCC4=C3C=CC(O)=C4)[C@@H]1CC[C@@H]2O,17-?-estradiol,Acetone,44684007
+CC(C)CCC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC=C4C[C@@H](O)CC[C@]4(C)[C@H]3CC[C@]12C,cholesterol,Acetone,3723755
+C[C@H](CCC(O)=O)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C,cholic acid ,Acetone,78606531
+CC(=O)Oc1ccc2C3CC[C@]4(C)[C@@H](O)CCC4C3CCc2c1,estradiol acetate,Acetone,18954081
+C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1C[C@@H](O)[C@@H]2O,estriol,Acetone,31663632
+C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1CCC2=O,estrone,Acetone,53204315
+COc1ccc2[C@H]3CC[C@@]4(C)[C@@H](CC[C@@]4(O)C#C)[C@@H]3CCc2c1,mestranol,Acetone,797216
+C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@H]34)[C@@H]1CC[C@@]2(O)C#C,19-norethindrone,Acetone,2121940
+Clc1ccc(NC(=O)Nc2ccc(Cl)c(Cl)c2)cc1,"3,4,4'-trichlorocarbanilide",ACN,22830041
+OC1=CC(=CC(O)(C1)C(O)=O)O,"1,3,5-trihydroxybenzoic acid",ACN,25012310
+OC(=O)c1ccc(O)c(O)c1,"3,4-dihydroxybenzoic acid",ACN,122125774
+OC(=O)c1ccc(O)cc1,4-hydroxybenzoic acid,ACN,22370694
+Oc1ccc(cc1)C#N,4-hydroxybenzoic acid nitrile,ACN,1034618774
+OC(=O)c1ccccc1,benzoic acid,ACN,84387667
+OC(=O)c1cc(O)c(O)c(O)c1,gallic acid,ACN,269279689
+OC(=O)c1cccc2ccccc12,naphthoic acid,ACN,51540725
+OC(=O)c1ccc2ccc3cccc4ccc1c2c34,pyrenecarboxylic acid,ACN,377079256
+OC(=O)COc1ccc(Cl)cc1Cl,"2,4-dichlorophenoxyacetic acid",ACN,32395668
+CCCCCCS(O)(=O)=O,sodium-1-hexanesulfonate,ACN,2196699690
+OC(=O)/C=C/C(O)=O,fumaric acid,ACN,10904348
+CCCCCC(O)=O,hexanoic acid,ACN,18858896
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,undecafluorohexanoic acid,ACN,32278489
+CCCCCCCC(O)=O,octanoic acid,ACN,25113631
+CCCCCCCCCC(O)=O,decanoic acid,ACN,61154187
+CCCCCCCCCCCC(O)=O,dodecanoic acid,ACN,133605180
+CCCCCCCCCCCCCC(O)=O,tetradecanoic acid,ACN,219512252
+CCCCCCCCCCCCCCCC(O)=O,hexadecanoic acid,ACN,277760538
+CCCCCCCCCCCCCCCCCC(O)=O,stearic acid,ACN,423008841
+Oc1cccc(c1)C(F)(F)F,3-(trifluoromethyl)phenol,ACN,703929235
+Oc1ccc(Cl)cc1,4-chlorophenol,ACN,125281118
+Oc1ccc(cc1)[N+]([O-])=O,4-nitrophenol,ACN,472144993
+Oc1ccc(O)cc1,hydroquinone,ACN,4818516
+Cc1ccc(O)cc1,p-cresol,ACN,935931
+Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl,irgasan,ACN,9957859
+CC(=O)Nc1ccc(O)cc1,4-acetamidophenol,ACN,25703826
+Oc1c(Br)cc(cc1Br)C#N,bromoxynil,ACN,427932213
+CNc1ccccc1O,2-methylamino phenol,ACN,25837324
+CN(C)c1cccc(O)c1,3-dimethylamino phenol,ACN,11362609
+Nc1ccc(O)cc1,4-aminophenol,ACN,1758858
+O=C1NC(=O)NC(=O)N1,cyanuric acid,ACN,36262906
+O[C@H]1Cc2c(O)cc(O)cc2O[C@@H]1c3ccc(O)c(O)c3,catechin,ACN,94944444
+Oc1ccc(cc1)C2=C(O)C(=O)c3c(O)cc(O)cc3O2,kaempferol,ACN,703408470
+[nH]1c2ccccc2c3ccccc13,carbazole,ACN,36539370
+C[C@]12CC[C@H]3[C@@H](CCC4=C3C=CC(O)=C4)[C@@H]1CC[C@@H]2O,17-?-estradiol,ACN,386881363
+CC(C)CCC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC=C4C[C@@H](O)CC[C@]4(C)[C@H]3CC[C@]12C,cholesterol,ACN,3786480
+C[C@H](CCC(O)=O)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C,cholic acid ,ACN,71387238
+CC(=O)Oc1ccc2C3CC[C@]4(C)[C@@H](O)CCC4C3CCc2c1,estradiol acetate,ACN,262066866
+C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1C[C@@H](O)[C@@H]2O,estriol,ACN,111047455
+C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1CCC2=O,estrone,ACN,527973301
+COc1ccc2[C@H]3CC[C@@]4(C)[C@@H](CC[C@@]4(O)C#C)[C@@H]3CCc2c1,mestranol,ACN,603693
+Clc1ccc(NC(=O)Nc2ccc(Cl)c(Cl)c2)cc1,"3,4,4'-trichlorocarbanilide",H2O,103770684
+OC1=CC(=CC(O)(C1)C(O)=O)O,"1,3,5-trihydroxybenzoic acid",H2O,84949120
+OC(=O)c1ccc(O)cc1,4-hydroxybenzoic acid,H2O,34285864
+Oc1ccc(cc1)C#N,4-hydroxybenzoic acid nitrile,H2O,2204633653
+OC(=O)c1ccccc1,benzoic acid,H2O,41033430
+OC(=O)c1cc(O)c(O)c(O)c1,gallic acid,H2O,54026
+OC(=O)c1cccc2ccccc12,naphthoic acid,H2O,106697413
+OC(=O)c1ccc2ccc3cccc4ccc1c2c34,pyrenecarboxylic acid,H2O,99201
+OC(=O)COc1ccc(Cl)cc1Cl,"2,4-dichlorophenoxyacetic acid",H2O,56129804
+OC[C@H]1O[C@H](OC[C@H]2O[C@H](O[C@]3(CO)O[C@H](CO)[C@@H](O)[C@@H]3O)[C@H](O)[C@@H](O)[C@@H]2O)[C@H](O)[C@@H](O)[C@H]1O,raffinose,H2O,412359735
+CCCCCCS(O)(=O)=O,sodium-1-hexanesulfonate,H2O,2185373778
+OC(=O)/C=C/C(O)=O,fumaric acid,H2O,7759314
+CC(C)Cc1ccc(cc1)C(C)C(O)=O,ibuprofen,H2O,746324
+CCCCCC(O)=O,hexanoic acid,H2O,15284894
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,undecafluorohexanoic acid,H2O,65619914
+CCCCCCCC(O)=O,octanoic acid,H2O,160604502
+CCCCCCCCCC(O)=O,decanoic acid,H2O,1324629418
+CCCCCCCCCCCC(O)=O,dodecanoic acid,H2O,5253650552
+CCCCCCCCCCCCCC(O)=O,tetradecanoic acid,H2O,1845488136
+CCCCCCCCCCCCCCCC(O)=O,hexadecanoic acid,H2O,454075671
+CCCCCCCCCCCCCCCCCC(O)=O,stearic acid,H2O,259363882
+Oc1cccc(c1)C(F)(F)F,3-(trifluoromethyl)phenol,H2O,249302931
+Oc1ccc(cc1)[N+]([O-])=O,4-nitrophenol,H2O,743005446
+Oc1ccc(O)cc1,hydroquinone,H2O,11718441
+Cc1ccc(O)cc1,p-cresol,H2O,8231554
+Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl,irgasan,H2O,22727231
+Oc1c(Br)cc(cc1Br)C#N,bromoxynil,H2O,720443706
+CNc1ccccc1O,2-methylamino phenol,H2O,112119360
+CN(C)c1cccc(O)c1,3-dimethylamino phenol,H2O,60998013
+Nc1ccc(O)cc1,4-aminophenol,H2O,19850546
+O=C1NC(=O)NC(=O)N1,cyanuric acid,H2O,12951103
+O[C@H]1Cc2c(O)cc(O)cc2O[C@@H]1c3ccc(O)c(O)c3,catechin,H2O,1129485326
+Oc1ccc(cc1)C2=C(O)C(=O)c3c(O)cc(O)cc3O2,kaempferol,H2O,5984199633
+Nc1ccccc1,aniline,H2O,6995
+[nH]1c2ccccc2c3ccccc13,carbazole,H2O,766371973
+C[C@]12CC[C@H]3[C@@H](CCC4=C3C=CC(O)=C4)[C@@H]1CC[C@@H]2O,17-?-estradiol,H2O,677238231
+CC(C)CCC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC=C4C[C@@H](O)CC[C@]4(C)[C@H]3CC[C@]12C,cholesterol,H2O,4757060
+C[C@H](CCC(O)=O)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C,cholic acid ,H2O,12582942144
+CC(=O)Oc1ccc2C3CC[C@]4(C)[C@@H](O)CCC4C3CCc2c1,estradiol acetate,H2O,1261794933
+C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1C[C@@H](O)[C@@H]2O,estriol,H2O,275770798
+C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1CCC2=O,estrone,H2O,1018367153
+COc1ccc2[C@H]3CC[C@@]4(C)[C@@H](CC[C@@]4(O)C#C)[C@@H]3CCc2c1,mestranol,H2O,2125983
+C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@H]34)[C@@H]1CC[C@@]2(O)C#C,19-norethindrone,H2O,31135877
+Clc1ccc(NC(=O)Nc2ccc(Cl)c(Cl)c2)cc1,"3,4,4'-trichlorocarbanilide",MeOH,165047500
+OC1=CC(=CC(O)(C1)C(O)=O)O,"1,3,5-trihydroxybenzoic acid",MeOH,126900941
+OC(=O)c1ccc(O)c(O)c1,"3,4-hydroxybenzoic acid",MeOH,136071654
+OC(=O)c1ccc(O)cc1,4-hydroxybenzoic acid,MeOH,87365186
+Oc1ccc(cc1)C#N,4-hydroxybenzoic acid nitrile,MeOH,1854460239
+OC(=O)c1ccccc1,benzoic acid,MeOH,152751716
+OC(=O)c1cc(O)c(O)c(O)c1,gallic acid,MeOH,499436807
+OC(=O)c1cccc2ccccc12,naphthoic acid,MeOH,227797479
+OC(=O)c1ccc2ccc3cccc4ccc1c2c34,pyrenecarboxylic acid,MeOH,424281997
+OC(=O)COc1ccc(Cl)cc1Cl,"2,4-dichlorophenoxyacetic acid",MeOH,45747343
+OC[C@H]1O[C@H](OC[C@H]2O[C@H](O[C@]3(CO)O[C@H](CO)[C@@H](O)[C@@H]3O)[C@H](O)[C@@H](O)[C@@H]2O)[C@H](O)[C@@H](O)[C@H]1O,raffinose,MeOH,1691319842
+CCCCCCS(O)(=O)=O,sodium-1-hexanesulfonate,MeOH,2527639835
+OC(=O)/C=C/C(O)=O,fumaric acid,MeOH,24744538
+CC(C)Cc1ccc(cc1)C(C)C(O)=O,ibuprofen,MeOH,1576268
+CCCCCC(O)=O,hexanoic acid,MeOH,46911655
+OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,undecafluorohexanoic acid,MeOH,60973526
+CCCCCCCC(O)=O,octanoic acid,MeOH,88106240
+CCCCCCCCCC(O)=O,decanoic acid,MeOH,368252860
+CCCCCCCCCCCC(O)=O,dodecanoic acid,MeOH,801532462
+CCCCCCCCCCCCCC(O)=O,tetradecanoic acid,MeOH,1286611735
+CCCCCCCCCCCCCCCC(O)=O,hexadecanoic acid,MeOH,1325649449
+CCCCCCCCCCCCCCCCCC(O)=O,stearic acid,MeOH,1647669817
+Oc1cccc(c1)C(F)(F)F,3-(trifluoromethyl)phenol,MeOH,2509772266
+Oc1ccc(cc1)[N+]([O-])=O,4-nitrophenol,MeOH,1337843343
+Oc1ccc(O)cc1,hydroquinone,MeOH,11482288
+Cc1ccc(O)cc1,p-cresol,MeOH,2046725331
+Oc1cc(Cl)ccc1Oc2ccc(Cl)cc2Cl,irgasan,MeOH,37788212
+Oc1c(Br)cc(cc1Br)C#N,bromoxynil,MeOH,995597728
+CNc1ccccc1O,2-methylamino phenol,MeOH,91710881
+CN(C)c1cccc(O)c1,3-dimethylamino phenol,MeOH,60162982
+Nc1ccc(O)cc1,4-aminophenol,MeOH,42617264
+O=C1NC(=O)NC(=O)N1,cyanuric acid,MeOH,46478549
+O[C@H]1Cc2c(O)cc(O)cc2O[C@@H]1c3ccc(O)c(O)c3,catechin,MeOH,1394466241
+Oc1ccc(cc1)C2=C(O)C(=O)c3c(O)cc(O)cc3O2,kaempferol,MeOH,5688148103
+[nH]1c2ccccc2c3ccccc13,carbazole,MeOH,1521092826
+C[C@]12CC[C@H]3[C@@H](CCC4=C3C=CC(O)=C4)[C@@H]1CC[C@@H]2O,17-?-estradiol,MeOH,1871247360
+CC(C)CCC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC=C4C[C@@H](O)CC[C@]4(C)[C@H]3CC[C@]12C,cholesterol,MeOH,7430338
+C[C@H](CCC(O)=O)[C@H]1CC[C@H]2[C@@H]3[C@H](O)C[C@@H]4C[C@H](O)CC[C@]4(C)[C@H]3C[C@H](O)[C@]12C,cholic acid ,MeOH,1191951214
+CC(=O)Oc1ccc2C3CC[C@]4(C)[C@@H](O)CCC4C3CCc2c1,estradiol acetate,MeOH,1553367760
+C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1C[C@@H](O)[C@@H]2O,estriol,MeOH,1097858024
+C[C@]12CC[C@H]3[C@@H](CCc4cc(O)ccc34)[C@@H]1CCC2=O,estrone,MeOH,1650323656
+COc1ccc2[C@H]3CC[C@@]4(C)[C@@H](CC[C@@]4(O)C#C)[C@@H]3CCc2c1,mestranol,MeOH,4183978
+C[C@]12CC[C@H]3[C@@H](CCC4=CC(=O)CC[C@H]34)[C@@H]1CC[C@@]2(O)C#C,19-norethindrone,MeOH,1227679

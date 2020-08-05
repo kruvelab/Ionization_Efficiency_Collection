@@ -1,0 +1,12 @@
+compound_name,SMILES,RRF,ret_time
+L-Threonine,C[C@@H](O)[C@H](N)C(O)=O,1.00,2.62
+Benzisothiazolone,O=s1ncc2ccccc12,3.79,10.58
+Abietic acid,CC(C)C1=CC2=CC[C@@H]3[C@](C)(CCC[C@@]3(C)C(O)=O)[C@H]2CC1,17.43,27.00
+sodium 2-dodecylbenzenesulfonate,CCCCCCCCCCCCc1ccccc1[S]([O-])(=O)=O,49.08,22.15
+Chlorothalonil,Clc1c(Cl)c(C#N)c(Cl)c(C#N)c1Cl,6.89,17.68
+Oleic acid,CCCCCCCC\C=C/CCCCCCCC(O)=O,9.70,28.88
+p-Chlorocresol,Cc1cc(Cl)ccc1O,3.69,16.62
+Pentachlorophenol,Oc1c(Cl)c(Cl)c(Cl)c(Cl)c1Cl,225.84,23.47
+Syringaldehyde,COc1cc(C=O)cc(OC)c1O,2.47,10.96
+"?,?-Trehalose",C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O[C@@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)O)O)O)O,3.64,2.66
+"Octadecyl 3,5-di-t-butyl-4-hydroxyhydrocinnamate",CCCCCCCCCCCCCCCCCCOC(=O)CCc1cc(c(O)c(c1)C(C)(C)C)C(C)(C)C,14.53,36.11
