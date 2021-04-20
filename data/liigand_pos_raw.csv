@@ -3141,9 +3141,9 @@ organic_modifier_percentage,organic_modifier,additive,additive_concentration_mM,
 80,MeCN,formic acid,5.3,2.7,saccharine,0.22017071,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,c1ccc2c(c1)C(=NS2(=O)=O)O
 80,MeCN,formic acid,5.3,2.7,ibuprofen,0.387850891,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC(C)Cc1ccc(cc1)C(C)C(=O)O
 80,MeCN,formic acid,5.3,2.7,mercaptobenzimidazole,1.488020326,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,c1ccc2c(c1)nc([nH]2)S
-80,MeCN,formic acid,5.3,2.7,brilliant green,4.790172156,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC[N+](=C1C=CC(=C(c2ccccc2)c2ccc(cc2)N(CC)CC)C=C1)CC.[O-]S(=O)(=O)O
-80,MeCN,formic acid,5.3,2.7,crystal violet,4.598593317,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,C[N+](=C1C=CC(=C(c2ccc(cc2)N(C)C)c2ccc(cc2)N(C)C)C=C1)C.[Cl-]
-80,MeCN,formic acid,5.3,2.7,malachite green,4.270668273,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,C[N+](=C1C=CC(=C(c2ccccc2)c2ccc(cc2)N(C)C)C=C1)C.[Cl-]
+80,MeCN,formic acid,5.3,2.7,brilliant green,4.790172156,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC[N+](=C1C=CC(=C(c2ccccc2)c2ccc(cc2)N(CC)CC)C=C1)CC
+80,MeCN,formic acid,5.3,2.7,crystal violet,4.598593317,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,C[N+](=C1C=CC(=C(c2ccc(cc2)N(C)C)c2ccc(cc2)N(C)C)C=C1)C
+80,MeCN,formic acid,5.3,2.7,malachite green,4.270668273,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,C[N+](=C1C=CC(=C(c2ccccc2)c2ccc(cc2)N(C)C)C=C1)C
 80,MeCN,formic acid,5.3,2.7,niacin,2.171033055,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,c1cc(cnc1)C(=O)O
 80,MeCN,formic acid,5.3,2.7,diclofenac,1.778536842,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,c1ccc(c(c1)CC(=O)O)Nc1c(cccc1Cl)Cl
 80,MeCN,formic acid,5.3,2.7,azithromycin,5.242513235,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC[C@@H]1[C@](C)([C@@H]([C@@H](C)N(C)C[C@H](C)C[C@](C)([C@@H](C(C)[C@@H]([C@@H](C)C(=O)O1)O[C@H]1C[C@](C)([C@H]([C@H](C)O1)O)OC)O[C@H]1[C@@H]([C@H](C[C@@H](C)O1)N(C)C)O)O)O)O
@@ -3155,7 +3155,7 @@ organic_modifier_percentage,organic_modifier,additive,additive_concentration_mM,
 80,MeCN,formic acid,5.3,2.7,ciprofloxacin,3.100917464,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,C1CC1n1cc(c(=O)c2cc(c(cc12)N1CCNCC1)F)C(=O)O
 80,MeCN,formic acid,5.3,2.7,sulfadimethoxine,2.741536143,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,COc1cc(nc(n1)OC)NS(=O)(=O)c1ccc(cc1)N
 80,MeCN,formic acid,5.3,2.7,carbamazepine,2.398854928,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,c1ccc2c(c1)C=Cc1ccccc1N2C(=N)O
-80,MeCN,formic acid,5.3,2.7,metformin,3.486978941,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CN(C)C(=N)NC(=N)N.Cl
+80,MeCN,formic acid,5.3,2.7,metformin,3.486978941,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CN(C)C(=N)NC(=N)N
 80,MeCN,formic acid,5.3,2.7,serotonin,2.353408505,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,c1cc2c(cc1O)c(CCN)c[nH]2
 80,MeCN,formic acid,5.3,2.7,arachidic acid,1.254349369,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CCCCCCCCCCCCCCCCCCCC(=O)O
 80,MeCN,formic acid,5.3,2.7,5-alpha-cholestan-3-beta-ol,0.04475562,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC(C)CCC[C@@H](C)[C@H]1CC[C@H]2[C@@H]3CC[C@H]4C[C@H](CC[C@]4(C)[C@H]3CC[C@]12C)O
@@ -3168,9 +3168,9 @@ organic_modifier_percentage,organic_modifier,additive,additive_concentration_mM,
 80,MeCN,formic acid,5.3,2.7,decanoic acid,0.51437916,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CCCCCCCCCC(=O)O
 80,MeCN,formic acid,5.3,2.7,3-methoxycatechol,-0.258300548,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,COc1cccc(c1O)O
 80,MeCN,formic acid,5.3,2.7,4-methylcatechol,-0.752555962,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,Cc1ccc(c(c1)O)O
-80,MeCN,formic acid,5.3,2.7,glyceryl tripalmitate,2.265716643,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CCCCCCCCCCCCCCCC(=O)OCC(CO)O.CCCCCCCCCCCCCCCC(=O)[O-].CCCCCCCCCCCCCCCC(=O)[O-]
-80,MeCN,formic acid,5.3,2.7,glyceryl trilinoleate,3.715221276,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CCCCC/C=C\C/C=C\CCCCCCCC(=O)OCC(CO)O.CCCCC/C=C\C/C=C\CCCCCCCC(=O)[O-].CCCCC/C=C\C/C=C\CCCCCCCC(=O)[O-]
-80,MeCN,formic acid,5.3,2.7,glyceryl trioleate,3.973240235,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CCCCCCCC/C=C\CCCCCCCC(=O)OCC(CO)O.CCCCCCCC/C=C\CCCCCCCC(=O)[O-].CCCCCCCC/C=C\CCCCCCCC(=O)[O-]
+80,MeCN,formic acid,5.3,2.7,glyceryl tripalmitate,2.265716643,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CCCCCCCCCCCCCCCC(=O)OCC(COC(=O)CCCCCCCCCCCCCCC)OC(=O)CCCCCCCCCCCCCCC
+80,MeCN,formic acid,5.3,2.7,glyceryl trilinoleate,3.715221276,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CCCCC/C=C\C/C=C\CCCCCCCC(=O)OCC(OC(=O)CCCCCCC/C=C\C/C=C\CCCCC)COC(=O)CCCCCCC/C=C\C/C=C\CCCCC
+80,MeCN,formic acid,5.3,2.7,glyceryl trioleate,3.973240235,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CCCCCCCC/C=C\CCCCCCCC(=O)OCC(OC(=O)CCCCCCC/C=C\CCCCCCCC)COC(=O)CCCCCCC/C=C\CCCCCCCC
 80,MeCN,formic acid,5.3,2.7,clindamycin,3.612965974,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CCC[C@@H]1C[C@@H](C(=NC(C(C)Cl)[C@@H]2[C@@H]([C@@H]([C@H]([C@H](O2)SC)O)O)O)O)N(C)C1
 80,MeCN,formic acid,5.3,2.7,clofibric acid,-0.444710195,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC(C)(C(=O)O)Oc1ccc(cc1)Cl
 80,MeCN,formic acid,5.3,2.7,dimetridazole,2.971531197,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,Cc1ncc(n1C)N(=O)=O
@@ -3183,7 +3183,7 @@ organic_modifier_percentage,organic_modifier,additive,additive_concentration_mM,
 80,MeCN,formic acid,5.3,2.7,oxcarbazepine,1.434218344,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,c1ccc2c(c1)CC(=O)c1ccccc1N2C(=N)O
 80,MeCN,formic acid,5.3,2.7,pentoxifylline,2.070915097,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC(=O)CCCCn1c(=O)c2c(ncn2C)n(C)c1=O
 80,MeCN,formic acid,5.3,2.7,antipyrine,3.153116289,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,Cc1cc(=O)n(c2ccccc2)n1C
-80,MeCN,formic acid,5.3,2.7,propanolol,3.745757552,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC(C)NCC(COc1cccc2ccccc12)O.Cl
+80,MeCN,formic acid,5.3,2.7,propanolol,3.745757552,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC(C)NCC(COc1cccc2ccccc12)O
 80,MeCN,formic acid,5.3,2.7,propyphenazone,3.35949878,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC(C)c1c(C)n(C)n(c2ccccc2)c1=O
 80,MeCN,formic acid,5.3,2.7,ranitidine,3.890898309,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CN/C(=C\N(=O)=O)/NCCSCc1ccc(CN(C)C)o1
 80,MeCN,formic acid,5.3,2.7,rosuvastatin,2.52672916,Agilent XCT,ESI,FALSE,NA,0.040194685,0.57,32.19,6.68,2.7,0,NA,MeCN/0.1% HCOOH 80/20,CC(C)c1c(CC[C@H](C[C@H](CC(=O)O)O)O)c(c2ccc(cc2)F)nc(n1)N(C)S(=O)(=O)C
