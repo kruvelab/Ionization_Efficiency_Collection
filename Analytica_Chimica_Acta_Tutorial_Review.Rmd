@@ -42,6 +42,15 @@ title_x_logP <- expression("log"*italic("P"))
 title_x_pKa_acid <- expression(p*italic("K")["a"]*' acid')
 title_x_pKa_base <- expression(p*italic("K")["a"]*' base')
 #DAtaset variables
+aalizadeh_vendor <- 'Bruker'
+aalizadeh_model <- 'Maxis Impact'
+aalizadeh_mass_analyzer <- 'QTOF'
+aalizadeh_source <- 'ESI'
+aalizadeh_doi <- '10.1021/jasms.1c00032'
+aalizadeh_organic_phase_meoh <- 'MeOH 10 mM ammonium acetate'
+aalizadeh_organic_phase_mecn <- 'MeCN'
+aalizadeh_aqueous_phase_meoh <- '10 mM ammonium acetate'
+aalizadeh_aqueous_phase_mecn <- '1 mM ammoniun acetate'
 organic_modifier_abrahamsson <- "MeOH"
 pH_abrahamsson <- 3
 ammonia_abrahamsson <- 1
@@ -277,6 +286,9 @@ select_relevant_columns <- function(dataset){
 
 ```{r, echo=FALSE, eval=F}
 #RAW DATA
+aalizadeh <- read_csv('data/aalizadeh_neg_natural_products.csv')
+aalizadeh_eluent_meoh <- read_csv('data/aalizadeh_meoh_eluent.csv') #gradient has been adjusted to correspond to water and methanol as A and B
+aalizadeh_eluent_mecn <- read_csv('data/aalizadeh_mecn_eluent.csv')
 abrahamsson_pos <- read_csv("data/abrahamsson_pos_raw.csv")
 abrahamsson_eluent <- read_csv("data/abrahamsson_eluent_parameters.csv")
 abrahamsson_neg <- read_csv("data/abrahamsson_neg_raw.csv")
@@ -311,6 +323,62 @@ thurman <- read_csv("data/thurman_raw.csv")
 wu <- read_csv("data/wu_raw.csv")
 wu_eluent <- read_csv("data/wu_eluent_parameters.csv")
 yang <- read_csv("data/yang_raw.csv")
+```
+```{r}
+#Aalizadeh data preprocessing
+aalizadeh_meoh <- aalizadeh %>% 
+  filter(organic_modifier == 'MeOH') %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup()
+
+aalizadeh_meoh_prepared <- get_eluent_features(dataset = aalizadeh_meoh,
+                                                eluent_data = aalizadeh_eluent_meoh,
+                                                organic_modifier = 'MeOH',
+                                                pH = 3.6,
+                                                ammonia = 1,
+                                                aqueous_phase = aalizadeh_aqueous_phase_meoh,
+                                                organic_phase = aalizadeh_organic_phase_meoh
+)
+aalizadeh_meoh_prepared <- aalizadeh_meoh_prepared %>% 
+  rename(compound_name = name,
+         organic_pc = organic) %>% 
+  mutate(vendor = aalizadeh_vendor,
+         organic_modifier = 'MeOH',
+         mass_analyzer = aalizadeh_mass_analyzer,
+         ESI_mode = "negative",
+         ESI_source = aalizadeh_source,
+         instrument_model = aalizadeh_model,
+         doi = aalizadeh_doi,
+         publication = "Aalizadeh") %>% 
+  select_relevant_columns()
+
+aalizadeh_mecn <- aalizadeh %>% 
+  filter(organic_modifier == 'MeCN') %>% 
+  group_by(SMILES) %>% 
+  mutate(isotope_correction = isotope_distribution(SMILES)) %>% 
+  ungroup()
+
+aalizadeh_mecn_prepared <- get_eluent_features(dataset = aalizadeh_mecn,
+                                                eluent_data = aalizadeh_eluent_mecn,
+                                                organic_modifier = 'MeCN',
+                                                pH = 2.6,
+                                                ammonia = 1,
+                                                aqueous_phase = aalizadeh_aqueous_phase_mecn,
+                                                organic_phase = aalizadeh_organic_phase_mecn
+)
+aalizadeh_mecn_prepared <- aalizadeh_mecn_prepared %>% 
+  rename(compound_name = name,
+         organic_pc = organic) %>% 
+  mutate(vendor = aalizadeh_vendor,
+         organic_modifier = 'MeCN',
+         mass_analyzer = aalizadeh_mass_analyzer,
+         ESI_mode = "negative",
+         ESI_source = aalizadeh_source,
+         instrument_model = aalizadeh_model,
+         doi = aalizadeh_doi,
+         publication = "Aalizadeh") %>% 
+  select_relevant_columns()
 ```
 
 ```{r, warning=F, echo=FALSE, eval=F}
@@ -1363,7 +1431,9 @@ yang_prepared <- yang_tidied %>%
 ```{r, echo=FALSE, eval=F}
 #Creating one dataset
 entire_dataset <- alymatiri_neg_prepared %>% 
-  bind_rows(alymatiri_pos_prepared) %>% 
+  bind_rows(alymatiri_pos_prepared) %>%
+  bind_rows(aalizadeh_mecn_prepared) %>% 
+  bind_rows(aalizadeh_meoh_prepared) %>% 
   bind_rows(abrahamsson_neg_prepared) %>% 
   bind_rows(abrahamsson_pos_prepared) %>% 
   bind_rows(bedner_prepared) %>% 
